@@ -49,9 +49,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-While traditional container technology allows you to focus on the process space of your application, you still have to worry about the entire life-cycle of the application, Lambda is a serverless platform to run Functions-as-a-Service
+With the advent of Lamd
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMj
-g2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0
-NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTE4ODY3MzQxNTcsLTEwNjQ2ODA0MzUsLT
+E2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5
+OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
