@@ -18,8 +18,10 @@ This is analogous to hailing an *Uber* car service. With Uber you just tell what
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
 ## Fargate - the Good, Bad & Ugly
-### Pay Per Use
+###  Good & Bad: Pay Per Use
 Fargate is a good choice if you are leaving a lot of compute power and memory foot-print unused. Unlike ECS or EKS, you only pay for the compute and memory that you actually use. It also integrates well with other AWS services allowing you to schedule tasks and run them based on events while automatically fading them out when not in use.
+
+While Fargate is 
 
 ### Low Complexity
 With its Container-as-a-Service model, you don't have to worry about the underlying infrastructure you need for deploying your container, how you will optimize usage or secure them. Instead you focus reduces to the four walls of your container - its size, power and communication with the outside world aka memory, CPU and networking.
@@ -41,6 +43,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwOTc3NTk3LC0xOTQwNDY2NDgxLC0xMj
-I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTExNjkxNzA5MzYsLTE5NDA0NjY0ODEsLT
+EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
