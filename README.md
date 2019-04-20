@@ -46,8 +46,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-
+While Lambdas provide a serverless
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMj
-I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTkzNTg3NDc0MCwyODYyNjMxNDUsLTE5ND
+A0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0
+NDY5XX0=
 -->
