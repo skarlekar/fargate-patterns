@@ -1,4 +1,4 @@
-# Fargate Patterns
+# Fargate Design Patterns
 
 ## Compendium and Code Examples of AWS Fargate Patterns.
 
@@ -26,6 +26,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMj
-YwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbNDI0NDQ3MTk5LC0xOTQwNDY2NDgxLC0xMj
+I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
