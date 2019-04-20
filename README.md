@@ -46,9 +46,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-While traditional container technology allows Lambda is a serverless platform to run Functions-as-a-Service
+While traditional container technology allows you to focus on the process space of your application, you still have to worry about the entire life-cycle of the application, Lambda is a serverless platform to run Functions-as-a-Service
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzIwODIyNzMsMjg2MjYzMTQ1LC0xOT
+eyJoaXN0b3J5IjpbLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOT
 QwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2
 NDQ2OV19
 -->
