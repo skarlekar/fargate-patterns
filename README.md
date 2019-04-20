@@ -6,7 +6,7 @@
 
 
 ## What is AWS Fargate?
-Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software  even on same operating systems where the developers have no control can cause unexpected behaviors Containers were invented to solve this problem
+Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulate
 
 Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run your containers without having to worry about managing a cluster of servers. You don't have to choose server types, upgrade or patch servers or optimize container packing on your clusters. 
 
@@ -28,6 +28,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1MzM4OTE5LC0xOTQwNDY2NDgxLC0xMj
-I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTc2NjM4OTU1OCwtMTk0MDQ2NjQ4MSwtMT
+IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
