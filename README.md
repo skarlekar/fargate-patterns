@@ -5,7 +5,7 @@
 **AWS Fargate** is the Uber of container service allowing engineers to hail a container by specifying their compute and memory needs. By providing an incredible on-demand flexibility and removing the burden of resource provisioning just as Lambda did years ago to servers, Fargate is disrupting the container management technology.
 
 ## Introduction
-Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulates entire runtime environments for an application or service including dependent libraries, configurations which are just enough to run the application into capsules that are portable across operating systems. With a 
+Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulates entire runtime environments for an application or service including dependent libraries, configurations which are just enough to run the application into capsules that are portable across operating systems. By sandboxing an application into just enough space and just the right ports for communication with the outside world, containers also increases the security of an application by reducing blast radius and increasing the n
 
 ## What is AWS Fargate?
 
@@ -29,6 +29,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzk1NjY5OTEsLTE5NDA0NjY0ODEsLT
-EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbMTA3NTQ4NDk5NCwtMTk0MDQ2NjQ4MSwtMT
+IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
