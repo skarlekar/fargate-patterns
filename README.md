@@ -46,9 +46,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-While Lambdas provide a serverless
+While Lambda is a serverless platform to run Functions-as-a-Service
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTg3NDc0MCwyODYyNjMxNDUsLTE5ND
+eyJoaXN0b3J5IjpbLTEyODc2ODE4NywyODYyNjMxNDUsLTE5ND
 A0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0
 NDY5XX0=
 -->
