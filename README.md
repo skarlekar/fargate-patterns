@@ -5,7 +5,7 @@
 **AWS Fargate** is the Uber of container service allowing engineers to hail a container by specifying their compute and memory needs. By providing an incredible on-demand flexibility and removing the burden of resource provisioning just as Lambda did years ago to servers, Fargate is disrupting the container management technology.
 
 ## Introduction
-Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulate entire runtime environments for an application or servicincluding 
+Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulates entire runtime environments for an application or service including dependent libraries, configurations which are just enough to run the application.
 
 ## What is AWS Fargate?
 
@@ -29,6 +29,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTkxMTc4NSwtMTk0MDQ2NjQ4MSwtMT
+eyJoaXN0b3J5IjpbMTAxMzIzOTYzOCwtMTk0MDQ2NjQ4MSwtMT
 IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
