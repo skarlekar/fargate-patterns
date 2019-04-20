@@ -6,7 +6,7 @@
 
 
 ## What is AWS Fargate?
-Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run your containers without having to worry about managing a cluster of servers. You don't have to choose server types, upgrade or patch servers or optimize container packing on your clusters. This is analogous to hailing a taxi
+Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run your containers without having to worry about managing a cluster of servers. You don't have to choose server types, upgrade or patch servers or optimize container packing on your clusters. This is analogous to hailing a Uber. With Uber you don't specify wh
 
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
@@ -20,5 +20,5 @@ We will use the Container-on-Demand pattern to build the Tom-Thumb on-demand tas
 
 Later we will explore the Sidecar-Assembly pattern to assemble otherwise fully functional services running in containers to build an application that has expanded capabilities beyond what is provided by these services. In essence, to reinforce that the whole is greater than sum of its parts.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzYwOTkzNiwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbMTI5NDY5ODk1NSwtMTc0MzQ2NDQ2OV19
 -->
