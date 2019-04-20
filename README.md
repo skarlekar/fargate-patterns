@@ -23,13 +23,15 @@ Fargate is a good choice if you are leaving a lot of compute power and memory fo
 
 While Fargate provides you an opportunity to cut costs by charging you only for the time your container is running, the average per-hour cost for running Fargate is more than the per-hour cost of running ECS or EKS in spite of [major price reduction in Jan 2019](https://aws.amazon.com/blogs/compute/aws-fargate-price-reduction-up-to-50/) proving once again that there is no free lunch. The cost differential is price you pay for not having to deal with the complexity of managing infrastructure or investing in time and resources to deal with the cluster management that comes with the traditional solutions. 
 
-As a result, the onus is on you to make the right choice based on
+As a result, the onus is on you to make the right choice based on the size of your workload, availability of skilled resources to manage and secure clusters etc.
 
 ### Good: Low Complexity
 With its Container-as-a-Service model, you don't have to worry about the underlying infrastructure you need for deploying your container, how you will optimize usage or secure them. Instead you focus reduces to the four walls of your container - its size, power and communication with the outside world aka memory, CPU and networking.
 
-### Better Security
+### Good: Better Security
 Since you don't have to worry about securing the entire cluster of servers, your security concern is reduced to security within the container, the roles required to run your application, the ports that must be opened for the application that is running inside the container to communicate with the outside world etc.
+
+### 
  
 ## Focus of this workshop
 
@@ -45,6 +47,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjk1NTgyMjAsLTE5NDA0NjY0ODEsLT
-EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbLTUyMjMwNzAyNywtMTk0MDQ2NjQ4MSwtMT
+IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
