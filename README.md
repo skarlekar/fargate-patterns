@@ -18,9 +18,11 @@ This is analogous to hailing a Uber. With Uber you just tell what size car you w
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
 ## Fargate - the Good, Bad & Ugly
-### Pay per use
+### Pay Per Use
 Fargate is a good choice if you are leaving a lot of compute power and memory foot-print unused. Unlike ECS or EKS, you only pay for the compute and memory that you actually use.
+
 ### Low Complexity
+With its Container-as-a-Service model, you don't have to worry about where you will deploh
 ## Focus of this workshop
 
 In this workshop, we will explore three design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure.
@@ -35,6 +37,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTU3NzI5NywtMTk0MDQ2NjQ4MSwtMT
+eyJoaXN0b3J5IjpbMjA2NjIzNDcxNiwtMTk0MDQ2NjQ4MSwtMT
 IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
