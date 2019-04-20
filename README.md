@@ -7,7 +7,7 @@
 ## Introduction
 Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. Containers were invented to solve this problem. Containers encapsulates entire runtime environments for an application or service including dependent libraries, configurations which are just enough to run the application into software packages that are portable across operating systems. By sandboxing the application into just enough space and opening just the right ports for communication with the outside world, containers also increases the security of an application by reducing blast radius and increases the number of services that can be run on a unit of hardware.
 
-First released in 2013, Docker introduced the concept of containers. Kubernetes followed in 2014 allowing multiple Docker nodes running on different heterogenous hosts to be orchestrated by automating provisioning, networking, load-balancing, security and scaling across these nodes through a single dashboard or command line. Both of these technologies required upkeep of the underlying cluster of servers & operating system through upgrades, patching, rehydration and security management. Amazon introduced ECS and EKS to
+First released in 2013, Docker introduced the concept of containers. Kubernetes followed in 2014 allowing multiple Docker nodes running on different heterogenous hosts to be orchestrated by automating provisioning, networking, load-balancing, security and scaling across these nodes through a single dashboard or command line. Both of these technologies required upkeep of the underlying cluster of servers & operating system through upgrades, patching, rehydration and security management. Amazon introduced ECS and EKS to streamline this management process for Docker and Kubernetes respectively.
 
 ## What is AWS Fargate?
 
@@ -18,7 +18,7 @@ This is analogous to hailing a Uber. With Uber you just tell what size car you w
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
 ## Fargate - the Good, Bad & Ugly
-Fargate is a good choice if you are leaving a lot of compute power and memory foot-print unused. Unlike o
+Fargate is a good choice if you are leaving a lot of compute power and memory foot-print unused. Unlike ECS or EKS, you only pay for the co
 ## Focus of this workshop
 
 In this workshop, we will explore three design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure.
@@ -33,6 +33,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5ODAwNTQzNSwtMTk0MDQ2NjQ4MSwtMT
+eyJoaXN0b3J5IjpbMTM2MjQ0NDg3MywtMTk0MDQ2NjQ4MSwtMT
 IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
