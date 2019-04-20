@@ -23,6 +23,8 @@ Fargate is a good choice if you are leaving a lot of compute power and memory fo
 
 ### Low Complexity
 With its Container-as-a-Service model, you don't have to worry about the underlying infrastructure you need for deploying your container, how you will optimize usage or secure them. Instead you focus reduces to the four walls of your container - its size, power and communication with the outside world aka memory, CPU and networking.
+
+### 
  
 ## Focus of this workshop
 
@@ -38,6 +40,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzg4NzY1LC0xOTQwNDY2NDgxLC0xMj
-I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTgwNzUyOTI3NiwtMTk0MDQ2NjQ4MSwtMT
+IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
