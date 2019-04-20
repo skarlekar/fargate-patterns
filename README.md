@@ -31,9 +31,12 @@ With its Container-as-a-Service model, you don't have to worry about the underly
 ### Good: Better Security
 Since you don't have to worry about securing the entire cluster of servers, your security concern is reduced to security within the container, the roles required to run your application, the ports that must be opened for the application that is running inside the container to communicate with the outside world etc.
 
+### Good: Faster Development
+
+### Good: 
 ### Bad: Limited Availability
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS.
- 
+
 ## Focus of this workshop
 
 In this workshop, we will explore three design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure.
@@ -48,7 +51,7 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 ### Problem
 While traditional container technology allows you to focus on the process space of your application, you still have to worry about the entire life-cycle of the application, Lambda is a serverless platform to run Functions-as-a-Service
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOT
-QwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2
-NDQ2OV19
+eyJoaXN0b3J5IjpbLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMj
+g2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0
+NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
