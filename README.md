@@ -6,11 +6,11 @@
 
 
 ## What is AWS Fargate?
-Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run your containers without having to worry about managing a cluster of servers. You don't have to choose server types, upgrade or patch servers or optimize container packing on your clusters. 
+Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run your containers without having to worry about managing a cluster of servers. You don't have to choose server types, upgrade or patch servers or optimize container packing on your clusters. This is analogous to hailing a taxi
 
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
-JuWith Fargate, all you do is package your application in containers, specify the CPU and memory requirements, define networking and IAM policies, and launch the application. Fargate takes care of scaling so that you don't have to worry about provisioning enough compute resources for your containers to scale out. 
+Just as you don't specify which carWith Fargate, all you do is package your application in containers, specify the CPU and memory requirements, define networking and IAM policies, and launch the application. Fargate takes care of scaling so that you don't have to worry about provisioning enough compute resources for your containers to scale out. 
 
 
 
@@ -20,6 +20,5 @@ We will use the Container-on-Demand pattern to build the Tom-Thumb on-demand tas
 
 Later we will explore the Sidecar-Assembly pattern to assemble otherwise fully functional services running in containers to build an application that has expanded capabilities beyond what is provided by these services. In essence, to reinforce that the whole is greater than sum of its parts.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzk1NjUxMDksLTE3NDM0NjQ0NjldfQ
-==
+eyJoaXN0b3J5IjpbMTM2MzYwOTkzNiwtMTc0MzQ2NDQ2OV19
 -->
