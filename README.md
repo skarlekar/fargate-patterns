@@ -22,7 +22,8 @@ We will use the *Scaling-Container* to build the an auto-scaling service that fi
 
 Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully functional services running in containers to build an application that has expanded capabilities beyond what is provided by these services. In essence, to reinforce that the whole is greater than sum of its parts.
 
+##
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0MDE4ODkyLDI2MDg0NDM1NCwtMTc0Mz
-Q2NDQ2OV19
+eyJoaXN0b3J5IjpbLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNz
+QzNDY0NDY5XX0=
 -->
