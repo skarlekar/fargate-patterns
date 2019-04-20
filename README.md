@@ -52,15 +52,13 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 While AWS Lambda allows you to run functions-as-a-service allowing you to build applications as a conglomeration of serverless microservices which react to events and eschewing  development of core functionalities, easy deployment, automatic scaling and fault tolerance, it has a many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html):
 -   The default deployment package size is 50 MB.
 -   Memory range is from 128 to 3008 MB.
--   Maximum execution timeout for a function is 15 minutes*.  
-    Requests limitations by lambda:
-    
+-   Maximum execution timeout for a function is 15 minutes.      
 -   Request and response (synchronous calls) body payload size can be up to to 6 MB.
-    
--   Event request (asynchronous calls) body can be up to 128 KB 
+-   Event request (asynchronous calls) body can be up to 128 KB .
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTkyNDUxMDMsODc0NTQ1NDE3LC0xMD
-Y0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2
-NjQ4MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0Nj
-ldfQ==
+eyJoaXN0b3J5IjpbMzY5MjM2ODIyLDg3NDU0NTQxNywtMTA2ND
+Y4MDQzNSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0
+ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX
+0=
 -->
