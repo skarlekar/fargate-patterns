@@ -55,9 +55,9 @@ While AWS Lambda allows you to run functions-as-a-service allowing you to build 
 -   Maximum execution timeout for a function is 15 minutes.      
 -   Request and response (synchronous calls) body payload size can be up to to 6 MB.
 -   Event request (asynchronous calls) body can be up to 128 KB .
-
+These are severe limitations for processing several types of applications including AIaaS applications where the size of ma
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5MjM2ODIyLDg3NDU0NTQxNywtMTA2ND
+eyJoaXN0b3J5IjpbNTE3OTUwODA2LDg3NDU0NTQxNywtMTA2ND
 Y4MDQzNSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0
 ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX
 0=
