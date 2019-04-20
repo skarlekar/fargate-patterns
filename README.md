@@ -49,9 +49,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-With the advent of Lamd
+With the advent of Lambda - Amazon's Function-as-a-Service
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY3MzQxNTcsLTEwNjQ2ODA0MzUsLT
-E2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5
-OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbMTMyODEyNDY5NCwtMTA2NDY4MDQzNSwtMT
+Y1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5
+MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
