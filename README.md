@@ -49,10 +49,10 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-While AWS Lambda allows you to run functions as a service allowing you to build applications as a conglomeration of serverless microservices reacting to events eschewing simple development of core functionalities, easy deployment, automatic scaling and fault tolerance to, it has a few limitations 
+While AWS Lambda allows you to run functions-as-a-service allowing you to build applications as a conglomeration of serverless microservices, reacting to events and eschewing simple development of core functionalities, easy deployment, automatic scaling and fault tolerance, it has a few limitations 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNDcxMzg4Nyw4NzQ1NDU0MTcsLTEwNj
-Q2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2
-NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV
-19
+eyJoaXN0b3J5IjpbLTE2NDAwNTg1MzYsODc0NTQ1NDE3LC0xMD
+Y0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2
+NjQ4MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0Nj
+ldfQ==
 -->
