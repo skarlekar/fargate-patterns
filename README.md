@@ -31,7 +31,8 @@ With its Container-as-a-Service model, you don't have to worry about the underly
 ### Good: Better Security
 Since you don't have to worry about securing the entire cluster of servers, your security concern is reduced to security within the container, the roles required to run your application, the ports that must be opened for the application that is running inside the container to communicate with the outside world etc.
 
-### 
+### Bad: Limited Availability
+While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS.
  
 ## Focus of this workshop
 
@@ -47,6 +48,6 @@ Later we will explore the *Sidecar-Assembly* pattern to assemble otherwise fully
 ### Problem
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMjMwNzAyNywtMTk0MDQ2NjQ4MSwtMT
-IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
+eyJoaXN0b3J5IjpbLTEwODU2Mjc5MjcsLTE5NDA0NjY0ODEsLT
+EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
