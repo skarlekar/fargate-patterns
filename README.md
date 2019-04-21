@@ -71,7 +71,9 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running jobs. For instance:
+AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running jobs. 
+
+For instance these are current limitations on Lambda (as of April 2019):
 -   The default deployment package size is 50 MB.
 -   Memory range is from 128 to 3008 MB.
 -   Maximum execution timeout for a function is 15 minutes.      
@@ -80,7 +82,7 @@ AWS Lambda lets you run functions as a service. This allows you to build applica
 
 These are severe limitations for processing several types of applications including machine learning models where the size of libraries go much above the maximum deployment package size of 250MB or may take longer than 15 minutes to run a batch.
 
-As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
+As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the software package in a Lambda deployment.
 
 ### Solution
 Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. The Fargate Task is started from a dormant state. Once the process is complete and the output written to the output repository, the Task is automatically stopped. As a result of this, you pay only for the time the Task is running. Additionally, you can preconfigure the size of the task (vCPU, memory, environment variables to pass parameters to the job) or override it for every invocation.
@@ -102,7 +104,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. For synchronous workloads that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how A the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. For synchronous workloads that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
@@ -113,11 +115,11 @@ As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerSh
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MTM0MTMwOSwxNTc0ODAyNDIxLDEzOT
-EyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1
-NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNj
-Q3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0
-NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMD
-Y0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2
-NjQ4MV19
+eyJoaXN0b3J5IjpbMjg0MDk3NTk4LDE1NzQ4MDI0MjEsMTM5MT
+IxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1
+MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2ND
+c0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0
+LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNj
+Q2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2
+NDgxXX0=
 -->
