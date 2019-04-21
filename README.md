@@ -108,16 +108,16 @@ In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
-How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it own set of issues, especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size
+How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it [own set of issues](https://lumigo.io/blog/lambda-layers-when-to-use-it/), especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size.
 
 ### Solution
-
+Deploy your service in a Fargate Task and wrap it around a Farg
 ![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-container-pattern.png) 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDc4NTY1MSwtODE5Njk1MzE0LDE1Nz
+eyJoaXN0b3J5IjpbMTU1ODgyNjAxMCwtODE5Njk1MzE0LDE1Nz
 Q4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4
 NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0Nj
 Y5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1
