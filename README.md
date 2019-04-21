@@ -102,12 +102,12 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations posed by Lambda such as the restrictions on long-processes im
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. 
 
 In the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzNzk5NjYyLDEzOTEyMTUyMjQsLTExNz
+eyJoaXN0b3J5IjpbNTIzNTI1Mzk0LDEzOTEyMTUyMjQsLTExNz
 I3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYw
 ODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMj
 czODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0
