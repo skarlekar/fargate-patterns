@@ -62,10 +62,10 @@ As a result, it is not possible to run large workloads or long running processes
 ### Solution
 Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. 
 
-The entry point in the container can be as trivial as a shell script or could be complex as a web service. But the point to note here is the job submitted to the Fargate Task in this case should be asynchronous. As a result large
+The entry point in the container can be as trivial as a shell script or could be complex as a web service. But the point to note here is the job submitted to the Fargate Task in this case should be asynchronous. As a result large wo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5Mjg4MzQ1OCwzMTk2NzU5NDQsLTgzOT
-kxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQz
-NSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLT
-EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbLTE4MTg1NDI0MzgsMzE5Njc1OTQ0LC04Mz
+k5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0
+MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC
+0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
