@@ -56,6 +56,7 @@ AWS Lambda lets you run functions as a service. This allows you to build applica
 -   Maximum execution timeout for a function is 15 minutes.      
 -   Request and response (synchronous calls) body payload size can be up to to 6 MB.
 -   Event request (asynchronous calls) body can be up to 128 KB .
+
 These are severe limitations for processing several types of applications including machine learning models where the size of libraries go much above the maximum deployment package size of 250MB or may take longer than 15 minutes to run a batch.
 
 As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
@@ -80,10 +81,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3ND
-A0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwt
-ODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0Nj
-gwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4
-MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ
-==
+eyJoaXN0b3J5IjpbMTg3NTAyNzM3Myw3MTA1MjUwNyw0NjY5Mj
+kzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAs
+MzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1ND
+U0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1
+LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMT
+c0MzQ2NDQ2OV19
 -->
