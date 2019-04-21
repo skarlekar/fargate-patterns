@@ -26,7 +26,7 @@ The Task Definiton specifies which container repository and container image you 
 Fargate then knows which Docker image to use for containers, how many containers to use in the task, and the resource allocation for each container. 
 
 ### Service 
-
+A *Service* launches and maintains a specified number of copies of the tasks simultaneoulsy in your cluster.
 
 ## AWS Fargate - the Good, Bad & Ugly
 ###  Good & Bad: Pay Per Use
@@ -92,10 +92,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDE2NjQ2MzcsLTk4NjMxNTUwNSwxNT
-Y2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgy
-MCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOT
-kxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQz
-NSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLT
-EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbLTE4ODk4MDcxNSwtOTg2MzE1NTA1LDE1Nj
+YwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIw
+LDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OT
+E0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1
+LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4MSwtMT
+IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
 -->
