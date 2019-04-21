@@ -1,3 +1,30 @@
+- [Fargate Design Patterns](#fargate-design-patterns)
+  * [Compendium and Code Examples of AWS Fargate Patterns.](#compendium-and-code-examples-of-aws-fargate-patterns)
+  * [Introduction](#introduction)
+  * [What is AWS Fargate?](#what-is-aws-fargate-)
+  * [Components of AWS Fargate](#components-of-aws-fargate)
+    + [Task](#task)
+    + [Service](#service)
+    + [Cluster](#cluster)
+  * [AWS Fargate - the Good, Bad & Ugly](#aws-fargate---the-good--bad---ugly)
+    + [Good & Bad: Pay Per Use](#good---bad--pay-per-use)
+    + [Good: Low Complexity](#good--low-complexity)
+    + [Good: Better Security](#good--better-security)
+    + [Good: Faster Development](#good--faster-development)
+    + [Good:  Scaling](#good---scaling)
+    + [Bad: Limited Availability](#bad--limited-availability)
+  * [Focus of these Behavioral Patterns](#focus-of-these-behavioral-patterns)
+  * [*Container-on-Demand* Pattern](#-container-on-demand--pattern)
+    + [Problem](#problem)
+    + [Solution](#solution)
+      - [Pattern Components](#pattern-components)
+    + [Limitations](#limitations)
+  * [Scaling Container Pattern](#scaling-container-pattern)
+    + [Problem](#problem-1)
+    + [Solution](#solution-1)
+      - [Pattern Components](#pattern-components-1)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 # Fargate Design Patterns
 
 ## Compendium and Code Examples of AWS Fargate Patterns.
@@ -133,11 +160,11 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 - **ECS Service** - An ECS service that wra
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMD
-IyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1
-MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNS
-wxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQw
-NDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLT
-gzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4
-MDQzNV19
+eyJoaXN0b3J5IjpbNDk5ODUyMDIsMTkzNDA5OTY1NiwtMTI0MD
+I1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQy
+MSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLT
+k4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4
+NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMT
+k2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQx
+N119
 -->
