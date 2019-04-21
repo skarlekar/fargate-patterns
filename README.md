@@ -67,7 +67,8 @@ Deploy your software package in a container as a Fargate Task. Invoke the task u
 The entry point in the container can be as trivial as a shell script or could be complex as a web service. But the point to note here is the job submitted to the Fargate Task in this case should be asynchronous. As a result large software packages running large workloads can be run using this pattern.
 
 #### Pattern Components
-- Input Repository - The input for your processor is stored here and should be reachable by the processor. This could be S3-based object store or a 
+- **Input Repository** - The input for your Processor is stored here and should be reachable by the processor. This could be S3-based object store or a data base.
+- **Task Invoker** - A short-running function that is used to invoke your processor
 
 ### Limitations
 While using this pattern Fargate puts Lambdas on steroids, Fargate has its [own resource limitations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_limits.html) due to it serverless nature. For instance, the number of tasks using the Fargate launch type, per region, per account cannot be more than 50 or the maximum container storage for tasks using the Fargate launch type cannot be over 10GB. 
@@ -76,7 +77,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTU1NDUxNiwxMzI3Mzg1NTIsMTUwOT
+eyJoaXN0b3J5IjpbLTk4MzIyNzMxNywxMzI3Mzg1NTIsMTUwOT
 UzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0
 LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4OSwyOD
 YyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0
