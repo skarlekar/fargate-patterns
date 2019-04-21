@@ -17,7 +17,9 @@ This is analogous to hailing an *Uber* car service. With Uber, you just tell wha
 
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
-## Fargate - the Good, Bad & Ugly
+## Components of AWS Fargate
+
+## AWS Fargate - the Good, Bad & Ugly
 ###  Good & Bad: Pay Per Use
 Fargate is a good choice if you are leaving a lot of compute power and memory foot-print unused. Unlike ECS or EKS, you only pay for the compute and memory that you actually use. It also integrates well with other AWS services allowing you to schedule tasks and run them based on events while automatically fading them out when not in use.
 
@@ -81,10 +83,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5Mj
-kzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAs
-MzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1ND
-U0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1
-LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMT
-c0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTMwMTk1MTM0MSwxNTY2MDM2MDg0LDcxMD
+UyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIs
+MTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzND
+EwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4
+OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMj
+YwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
