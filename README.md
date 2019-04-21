@@ -20,12 +20,13 @@ If you are used to traditional container management, you will really appreciate 
 ## Components of AWS Fargate
 
 ### Task 
-A *Task* is the blue print for your application running on Fargate. You use *Task Definition* to configure your tasks on Fargate asnach time you launch a task in Amazon ECS, you specify a task definition. 
+A *Task* is the blue print for your application running on Fargate. You use *Task Definition* to configure your tasks on Fargate and each time you launch a task in Amazon ECS.
 
 The Task Definiton specifies which container repository and container image you want to use for running your Task. It also specifies the CPU, memory, the roles to use for executing the task. 
 Fargate then knows which Docker image to use for containers, how many containers to use in the task, and the resource allocation for each container. 
 
-### Serv
+### Service 
+
 
 ## AWS Fargate - the Good, Bad & Ugly
 ###  Good & Bad: Pay Per Use
@@ -91,10 +92,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Njg4NjI5LC05ODYzMTU1MDUsMTU2Nj
-AzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAs
-MTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MT
-QyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUs
-LTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMj
-I5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbLTEzMDE2NjQ2MzcsLTk4NjMxNTUwNSwxNT
+Y2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgy
+MCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOT
+kxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQz
+NSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLT
+EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
