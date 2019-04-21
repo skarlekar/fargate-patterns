@@ -72,7 +72,7 @@ The entry point in the container can be as trivial as a shell script or could be
 - **Input Repository** - The input for your *Processor* is stored here and should be reachable by the processor. This could be S3-based object store or a data base. Ideally, this repository should notify the task invoker when a new object is uploaded or updated.
 - **Task Invoker** - A short-running function that is used to invoke your Processor. This could be a Lambda function or a synchronous service running as part of another larger process chain.
 - **Processor** - A long-running task that is the core of the pattern. It is invoked by the Task Invoker. This could be a Fargate Task that reads its input from the Input Repository, processes it and writes back the output to the Output Repository.
-- **Output Repository** - 
+- **Output Repository** - Results of the Fargate Task are stored here. Again, this could be a S3 store or a database and could be optionally configure to emit events on inserts and updates.
 
 ### Limitations
 While using this pattern Fargate puts Lambdas on steroids, Fargate has its [own resource limitations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_limits.html) due to it serverless nature. For instance, the number of tasks using the Fargate launch type, per region, per account cannot be more than 50 or the maximum container storage for tasks using the Fargate launch type cannot be over 10GB. 
@@ -81,7 +81,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTI5ODg2Miw3MTA1MjUwNyw0NjY5Mj
+eyJoaXN0b3J5IjpbMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5Mj
 kzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAs
 MzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1ND
 U0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1
