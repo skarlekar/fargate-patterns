@@ -102,10 +102,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. For synchronous workloads that execute within these limits, the main limitations are the size of the deployment package, networking limitations, local temporary store or the language supported in Lambda that. 
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. For synchronous workloads that execute within these limits, the main limitations are the size of the deployment package, networking limitations, local temporary store or the language supported in Lambda that. As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzcxMDM0MiwxMzkxMjE1MjI0LC0xMT
+eyJoaXN0b3J5IjpbLTQ5Njc3MDc5NSwxMzkxMjE1MjI0LC0xMT
 cyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2
 MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMz
 I3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIw
