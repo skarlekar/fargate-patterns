@@ -1,4 +1,4 @@
-- [Fargate Design Patterns](#fargate-design-patterns)
+- [**Fargate Design Patterns**](#fargate-design-patterns)
   * [Compendium and Code Examples of AWS Fargate Patterns.](#compendium-and-code-examples-of-aws-fargate-patterns)
   * [Introduction](#introduction)
   * [What is AWS Fargate?](#what-is-aws-fargate-)
@@ -160,11 +160,11 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 - **ECS Service** - An ECS service that wra
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5ODUyMDIsMTkzNDA5OTY1NiwtMTI0MD
-I1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQy
-MSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLT
-k4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4
-NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMT
-k2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQx
-N119
+eyJoaXN0b3J5IjpbLTExNDI5NDM4ODYsMTkzNDA5OTY1NiwtMT
+I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
+MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
+AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
+OTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MC
+wzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0
+NTQxN119
 -->
