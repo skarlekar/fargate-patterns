@@ -94,7 +94,7 @@ The entry point in the container can be as trivial as a shell script or could be
 #### Pattern Components
 - **Input Repository** - The input for your *Processor* is stored here and should be reachable by the processor. This could be S3-based object store or a data base. Ideally, this repository should notify the task invoker when a new object is uploaded or updated.
 - **Task Invoker** - A short-running function that is used to invoke your Processor. This could be a Lambda function or a synchronous service running as part of another larger process chain.
-- **Processor** - A long-running task that is the core of the pattern. It is invoked by the Task Invoker. This could be a Fargate Task that reads its input from the Input Repository, processes it and writes back the output to the Output Repository. The Fargate task can be configured to use one or more containers
+- **Processor** - A long-running task that is the core of the pattern. It is invoked by the Task Invoker. This could be a Fargate Task that reads its input from the Input Repository, processes it and writes back the output to the Output Repository. The Fargate task can be configured to use one or more containers (with a maximum of 10).
 - **Output Repository** - Results of the Fargate Task are stored here. Again, this could be a S3 store or a database and could be optionally configure to emit events on inserts and updates.
 
 ### Limitations
@@ -133,11 +133,11 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 - ECS Service - An ECS service that wra
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjMwMzUxNiwtMTI0MDI1NTQ5MiwyMD
-IyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1
-MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNS
-wxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQw
-NDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLT
-gzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4
-MDQzNV19
+eyJoaXN0b3J5IjpbLTIxMzYxMzkwODAsLTEyNDAyNTU0OTIsMj
+AyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIx
+NTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MD
+UsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0
+MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC
+04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2
+ODA0MzVdfQ==
 -->
