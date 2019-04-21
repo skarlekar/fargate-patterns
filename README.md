@@ -127,14 +127,16 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 
 ![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-container-pattern.png) 
 
+#### Pattern Components
 
+- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDAyNTU0OTIsMjAyMjYxNjU4NSwtOD
-E5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5
-ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NC
-w3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4
-NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMT
-g5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1
-NTE5ODldfQ==
+eyJoaXN0b3J5IjpbMTc4Njg2NjkwMywtMTI0MDI1NTQ5MiwyMD
+IyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1
+MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNS
+wxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQw
+NDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLT
+gzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4
+MDQzNV19
 -->
