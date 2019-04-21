@@ -57,12 +57,13 @@ AWS Lambda lets you run functions as a service. This allows you to build applica
 -   Event request (asynchronous calls) body can be up to 128 KB .
 These are severe limitations for processing several types of applications including machine learning models where the size of libraries go much above the maximum deployment package size of 250MB or may take longer than 15 minutes to run a batch.
 
-As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software
+As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
+
 ### Solution
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3ND
-U0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4OSwyODYyNjMx
-NDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC
-0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5Mz
+QxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5
+ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLD
+I2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
