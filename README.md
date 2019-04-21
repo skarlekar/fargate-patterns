@@ -60,7 +60,7 @@ These are severe limitations for processing several types of applications includ
 As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
 
 ### Solution
-Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. The Fargate Task is put to 
+Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. The Fargate Task is started from a dormant state. Once the process is complete and the output written to the output repository, the Task is automatically stopped. As a result of this, you pay only for the time the Task is running.
 
 ![Container-on-Demand Pattern](https://github.com/skarlekar/fargate-patterns/blob/master/images/container-on-demand-pattern.png)
 
@@ -78,9 +78,9 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDY0NTA3OSwxMzI3Mzg1NTIsMTUwOT
-UzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0
-LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4OSwyOD
-YyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0
-MzU0LC0xNzQzNDY0NDY5XX0=
+eyJoaXN0b3J5IjpbLTE0Njk1NTQ3MDQsMTMyNzM4NTUyLDE1MD
+k1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0
+NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMj
+g2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0
+NDM1NCwtMTc0MzQ2NDQ2OV19
 -->
