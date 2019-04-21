@@ -157,14 +157,14 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 #### Pattern Components
 
 - **Fargate Task** - A Fargate task that has its ports open for two-way communication using one or more containers (within a maximum limit of ten containers).
-- **ECS Service** - An ECS service that wra
+- **ECS Service** - An ECS service that wraps 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDI5NDM4ODYsMTkzNDA5OTY1NiwtMT
-I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
-MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
-AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
-OTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MC
-wzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0
-NTQxN119
+eyJoaXN0b3J5IjpbLTMzMDc5NzUzNSwxOTM0MDk5NjU2LC0xMj
+QwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAy
+NDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMC
+wtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5
+Mzg3LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLD
+MxOTY3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1
+NDE3XX0=
 -->
