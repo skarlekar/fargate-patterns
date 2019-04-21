@@ -112,7 +112,7 @@ How do we run synchronous services where the size of the deployment package exce
 
 While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it [own set of issues](https://lumigo.io/blog/lambda-layers-when-to-use-it/), especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size.
 
-What if you want to run an always-on services that can scale on-demand?While the Container-on-Demand pattern is 
+What if you want to run an always-on services that can scale on-demand? Note that, the Container-on-Demand pattern spins up task to execute the job and spins it down. For asynchronous workloads the time taken to spin-up is not an issue. But for synchronous web services, time is dear.
 
 ### Solution
 Deploy your service in a Fargate Task, open ports for two-way communication and wrap it around a Fargate Service. T
@@ -121,7 +121,7 @@ Deploy your service in a Fargate Task, open ports for two-way communication and 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODAyNDgyNCwtODE5Njk1MzE0LDE1Nz
+eyJoaXN0b3J5IjpbLTgzOTExMTg1OCwtODE5Njk1MzE0LDE1Nz
 Q4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4
 NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0Nj
 Y5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1
