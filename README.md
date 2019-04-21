@@ -108,24 +108,26 @@ In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
-How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? 
+***How do we run synchronous services where the size of the deployment package exceeds the Lambda limits?*** 
 
 While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it [own set of issues](https://lumigo.io/blog/lambda-layers-when-to-use-it/), especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size.
 
-What if you want to run an always-on services that can scale on-demand? Note that, the Container-on-Demand pattern spins up task to execute the job and spins it down. For asynchronous workloads the time taken to spin-up is not an issue. But for synchronous web services, time is dear.
+***What if you want to run an always-on services that can scale on-demand?*** 
+
+Note that, the Container-on-Demand pattern spins up task to execute the job and spins it down. For asynchronous workloads the time taken to spin-up is not an issue. But for synchronous web services, time is dear. 
 
 ### Solution
-Deploy your service in a Fargate Task, open ports for two-way communication and wrap it around a Fargate Service. T
+Deploy your service in a Fargate Task, open ports for two-way communication and wrap it around a Fargate Service. 
 ![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-container-pattern.png) 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTExMTg1OCwtODE5Njk1MzE0LDE1Nz
-Q4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4
-NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0Nj
-Y5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1
-NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4Nz
-Q1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYz
-MTQ1XX0=
+eyJoaXN0b3J5IjpbLTE4NDk0MzA3NjYsLTgxOTY5NTMxNCwxNT
+c0ODAyNDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQz
+ODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsND
+Y2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMw
+NTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsOD
+c0NTQ1NDE3LC0xMDY0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2
+MzE0NV19
 -->
