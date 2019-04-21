@@ -18,6 +18,8 @@ This is analogous to hailing an *Uber* car service. With Uber, you just tell wha
 If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
 ## Components of AWS Fargate
+### Task Definition
+A task definition is the blue print for your application running on Fargate. Each time you launch a task in Amazon ECS, you specify a task definition. The service then knows which Docker image to use for containers, how many containers to use in the task, and the resource allocation for each container.
 
 ## AWS Fargate - the Good, Bad & Ugly
 ###  Good & Bad: Pay Per Use
@@ -83,7 +85,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTk1MTM0MSwxNTY2MDM2MDg0LDcxMD
+eyJoaXN0b3J5IjpbMTYzMjc5MTM5MSwxNTY2MDM2MDg0LDcxMD
 UyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIs
 MTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzND
 EwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4
