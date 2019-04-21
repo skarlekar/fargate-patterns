@@ -62,9 +62,9 @@ As a result, it is not possible to run large workloads or long running processes
 ### Solution
 Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. 
 
-The entry point in the container can be as trivial as a shell sr
+The entry point in the container can be as trivial as a shell script or could be complex as a service. But the point to note here is the task ru
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDM5NTgxNzYsMzE5Njc1OTQ0LC04Mz
+eyJoaXN0b3J5IjpbLTEzMTIwNTAzNzEsMzE5Njc1OTQ0LC04Mz
 k5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0
 MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC
 0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
