@@ -31,7 +31,7 @@ Fargate allows you to run and maintain a specified number of instances of a *Tas
 In addition to maintaining the desired count of tasks in your service, you can optionally run your service behind a load balancer. The load balancer distributes traffic across the tasks that are associated with the service.
 
 ### Cluster
-An Amazon ECS cluster is a logical grouping of tasks or services. 
+An Amazon ECS *Cluster* is a logical grouping of tasks or services. Clusters are AWS region specific and can contain tasks using both the Fargate and EC2 launch types.
 
 ## AWS Fargate - the Good, Bad & Ugly
 ###  Good & Bad: Pay Per Use
@@ -97,7 +97,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzA3NzU2OCwtOTg2MzE1NTA1LDE1Nj
+eyJoaXN0b3J5IjpbLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1Nj
 YwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIw
 LDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OT
 E0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1
