@@ -17,7 +17,7 @@ Put simply, **AWS Fargate** is a managed, compute engine provided by AWS to run 
 
 This is analogous to hailing an *Uber* car service. With Uber, you just tell what size car you want based on how many people are riding, if you want a car seat or want the car to be wheel-chair accessible. You don’t specify a Lexus or a Toyota. With Fargate, all you do is package your application in containers, specify the CPU and memory requirements, define networking and IAM policies, and launch the application. Fargate takes care of scaling so that you don't have to worry about provisioning enough compute resources for your containers to scale out or scale them in when they are not utilized.  In essence, Fargate separates the task of running containers from the task of managing the underlying infrastructure. Developers can simply specify the resources that each container requires, and Fargate will handle the rest. ***As a result, applications deployed on Fargate can save you time, manpower, and money***.
 
-If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and removing the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
+If you are used to traditional container management, you will really appreciate Fargate allowing you to focus on the 'Dev' part of designing and building your applications and reduce the 'Ops' part of managing infrastructure from your 'DevOps' responsibilities. 
 
 ## Components of AWS Fargate
 
@@ -102,11 +102,11 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOT
-g2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3
-LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOT
-Y3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3
-LC0xMDY0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMT
-k0MDQ2NjQ4MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0
-NjQ0NjldfQ==
+eyJoaXN0b3J5IjpbMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtND
+k3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUw
+Nyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MD
+k1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0
+NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMj
+g2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0
+NDM1NF19
 -->
