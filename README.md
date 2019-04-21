@@ -71,7 +71,7 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running services. For instance:
+AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running jobs. For instance:
 -   The default deployment package size is 50 MB.
 -   Memory range is from 128 to 3008 MB.
 -   Maximum execution timeout for a function is 15 minutes.      
@@ -113,11 +113,11 @@ As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerSh
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMT
-cyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2
-MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMz
-I3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIw
-NCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMT
-Y1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5
-MTUxMTBdfQ==
+eyJoaXN0b3J5IjpbMTc2MTM0MTMwOSwxNTc0ODAyNDIxLDEzOT
+EyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1
+NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNj
+Q3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0
+NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMD
+Y0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2
+NjQ4MV19
 -->
