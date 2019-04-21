@@ -37,8 +37,8 @@ Since you don't have to worry about securing the entire cluster of servers, your
 ### Bad: Limited Availability
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS.
 
-## Focus of this workshop
-
+## Focus of these patterns
+Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily
 In this workshop, we will explore three design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure.
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
@@ -79,9 +79,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMj
-czODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0
-LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1LC0xNj
-U4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4MSwtMTIyOTkx
-NTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
+eyJoaXN0b3J5IjpbMTMwOTA4MTY5OSw0NjY5MjkzODcsLTE2ND
+c0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0
+LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNj
+Q2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2
+NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV
+19
 -->
