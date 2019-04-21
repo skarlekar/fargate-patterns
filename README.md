@@ -104,13 +104,15 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. While the Container-on-Demand pattern solves this issue, for synchronous web services that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. It shou
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. While the Container-on-Demand pattern solves this issue, for synchronous web services that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
-How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it [own set of issues](https://lumigo.io/blog/lambda-layers-when-to-use-it/), especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size.
+How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? 
 
-While the Container-on-Demand pattern is 
+While Lambda Layers mitigate some of this issue by allowing artifacts to be shared between Lambdas, it introduces it [own set of issues](https://lumigo.io/blog/lambda-layers-when-to-use-it/), especially around testing Lambdas locally and layers still count towards the 250MB hard limit on the unzipped deployment package size.
+
+What if you want to run an always-on services that can scale on-demand?While the Container-on-Demand pattern is 
 
 ### Solution
 Deploy your service in a Fargate Task, open ports for two-way communication and wrap it around a Fargate Service. T
@@ -119,7 +121,7 @@ Deploy your service in a Fargate Task, open ports for two-way communication and 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNjk3MDA2MywtODE5Njk1MzE0LDE1Nz
+eyJoaXN0b3J5IjpbMTgyODAyNDgyNCwtODE5Njk1MzE0LDE1Nz
 Q4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4
 NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0Nj
 Y5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1
