@@ -20,7 +20,7 @@ If you are used to traditional container management, you will really appreciate 
 ## Components of AWS Fargate
 
 ### Task 
-A task is the blue print for your application running on Fargate. You use Task Definition to configure your Task on Fargate. Each time you launch a task in Amazon ECS, you specify a task definition. Fargate then knows which Docker image to use for containers, how many containers to use in the task, and the resource allocation for each container. As a result, you configure your container as part of configuring your Task Definition which includes pointing to the Container Repository from where the container image must be pulled.
+A task is the blue print for your application running on Fargate. You use Task Definition to configure your Task on Fargate. Each time you launch a task in Amazon ECS, you specify a task definition. Fargate then knows which Docker image to use for containers, how many containers to use in the task, and the resource allocation for each container. As part of configuring the Task, you specify which container repository and container image you want to use for running your Task. This container image is then used to 
 
 ### Serv
 
@@ -88,7 +88,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI1NzQzNjQsMTU2NjAzNjA4NCw3MT
+eyJoaXN0b3J5IjpbLTE1MDQxMDc4MzQsMTU2NjAzNjA4NCw3MT
 A1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUy
 LDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5Mz
 QxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5
