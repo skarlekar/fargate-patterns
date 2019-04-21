@@ -102,14 +102,16 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-The limitations posed by AWS Lambda discussed in the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations posed by Lambda such as the restrictions on long-processes im
+
+In the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NTgwMjk1OSwxMzkxMjE1MjI0LC0xMT
-cyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2
-MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMz
-I3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIw
-NCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMT
-Y1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5
-MTUxMTBdfQ==
+eyJoaXN0b3J5IjpbNjEzNzk5NjYyLDEzOTEyMTUyMjQsLTExNz
+I3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYw
+ODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMj
+czODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0
+LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1LC0xNj
+U4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4MSwtMTIyOTkx
+NTExMF19
 -->
