@@ -108,7 +108,7 @@ In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
-How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? While Lambda Layers pr
+How do we run synchronous services where the size of the deployment package exceeds the Lambda limits? While Lambda Layers Lambda Layers are a new type of artifact that can contain arbitrary code and data, and may be referenced by multiple AWS Lambda functions at the same time
 
 ### Solution
 
@@ -117,11 +117,11 @@ How do we run synchronous services where the size of the deployment package exce
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOT
-EyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1
-NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNj
-Q3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0
-NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMD
-Y0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2
-NjQ4MV19
+eyJoaXN0b3J5IjpbMjA0MDExMDM1MywtODE5Njk1MzE0LDE1Nz
+Q4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4
+NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0Nj
+Y5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1
+NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4Nz
+Q1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYz
+MTQ1XX0=
 -->
