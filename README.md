@@ -117,18 +117,21 @@ While Lambda Layers mitigate some of this issue by allowing artifacts to be shar
 Note that, the Container-on-Demand pattern spins up task to execute the job and spins it down. For asynchronous workloads the time taken to spin-up is not an issue. But for synchronous web services, time is dear. 
 
 ### Solution
-Following is a possible solution to use a Fargate Service fronted by and 
-Deploy your service in a Fargate Task, open ports for two-way communication and wrap it around a Fargate Service. Attach an Application Load Balancer in front of the Fargate Service with rules to 
+Following is a possible solution to use a Fargate Service fronted by an Application Load Balancer.
+
+- Deploy your service in a Fargate Task
+- Open ports for two-way communication in the Task and Container
+- Create an ECS Serv. Attach an Application Load Balancer in front of the Fargate Service with rules to 
 ![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-container-pattern.png) 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTU5NTg0NTksMjAyMjYxNjU4NSwtOD
-E5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5
-ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNjA4NC
-w3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMyNzM4
-NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQyMDQsMT
-g5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1
-NTE5ODldfQ==
+eyJoaXN0b3J5IjpbMTc3ODI5MDc4NiwyMDIyNjE2NTg1LC04MT
+k2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4
+ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LD
+cxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1
+NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxOD
+kzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1
+MTk4OV19
 -->
