@@ -51,7 +51,7 @@ Since you don't have to worry about securing the entire cluster of servers, your
 As the problems of systems management is alleviated, developers spend less time on operational issues and can focus on solving business problems building services.
 
 ### Good:  Scaling
-As Fargate is serverless, scaling is taken care by the provider seamlessly. As a result, you do not have to consider the number of concurrent requests you can handle. Having said that, if you integrate Fargate with downstream server-based solutions, you should expect a increase in load on those componen
+As Fargate is serverless, scaling is taken care by the provider seamlessly. As a result, you do not have to consider the number of concurrent requests you can handle. Having said that, if you integrate Fargate with downstream *server-based* solutions, you should expect a increase in load on those components when your services running on Fargate scales out significantly.
 
 ### Bad: Limited Availability
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS. As of April 2019, Fargate is not available in GovCloud, Sao Paulo, Paris, Stockholm, Japan and China.
@@ -100,7 +100,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTk4MDYyNCwtNDk3NDM4NTAwLC05OD
+eyJoaXN0b3J5IjpbMTg1OTExMTkxOSwtNDk3NDM4NTAwLC05OD
 YzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcs
 LTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Nj
 c1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcs
