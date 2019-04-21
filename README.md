@@ -60,10 +60,10 @@ These are severe limitations for processing several types of applications includ
 As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
 
 ### Solution
-Deploy your software package in a container   
+Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDA0NTQ4MzQsMzE5Njc1OTQ0LC04Mz
-k5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0
-MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC
-0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbMTM5MTQyMTU0OCwzMTk2NzU5NDQsLTgzOT
+kxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQz
+NSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLT
+EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
 -->
