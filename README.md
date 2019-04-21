@@ -158,14 +158,16 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 
 - **Fargate Task** - A Fargate task that has its ports open for two-way communication using one or more containers (within a maximum limit of ten containers).
 - **ECS Service** - An ECS service that uses the Fargate Task from above identifying the desired count of tasks that must be run at any given time.
-- **Application Load Balancer** - An Application Load Balancer with a listener to forward requests 
+- **Application Load Balancer** - An Application Load Balancer with a listener to forward requests to the ECS Service.
+- **API Gateway** - An *optional* API gateway configured to forward requests to the application load balancer.
+- **Web Interface** - A browser-based interface for allowing users to 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NDE2MjA5OSwxOTM0MDk5NjU2LC0xMj
-QwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAy
-NDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMC
-wtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5
-Mzg3LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLD
-MxOTY3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1
-NDE3XX0=
+eyJoaXN0b3J5IjpbNDM0MjM4NTIwLDE5MzQwOTk2NTYsLTEyND
+AyNTU0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0
+MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC
+05ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5Mjkz
+ODcsLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMz
+E5Njc1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0
+MTddfQ==
 -->
