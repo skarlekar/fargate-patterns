@@ -37,10 +37,10 @@ Since you don't have to worry about securing the entire cluster of servers, your
 ### Bad: Limited Availability
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS.
 
-## Focus of these Patterns
+## Focus of these Behavioral Patterns
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
 
-In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure. Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily
+In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or run containers traditionally but without having to manage infrastructure. 
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
 
@@ -80,10 +80,10 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTQ2MzQxMyw0NjY5MjkzODcsLTE2ND
-c0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0
-LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNj
-Q2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2
-NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2NDQ2OV
-19
+eyJoaXN0b3J5IjpbNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3ND
+A0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwt
+ODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0Nj
+gwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4
+MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ
+==
 -->
