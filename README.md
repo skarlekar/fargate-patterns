@@ -102,16 +102,16 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. 
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minute
 
 In the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzNTI1Mzk0LDEzOTEyMTUyMjQsLTExNz
-I3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYw
-ODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMj
-czODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0
-LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1LC0xNj
-U4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4MSwtMTIyOTkx
-NTExMF19
+eyJoaXN0b3J5IjpbLTEzODY5NzUzNTQsMTM5MTIxNTIyNCwtMT
+E3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAz
+NjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMT
+MyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQy
+MDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLT
+E2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5
+OTE1MTEwXX0=
 -->
