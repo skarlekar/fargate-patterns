@@ -48,8 +48,10 @@ With its Container-as-a-Service model, you don't have to worry about the underly
 Since you don't have to worry about securing the entire cluster of servers, your security concern is reduced to security within the container, the roles required to run your application, the ports that must be opened for the application that is running inside the container to communicate with the outside world, etc.
 
 ### Good: Faster Development
-As the problems of systems management is alleviated, developers spend less time on operational issues
-### Good:  ????
+As the problems of systems management is alleviated, developers spend less time on operational issues and can focus on solving business problems building services.
+
+### Good:  Scaling
+As scaling is taken care by the provider, you d
 
 ### Bad: Limited Availability
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS. As of April 2019, Fargate is not available in GovCloud, Sao Paulo, Paris, Stockholm, Japan and China.
@@ -98,11 +100,11 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTg3NDIzOCwtNDk3NDM4NTAwLC05OD
-YzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcs
-LTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Nj
-c1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcs
-LTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOT
-QwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2
-NDQ2OV19
+eyJoaXN0b3J5IjpbLTIwNzYzMTMyMDAsLTQ5NzQzODUwMCwtOT
+g2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3
+LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOT
+Y3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3
+LC0xMDY0NjgwNDM1LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMT
+k0MDQ2NjQ4MSwtMTIyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0
+NjQ0NjldfQ==
 -->
