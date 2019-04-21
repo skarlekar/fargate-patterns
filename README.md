@@ -108,16 +108,16 @@ As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerSh
 
 ### Solution
 
- 
+![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-container-pattern.png) 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM3NTkyNzMsMTM5MTIxNTIyNCwtMT
-E3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAz
-NjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMT
-MyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5MTQy
-MDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcsLTEwNjQ2ODA0MzUsLT
-E2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOTQwNDY2NDgxLC0xMjI5
-OTE1MTEwXX0=
+eyJoaXN0b3J5IjpbMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMT
+cyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2
+MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMz
+I3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIw
+NCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMT
+Y1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5
+MTUxMTBdfQ==
 -->
