@@ -51,7 +51,7 @@ Since you don't have to worry about securing the entire cluster of servers, your
 
 ### Good: 
 ### Bad: Limited Availability
-While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS.
+While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS. As of April 2019, Fargate is not available in GovCloud, Sao Paulo
 
 ## Focus of these Behavioral Patterns
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
@@ -97,10 +97,11 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1Nj
-YwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIw
-LDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5OT
-E0MjA0LDE4OTM0MTA2NDQsODc0NTQ1NDE3LC0xMDY0NjgwNDM1
-LC0xNjU4NTUxOTg5LDI4NjI2MzE0NSwtMTk0MDQ2NjQ4MSwtMT
-IyOTkxNTExMCwyNjA4NDQzNTQsLTE3NDM0NjQ0NjldfQ==
+eyJoaXN0b3J5IjpbMTQxMjc2NTI0NSwtNDk3NDM4NTAwLC05OD
+YzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcs
+LTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Nj
+c1OTQ0LC04Mzk5MTQyMDQsMTg5MzQxMDY0NCw4NzQ1NDU0MTcs
+LTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYzMTQ1LC0xOT
+QwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NCwtMTc0MzQ2
+NDQ2OV19
 -->
