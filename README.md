@@ -60,7 +60,7 @@ These are severe limitations for processing several types of applications includ
 As a result, it is not possible to run large workloads or long running processes on Lambda. Further, the resource limitation around size of the software package restricts the type of workloads your can run on Lambda. For instance, if you have a machine learning model that requires usage of large libraries such as Scikit, Numpy etc, it is impossible to fit the resulting software in a Lambda deployment.
 
 ### Solution
-Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. 
+Deploy your software package in a container as a Fargate Task. Invoke the task using a Lambda. The Fargate Task is put to 
 
 ![Container-on-Demand Pattern](https://github.com/skarlekar/fargate-patterns/blob/master/images/container-on-demand-pattern.png)
 
@@ -69,7 +69,7 @@ The entry point in the container can be as trivial as a shell script or could be
 #### Pattern Components
 - **Input Repository** - The input for your *Processor* is stored here and should be reachable by the processor. This could be S3-based object store or a data base. Ideally, this repository should notify the task invoker when a new object is uploaded or updated.
 - **Task Invoker** - A short-running function that is used to invoke your Processor. This could be a Lambda function or a synchronous service running as part of another larger process chain.
-- **Processor** - A long-running task that is the core of the pattern. It is invoked by the 
+- **Processor** - A long-running task that is the core of the pattern. It is invoked by the Task Invoker. This could be a Fargate Task.
 
 ### Limitations
 While using this pattern Fargate puts Lambdas on steroids, Fargate has its [own resource limitations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_limits.html) due to it serverless nature. For instance, the number of tasks using the Fargate launch type, per region, per account cannot be more than 50 or the maximum container storage for tasks using the Fargate launch type cannot be over 10GB. 
@@ -78,9 +78,9 @@ If you think your workloads will breach these limitations, you should seriously 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyNDgxMjE0LDEzMjczODU1MiwxNTA5NT
-MwNTcwLDMxOTY3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQs
-ODc0NTQ1NDE3LC0xMDY0NjgwNDM1LC0xNjU4NTUxOTg5LDI4Nj
-I2MzE0NSwtMTk0MDQ2NjQ4MSwtMTIyOTkxNTExMCwyNjA4NDQz
-NTQsLTE3NDM0NjQ0NjldfQ==
+eyJoaXN0b3J5IjpbLTExNDY0NTA3OSwxMzI3Mzg1NTIsMTUwOT
+UzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0
+LDg3NDU0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4OSwyOD
+YyNjMxNDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0
+MzU0LC0xNzQzNDY0NDY5XX0=
 -->
