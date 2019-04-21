@@ -65,9 +65,9 @@ Deploy your software package in a container as a Fargate Task. Invoke the task u
 The entry point in the container can be as trivial as a shell script or could be complex as a web service. But the point to note here is the job submitted to the Fargate Task in this case should be asynchronous. As a result large software packages running large workloads can be run using this pattern.
 
 ### Limitations
-While using this pattern, Fargate  Lambdas further, Fargate has a few resource limitations due to t
+While using this pattern Fargate puts Lambdas on steroids, Fargate has its [own resource limitations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_limits.html) due to it serverless nature. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTIzMzIxMiwzMTk2NzU5NDQsLTgzOT
+eyJoaXN0b3J5IjpbMTMzNDAyMjk4NywzMTk2NzU5NDQsLTgzOT
 kxNDIwNCwxODkzNDEwNjQ0LDg3NDU0NTQxNywtMTA2NDY4MDQz
 NSwtMTY1ODU1MTk4OSwyODYyNjMxNDUsLTE5NDA0NjY0ODEsLT
 EyMjk5MTUxMTAsMjYwODQ0MzU0LC0xNzQzNDY0NDY5XX0=
