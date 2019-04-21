@@ -49,18 +49,20 @@ Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise f
 
 ## *Container-on-Demand* Pattern
 ### Problem
-AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance, it has a many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html):
+AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html). For instance:
 -   The default deployment package size is 50 MB.
 -   Memory range is from 128 to 3008 MB.
 -   Maximum execution timeout for a function is 15 minutes.      
 -   Request and response (synchronous calls) body payload size can be up to to 6 MB.
 -   Event request (asynchronous calls) body can be up to 128 KB .
 These are severe limitations for processing several types of applications including machine learning models where the size of libraries go much above the maximum deployment package size of 250MB or may take longer than 15 minutes to run a batch.
+
+As a result, it is not po
 ### Solution
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzMwODk4OTAsMTg5MzQxMDY0NCw4Nz
-Q1NDU0MTcsLTEwNjQ2ODA0MzUsLTE2NTg1NTE5ODksMjg2MjYz
-MTQ1LC0xOTQwNDY2NDgxLC0xMjI5OTE1MTEwLDI2MDg0NDM1NC
-wtMTc0MzQ2NDQ2OV19
+eyJoaXN0b3J5IjpbMTEzMDY2MzI0NywxODkzNDEwNjQ0LDg3ND
+U0NTQxNywtMTA2NDY4MDQzNSwtMTY1ODU1MTk4OSwyODYyNjMx
+NDUsLTE5NDA0NjY0ODEsLTEyMjk5MTUxMTAsMjYwODQ0MzU0LC
+0xNzQzNDY0NDY5XX0=
 -->
