@@ -196,7 +196,7 @@ All the examples require a few prerequisites to be performed. These range from c
 
 ### Setup Instructions 
 
-#### Environment se
+#### Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment.
 
 Clone the Git repository to your development environment
@@ -220,11 +220,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMjY3OTk4NSwtMjA0MzA5NDg4MywyMD
-U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
-MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
-UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
-NzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMz
-YwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEz
-MjczODU1Ml19
+eyJoaXN0b3J5IjpbNTkyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNT
+cxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUw
+OTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NS
+wtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3
+Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNj
+A4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMy
+NzM4NTUyXX0=
 -->
