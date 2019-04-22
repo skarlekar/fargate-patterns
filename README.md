@@ -410,20 +410,20 @@ Create the bean-counter log group
 
     $ ./create-bean-counter-log-group.sh
 
-This will create a log group called */ecs/tom-thumb-service*
+This will create a log group called */ecs/bean-counter-service*
 
 #### Create the ECS Cluster
 Create the bean-counter cluster in ECS
 
-    $ ./create-tom-thumb-cluster.sh
+    $ ./create-bean-counter-cluster.sh
 
 This will create an ECS cluster called tom-thumb-cluster.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTk4NzA0OSw5OTY5ODI1ODYsMjM2ND
-YyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5
-MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC
-00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0
-NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NT
-U5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3NjAy
-MDNdfQ==
+eyJoaXN0b3J5IjpbODYyNDE2NzYxLDk5Njk4MjU4NiwyMzY0Nj
+I5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkw
+LC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLT
+Q1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0
+MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NT
+kwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIw
+M119
 -->
