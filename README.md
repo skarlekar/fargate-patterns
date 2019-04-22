@@ -172,13 +172,13 @@ One option is to deploy these orthogonal components as separate services allowin
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
-The followig code examples demonstrates these behavioral patterns
+The following code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMD
-UzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYx
-NjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNC
-wtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2
-NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4Mj
-AsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5
-MTQyMDRdfQ==
+eyJoaXN0b3J5IjpbLTE1NjAzNTIyMDYsNDk3ODg2MzMwLC0xNz
+gzMTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAy
+NTU0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0Mj
+EsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05
+ODYzMTU1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzOD
+csLTE2NDc0MDQ4MjAsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5
+Njc1OTQ0XX0=
 -->
