@@ -283,7 +283,7 @@ Create the tom-thumb log group
 This will create a log group called */ecs/tom-thumb-service*
 
 #### Create the ECS Cluster
-Create the bean-counter cluster in ECS
+Create the tom-thumb cluster in ECS
 
     $ ./create-tom-thumb-cluster.sh
 
@@ -291,7 +291,7 @@ This will create an ECS cluster called tom-thumb-cluster.
 ![Tom-Thumb Cluster Creation](https://github.com/skarlekar/fargate-patterns/blob/master/images/cluster-creation-tom-thumb.png)
 
 #### Generate the Task Definition
-Generate bean counter task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
+Generate tom-thumb task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
 
     $ ./generate-tom-thumb-task-definition.sh https://s3.amazonaws.com/your-bucket-name/raw/samplevideo.mp4 10
 
@@ -308,7 +308,7 @@ This will create a temp directory and write the *register-tom-thumb-task-definit
 > storing the access keys in a config file on the container instance.
 
 #### Register the Task Defintion
-Register the bean counter task definition in ECS and verify it has been created in the Task Definition section of ECS.
+Register the tom-thumb task definition in ECS and verify it has been created in the Task Definition section of ECS.
 
     $ ./register-tom-thumb-task.sh
 
@@ -408,7 +408,7 @@ Ensure the latest image was pushed to the ECR Repository.
 #### Create the Log Group
 Create the bean-counter log group
 
-    $ ./create-tom-thumb-log-group.sh
+    $ ./create-bean-counter-log-group.sh
 
 This will create a log group called */ecs/tom-thumb-service*
 
@@ -419,11 +419,11 @@ Create the bean-counter cluster in ECS
 
 This will create an ECS cluster called tom-thumb-cluster.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODUxNjczOTUsOTk2OTgyNTg2LDIzNj
-Q2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEy
-OTAsLTE0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0Ni
-wtNDU3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAx
-NDQwMTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNj
-U1OTAyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYw
-MjAzXX0=
+eyJoaXN0b3J5IjpbLTc0MTk4NzA0OSw5OTY5ODI1ODYsMjM2ND
+YyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5
+MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC
+00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0
+NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NT
+U5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3NjAy
+MDNdfQ==
 -->
