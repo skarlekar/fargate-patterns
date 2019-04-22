@@ -195,7 +195,6 @@ All the examples require a few prerequisites to be performed. These range from c
 > scripts. This is done to carry over the environment variables
 > generated in one script to subsequent ones.
 
-### Setup Instructions 
 #### AWS IAM setup for executing the AWS CLI commands
 To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
 
@@ -257,7 +256,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzY2NTQ2NDEsLTEzMjU3MjE2MDgsMT
+eyJoaXN0b3J5IjpbLTE3MDEyNTg2MzYsLTEzMjU3MjE2MDgsMT
 Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
 MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
 MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
