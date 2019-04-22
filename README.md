@@ -449,14 +449,18 @@ Verify that the service has been created and two tasks are being provisioned for
 ![Bean-counter Service Task Provision Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
 
 #### Test the Service
-$ export DNS=$(aws elbv2 describe-load-balancers | jq '.LoadBalancers[] | if .LoadBalancerName == "My-Fargate-ALB" then .DNSName else null end' | grep -v null | sed "s/\"//g")
+Retrieve the DNS name of the application load balancer. Cut & paste the DNS in the browser.
+
+    $ export DNS=$(aws elbv2 describe-load-balancers | jq '.LoadBalancers[] | if .LoadBalancerName == "My-Fargate-ALB" then .DNSName else null end' | grep -v null | sed "s/\"//g")
+    $ echo $DNS
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NDk0Mzc2MSw5OTA0OTYyNiwxMTkwMj
-g3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYx
-LDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMD
-U1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2
-MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC
-00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQw
-MDI1XX0=
+eyJoaXN0b3J5IjpbNDg3NTc5MzMzLDk5MDQ5NjI2LDExOTAyOD
+c5NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3NjEs
+OTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNT
+UxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0MDYy
+NTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxODgsLT
+Q3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5NDAw
+MjVdfQ==
 -->
