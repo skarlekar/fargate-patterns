@@ -169,13 +169,13 @@ Services require orthogonal technical capabilities, such as monitoring, logging,
 One option is to deploy these orthogonal components as separate services allowing each component to have its own life-cycle and be built using different languages. While this gives more flexibility, deploying these features as separate services can add latency to the application. 
 
 ### Solution
-Co-deploy the orthogonal components along with the main service by placing them in their own containers. Containers in a task are co-deployed together in the same host thereby not affecting the latency of the service.
+Co-deploy the orthogonal components along with the main service by placing them in their own containers. Containers in a task are co-deployed together in the same host thereby not affecting the latency of the service signficantly for the communication between them. 
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
 The following code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzM5NjEzNyw0OTc4ODYzMzAsLTE3OD
+eyJoaXN0b3J5IjpbMTkwNjk2Njc0OCw0OTc4ODYzMzAsLTE3OD
 MxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1
 NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMS
 wxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4
