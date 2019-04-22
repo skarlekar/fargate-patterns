@@ -160,14 +160,18 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 - **ECS Service** - An ECS service that uses the Fargate Task from above identifying the desired count of tasks that must be run at any given time.
 - **Application Load Balancer** - An Application Load Balancer with a listener to forward requests to the ECS Service.
 - **API Gateway** - An *optional* API gateway configured to forward requests to the application load balancer.
-- **Web Interface** - An optional browser-based interface for allowing users to post requests to the service. This could be a simple HTML form.
+- **Web Interface** - An *optional* browser-based interface for allowing users to post requests to the service. This could be a simple HTML form.
 
+## Sidecar Assembly
+To do
+
+## Code Ex
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTA3MjM2NSwxOTM0MDk5NjU2LC0xMj
-QwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAy
-NDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMC
-wtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5
-Mzg3LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5NTMwNTcwLD
-MxOTY3NTk0NCwtODM5OTE0MjA0LDE4OTM0MTA2NDQsODc0NTQ1
-NDE3XX0=
+eyJoaXN0b3J5IjpbLTE4ODA5NTU0OTIsMTkzNDA5OTY1NiwtMT
+I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
+MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
+AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
+OTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MC
+wzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0
+NTQxN119
 -->
