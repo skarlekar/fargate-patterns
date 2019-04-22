@@ -372,13 +372,15 @@ Verify the Lambda function was created through the console and the following env
 
 - In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event when a file is dropped into a particular folder in your S3 bucket.
 
+@TODO paste two s3-notification-setting
+
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05Mj
-AwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3
-OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MD
-UwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIs
-LTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMj
-M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
-MzRdfQ==
+eyJoaXN0b3J5IjpbLTE4ODY3NjA5NDYsMTA3MzQyMzg0NiwtND
+U3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQw
+MTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OT
+AyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAz
+LDEzNDY2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtND
+U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
+MDldfQ==
 -->
