@@ -164,9 +164,7 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 
 ## Sidecar Assembly Pattern
 ### Problem
-Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. These capabilities can be implemented  services.
-
-If they are tightly integrated into the application, they can run in the same process as the application, making efficient use of shared resources. However, this also means they are not well isolated, and an outage in one of these components can affect other components or the entire application. Also, they usually need to be implemented using the same language as the parent application. As a result, the component and the application have close interdependence on each other.
+Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. While these capabilities can be integrated into the main service, it will leave the main service exposed to the vagaries oIf the are tightly integrated into the application,  they are not well isolated, and an outage in one of these components can affect other components or the entire application. Also, they usually need to be implemented using the same language as the parent application. As a result, the component and the application have close interdependence on each other.
 
 If the application is decomposed into services, then each service can be built using different languages and technologies. While this gives more flexibility, it means that each component has its own dependencies and requires language-specific libraries to access the underlying platform and any resources shared with the parent application. In addition, deploying these features as separate services can add latency to the application. Managing the code and dependencies for these language-specific interfaces can also add considerable complexity, especially for hosting, deployment, and management.### Solution
 
@@ -174,7 +172,7 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjkyMjIxOTEsLTE3ODMxNjYxMTYsLT
+eyJoaXN0b3J5IjpbLTE5Njc4NjI1OTcsLTE3ODMxNjYxMTYsLT
 EwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIy
 NjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1Mj
 I0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwx
