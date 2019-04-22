@@ -328,14 +328,18 @@ Go to the tom-thumb-cluster and verify that the task is running and the thumbnai
 
 @TO DO paste the manual verification image here.
 
+#### Create a Lambda Trigger
+Create a Lambda to automatically trigger the Fargate Task when a video file lands in the desired bucket.
+
+$ cd lambda
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MD
-E0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2
-NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3Nj
-AyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3
-LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMj
-M1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1NjI0
-NzU4XX0=
+eyJoaXN0b3J5IjpbLTE1MzQxNDEyOTYsLTkyMDAzNzE4OCwtND
+c3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAy
+NSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MD
+gzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYw
+OCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xOD
+U5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMx
+ODIxM119
 -->
