@@ -48,6 +48,8 @@ If you are used to traditional container management, you will really appreciate 
 
 ## Components of AWS Fargate
 
+
+
 ### Task 
 A *Task* is the blue print for your application running on Fargate. You use *Task Definition* to configure your tasks on Fargate and each time you launch a task in Amazon ECS.
 
@@ -178,11 +180,11 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ## Code Examples
 The following code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTYzOTA0NywyMDU3MTU0OTYyLDQ5Nz
-g4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5
-NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNC
-wxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5
-NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MD
-csNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEzMjczODU1MiwxNTA5
-NTMwNTcwXX0=
+eyJoaXN0b3J5IjpbLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OT
+c4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5
+OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMT
+QsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00
+OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNT
+A3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUw
+OTUzMDU3MF19
 -->
