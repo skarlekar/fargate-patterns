@@ -331,16 +331,18 @@ Go to the tom-thumb-cluster and verify that the task is running and the thumbnai
 #### Create a Lambda Trigger
 Create a Lambda to automatically trigger the Fargate Task when a video file lands in the desired bucket.
 
-$ cd lambda
+    $ cd lambda
 
-
+#### Set the S3 bucket ARN
+Identify a bucket that will notify the lambda when a video file is uploaded. Note down its ARN and set the S3_BUCKET_ARN variable.
+$ EXPORT S3_BUCKET_ARN=
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3NTgyNzgyLC05MjAwMzcxODgsLTQ3Nz
-YyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5NDAwMjUs
-NzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUwMTQ4LDU1NjA4Mz
-QxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3MjE2MDgs
-MTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OT
-U2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgy
-MTNdfQ==
+eyJoaXN0b3J5IjpbLTE1NzM3NjIxNzcsLTkyMDAzNzE4OCwtND
+c3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAy
+NSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MD
+gzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYw
+OCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xOD
+U5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMx
+ODIxM119
 -->
