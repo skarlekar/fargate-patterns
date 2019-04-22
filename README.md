@@ -312,7 +312,7 @@ Register the bean counter task definition in ECS and verify it has been created 
 
     $ ./register-tom-thumb-task.sh
 
-@TO DO paste register-task-definition image here
+![Register tom-thumb task-definition](https://github.com/skarlekar/fargate-patterns/blob/master/images/register-task-definition-tom-thumb.png)
 
 #### Generate the parameters for running the task
 Generate the parameters for running the task as follows. This will generate a file run-tom-thumb-task.json in the temp directory. 
@@ -326,7 +326,7 @@ Verify the task runs and generates the thumbnail as desired.
 $ ./run-tom-thumb-task.sh
 Go to the tom-thumb-cluster and verify that the task is running and the thumbnail was generated.
 
-@TO DO paste the manual verification image here.
+![Manual verification of Task registration](https://github.com/skarlekar/fargate-patterns/blob/master/images/manually-run-task.png)
 
 #### Create a Lambda Trigger
 Create a Lambda to automatically trigger the Fargate Task when a video file lands in the desired bucket.
@@ -378,11 +378,11 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxOTMzOTI4LC01NzcyNDM3ODksLTg1Mz
-A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
-NjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OC
-wtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0
-MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNT
-U2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcy
-MTYwOF19
+eyJoaXN0b3J5IjpbMTAxMzcwOTAxMiwtNTc3MjQzNzg5LC04NT
+MwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0
+MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxOD
+gsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5
+NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUwMTQ4LD
+U1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3
+MjE2MDhdfQ==
 -->
