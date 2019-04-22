@@ -268,15 +268,18 @@ If the repository already exists, you will get an error message. This is expecte
 
 #### Build the Docker Image
 Build Docker image and push to ECR repository
-$ ./push-to-ecr.sh
+
+    $ ./push-to-ecr.sh
+
 Ensure the latest image was pushed to the ECR Repository.
 
+@TO DO paste image 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMz
-I1NzIxNjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1
-MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC
-0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQz
-MDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MT
-E2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIs
-MjAyMjYxNjU4NV19
+eyJoaXN0b3J5IjpbLTE0ODY4NDMyNTMsLTE0NDc2MDIwMywxMz
+Q2NjM1OTMyLC0xMzI1NzIxNjA4LDE0NTA1NjY2MDcsLTQ1NTQx
+NDMxMCw5MTIzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC
+0xMjIyOTc2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTky
+MDMzMTI2LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2Mz
+MwLC0xNzgzMTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYs
+LTEyNDAyNTU0OTJdfQ==
 -->
