@@ -276,7 +276,7 @@ Ensure the latest image was pushed to the ECR Repository.
 ![ECR Repository](https://github.com/skarlekar/fargate-patterns/blob/master/images/ecr-repository-tom-thumb.png) 
 
 #### Create the Log Group
-Create the bean-counter log group
+Create the tom-thumb log group
 
     $ ./create-tom-thumb-log-group.sh
 
@@ -404,12 +404,26 @@ Build Docker image and push to ECR repository
     $ ./push-to-ecr.sh
 
 Ensure the latest image was pushed to the ECR Repository.
+
+#### Create the Log Group
+Create the bean-counter log group
+
+    $ ./create-tom-thumb-log-group.sh
+
+This will create a log group called */ecs/tom-thumb-service*
+
+#### Create the ECS Cluster
+Create the bean-counter cluster in ECS
+
+    $ ./create-tom-thumb-cluster.sh
+
+This will create an ECS cluster called tom-thumb-cluster.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3Mj
-QzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMx
-MDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC
-05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQw
-NTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMT
-A5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5
-MzJdfQ==
+eyJoaXN0b3J5IjpbLTE2ODUxNjczOTUsOTk2OTgyNTg2LDIzNj
+Q2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEy
+OTAsLTE0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0Ni
+wtNDU3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAx
+NDQwMTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNj
+U1OTAyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYw
+MjAzXX0=
 -->
