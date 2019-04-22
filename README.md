@@ -356,14 +356,17 @@ Package the python code that has the function that will be triggered through the
     $ ./package-lambda.sh
 
 #### Deploy the Lambda
-Deploy the zip file with the Lambda function to AWS.
+Deploy the zip file with the Lambda function on AWS. If the function already exists, it will be updated.
+$ ./create-lambda.sh
+
+Verify the Lambda function was created through the console.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDMxNTI5MTMsLTQ1NzY0NTQwNSwtOT
-IwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2
-NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOT
-A1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMy
-LC0xMzI1NzIxNjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MT
-IzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2
-MzM0XX0=
+eyJoaXN0b3J5IjpbOTY2NDA2NTc1LC00NTc2NDU0MDUsLTkyMD
+AzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5
+LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNT
+AxNDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwt
+MTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMz
+U2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMz
+NF19
 -->
