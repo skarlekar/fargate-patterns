@@ -444,10 +444,11 @@ $ ./create-bean-counter-service.sh
 
 Verify that the service has been created and two tasks are being provisioned for the service.
 
-![@TO DO paste images here](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-1.png)
-![Bean-counter ](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
+![Bean-counter Service Creation Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-1.png)
+
+![Bean-counter Service Task Provision Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxODQyOTksMTE5MDI4Nzk3OSwxNzc2Mj
+eyJoaXN0b3J5IjpbOTkwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2Mj
 QxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYs
 MjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4Mz
 QzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIz
