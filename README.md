@@ -442,9 +442,12 @@ This will create a temp directory and write the *create-bean-counter-service-def
 Create the bean-counter service from the service defintion file generated in the previous step.
 $ ./create-bean-counter-service.sh
 
-Verify that the service has been created with a desire
+Verify that the service has been created and two tasks are being provisioned for the service.
+
+@TO DO paste images here
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzk0NDk3NzIsMTE5MDI4Nzk3OSwxNz
+eyJoaXN0b3J5IjpbLTEzMjkzMDA5NTUsMTE5MDI4Nzk3OSwxNz
 c2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1
 ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMT
 c4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDcz
