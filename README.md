@@ -195,9 +195,9 @@ All the examples require a few prerequisites to be performed. These range from c
 > generated in one script to subsequent ones.
 
 #### AWS IAM setup for executing the AWS CLI commands
-To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
+To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the IAM user you will be using to work on this exercise.
 
-@TO DO - Paste image here
+![FargateDeveloper Group](https://github.com/skarlekar/fargate-patterns/blob/master/images/FargateDeveloperGroup.png)
 
 #### Development Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment and in the terminal window clone the Git repository to your development environment
@@ -248,7 +248,7 @@ Do not close the terminal or the shell. You will need the environment variables 
 ## Examples
 The following code examples demonstrates these behavioral patterns.
 
-### Tom Thumb - A video thumb-nail generator
+### Tom Thumb - A Video Thumb-nail Generator Task
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
 In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
@@ -273,25 +273,25 @@ Build Docker image and push to ECR repository
 
 Ensure the latest image was pushed to the ECR Repository.
 
-@TO DO paste image 
+![ECR Repository](https://github.com/skarlekar/fargate-patterns/blob/master/images/ecr-repository-tom-thumb.png) 
 
 #### Create the Log Group
-Create the bean-counter log group
+Create the tom-thumb log group
 
     $ ./create-tom-thumb-log-group.sh
 
 This will create a log group called */ecs/tom-thumb-service*
 
 #### Create the ECS Cluster
-Create the bean-counter cluster in ECS
+Create the tom-thumb cluster in ECS
 
     $ ./create-tom-thumb-cluster.sh
 
 This will create an ECS cluster called tom-thumb-cluster.
-@TO DO paste image here
+![Tom-Thumb Cluster Creation](https://github.com/skarlekar/fargate-patterns/blob/master/images/cluster-creation-tom-thumb.png)
 
 #### Generate the Task Definition
-Generate bean counter task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
+Generate tom-thumb task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
 
     $ ./generate-tom-thumb-task-definition.sh https://s3.amazonaws.com/your-bucket-name/raw/samplevideo.mp4 10
 
@@ -308,11 +308,11 @@ This will create a temp directory and write the *register-tom-thumb-task-definit
 > storing the access keys in a config file on the container instance.
 
 #### Register the Task Defintion
-Register the bean counter task definition in ECS and verify it has been created in the Task Definition section of ECS.
+Register the tom-thumb task definition in ECS and verify it has been created in the Task Definition section of ECS.
 
     $ ./register-tom-thumb-task.sh
 
-@TO DO paste register-task-definition image here
+![Register tom-thumb task-definition](https://github.com/skarlekar/fargate-patterns/blob/master/images/register-task-definition-tom-thumb.png)
 
 #### Generate the parameters for running the task
 Generate the parameters for running the task as follows. This will generate a file run-tom-thumb-task.json in the temp directory. 
@@ -326,7 +326,7 @@ Verify the task runs and generates the thumbnail as desired.
 $ ./run-tom-thumb-task.sh
 Go to the tom-thumb-cluster and verify that the task is running and the thumbnail was generated.
 
-@TO DO paste the manual verification image here.
+![Manual verification of Task registration](https://github.com/skarlekar/fargate-patterns/blob/master/images/manually-run-task.png)
 
 #### Create a Lambda Trigger
 Create a Lambda to automatically trigger the Fargate Task when a video file lands in the desired bucket.
@@ -374,15 +374,108 @@ Note: An update to the function does not update the environment variables.
 
 - In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event to trigger the ***task-runner*** lambda that was created earlier when a file is dropped into a particular folder in your S3 bucket.
 
-@TODO paste two s3-notification-setting images here
+![S3 Notification Setting 1](https://github.com/skarlekar/fargate-patterns/blob/master/images/s3-notification-setting-1.png)
 
+![S3 Notification Setting 2](https://github.com/skarlekar/fargate-patterns/blob/master/images/s3-notification-setting-2.png)
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
+
+---
+### Bean-Counter - A Coin Counter Service
+Bean Counter is a coin counter service. It will analyze an image of coins and return the total value of the coins in the image. It works only on US Mint issued coined and does not recognize any denomination above a quarter dollar coin. It also assumes that the picture contains a quarter. The quarter is used to calibrate the size of the coins. It is implemented following the ***Scaling-Container*** pattern.
+
+In a typical usage, an user navigates to the URL of the ALB on the browser and enters the URL for the service along with the location of the image file containing the picture of the coins. The Bean-Counter service then invokes the Fargate Task and returns the response to the browser.
+
+### Setup Instructions
+
+In the same shell that you used to run the prerequisites, run the following commands.
+
+#### Create a repository in ECR 
+Create a repository in ECR for storing the Tom-Thumb container image
+
+    $ source ./create-bean-counter-repository.sh
+
+If the repository already exists, you will get an error message. This is expected. Make sure that the variable ECR_REPO_URI is set
+
+    $ echo $ECR_REPO_URI
+
+#### Build the Docker Image
+Build Docker image and push to ECR repository
+
+    $ ./push-to-ecr.sh
+
+Ensure the latest image was pushed to the ECR Repository.
+
+#### Create the Log Group
+Create the bean-counter log group
+
+    $ ./create-bean-counter-log-group.sh
+
+This will create a log group called */ecs/bean-counter-service*
+
+#### Create the ECS Cluster
+Create the bean-counter cluster in ECS
+
+    $ ./create-bean-counter-cluster.sh
+
+This will create an ECS cluster called tom-thumb-cluster.
+
+#### Generate the Task Definition
+Generate bean-counter task definition from the template.
+
+    $ ./generate-bean-counter-task-definition.sh 
+
+This will create a temp directory and write the *register-bean-counter-task-definition.json* file.  Inspect this file and notice that the task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
+
+#### Register the Task Defintion
+Register the bean-counter task definition in ECS and verify it has been created in the Task Definition section of ECS.
+
+    $ ./register-bean-counter-task.sh
+
+#### Generate the Service Definition
+Generate bean-counter service definition from the template.
+
+    $ ./generate-bean-counter-service-definition.sh 
+
+This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that it contains the target group for the service under the load balancers section. This ties the load balancer to the service. Also notice the desiredCount variable set to 2. 
+
+#### Create the Bean-Counter Service
+Create the bean-counter service from the service defintion file generated in the previous step.
+$ ./create-bean-counter-service.sh
+
+Verify that the service has been created and two tasks are being provisioned for the service.
+
+![Bean-counter Service Creation Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-1.png)
+
+![Bean-counter Service Task Provision Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
+
+#### Test the Service
+Retrieve the DNS name of the application load balancer. Cut & paste the DNS in the browser.
+
+    $ export DNS=$(aws elbv2 describe-load-balancers | jq '.LoadBalancers[] | if .LoadBalancerName == "My-Fargate-ALB" then .DNSName else null end' | grep -v null | sed "s/\"//g")
+    $ echo $DNS
+    My-Fargate-ALB-xxxxxxx.us-east-1.elb.amazonaws.com
+
+@TO DO Paste the screenshots here
+
+#### Set the Scaling Policy for the Service
+Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the when the combined load on the service breaches 75% the service should scale-out. A cool-out period of 60 seconds is also specified so that the service doesn't thrash around.
+
+    $ ./set-scaling-policy.sh
+
+#### Test the Scaling Policy
+Use Apache Bench to hit the server $100,000 times with 100 concurrent threads with a timeout of 120 seconds to see the service scale out. You will have to wait for the cooling period to see the scaling out. Scaling in will take 15 minutes after scale out. Verify this on the ECS console.
+
+    $ ./test-scaling.sh
+    
+@TO DO - paste the screenshot of scaling run
+@TO DO - paste the screenshot of scaling test
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNz
-gzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0
-MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3Mj
-csMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4
-NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLT
-E0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4LDE0NTA1
-NjY2MDddfQ==
+eyJoaXN0b3J5IjpbLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOT
+kwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEw
+NDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01Nz
+cyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUx
+MzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MD
+UsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3
+NDA1Njc5XX0=
 -->
