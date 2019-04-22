@@ -188,6 +188,7 @@ All these examples uses AWS CLI to invoke various AWS services. To avoid the idi
 
 As you run the various shell scripts indicated in the instructions, pay close attention to scripts requiring you to *source* shell scripts. This is done to carry over the environment variables generated in one script to subsequent ones. 
 
+#### Instructions 
 
  
 
@@ -199,7 +200,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MDIwNjU2NiwtMjA0MzA5NDg4MywyMD
+eyJoaXN0b3J5IjpbLTcyNjUyNzQwNSwtMjA0MzA5NDg4MywyMD
 U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
 MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
 UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
