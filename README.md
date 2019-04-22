@@ -177,14 +177,18 @@ Co-deploy the orthogonal components along with the main service by placing them 
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 
-## Code Examples
+## Examples
 The following code examples demonstrates these behavioral patterns.
 
 ### Pre-requisites
 
 Both the example requires a few prerequisites to be performed. These range from creating appropriate roles in IAM for the Lambda and Fargate to invoke AWS services. For instance, the Lambda to invoke the Fargate task, the Fargate task to read files from the S3 bucket and write back responses to it. Additionally, the S3 bucket must be prepped to notify the Lambda function.
 
-All these examples uses AWS CLI to invoke various AWS services. To avoid the idiosyncrasies of personal development environments,  an EC2 instance running Ubuntu 16.04 LTS was used to run and deploy 
+All these examples uses AWS CLI to invoke various AWS services. To avoid the idiosyncrasies of personal development environments,  an EC2 instance running Ubuntu 16.04 LTS was used to run the AWS CLI and deploy the AWS services.
+
+As you process these 
+
+ 
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -194,7 +198,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzAwNTcxMCwtMjA0MzA5NDg4MywyMD
+eyJoaXN0b3J5IjpbMTE2MDIxMzI1MCwtMjA0MzA5NDg4MywyMD
 U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
 MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
 UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
