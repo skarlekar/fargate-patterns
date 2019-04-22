@@ -259,14 +259,20 @@ In the same shell that you used to run the prerequisites, run the following comm
 
 #### Create a repository in ECR 
 Create a repository in ECR for storing the Tom-Thumb container image
-$ source ./create-tom-thumb-repository.sh
-If the repository already exists, you will get an err
+
+    $ source ./create-tom-thumb-repository.sh
+
+If the repository already exists, you will get an error message. This is expected. Make sure that the variable ECR_REPO_URI is set
+
+    $ echo $ECR_REPO_URI
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwNTA4OTgsMTM0NjYzNTkzMiwtMTMyNT
-cyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5
-LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMT
-M2OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5
-NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNi
-wtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIw
-MjI2MTY1ODVdfQ==
+eyJoaXN0b3J5IjpbLTE4Nzc2MjUxNjAsMTM0NjYzNTkzMiwtMT
+MyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2
+NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNC
+wtMTM2OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0
+MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2Nj
+ExNiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDky
+LDIwMjI2MTY1ODVdfQ==
 -->
