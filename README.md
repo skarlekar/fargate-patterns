@@ -88,7 +88,7 @@ While AWS is rolling out Fargate to as many regions as they can, it is not as av
 ## Focus of these Behavioral Patterns
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
 
-In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. 
+In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent application and provides supporting features for the application. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
 
@@ -170,7 +170,7 @@ To do
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUwNzc4NzMwLC0xNzgzMTY2MTE2LC0xMD
+eyJoaXN0b3J5IjpbMzkyNTg0NDY4LC0xNzgzMTY2MTE2LC0xMD
 UzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYx
 NjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNC
 wtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2
