@@ -88,13 +88,13 @@ While AWS is rolling out Fargate to as many regions as they can, it is not as av
 ## Focus of these Behavioral Patterns
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
 
-In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent application and provides supporting features for the application. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
+In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
 
 We will use the ***Scaling-Container*** to build an auto-scaling service that finds the value of the coins thrown on a table from an image. With this pattern, you will have a small footprint always running and scale up or down as the processing demands.
 
-Later we will explore the ***Sidecar-Assembly*** pattern to deploy components of an application into a separate containers to provide isolation and encapsulation. This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts.
+Later we will explore the ***Sidecar-Assembly*** pattern to deploy components of an application into a separate containers to provide isolation and encapsulation. 
 
 ## *Container-on-Demand* Pattern
 ### Context & Problem
@@ -166,15 +166,16 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 ### Problem
 To do
 ### Solution
-To do
+
+This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyNTg0NDY4LC0xNzgzMTY2MTE2LC0xMD
-UzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYx
-NjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNC
-wtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2
-NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4Mj
-AsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5
-MTQyMDRdfQ==
+eyJoaXN0b3J5IjpbMTY5NDc4OTQ1MCwtMTc4MzE2NjExNiwtMT
+A1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2
+MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMj
+QsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1
+NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0OD
+IwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5
+OTE0MjA0XX0=
 -->
