@@ -97,7 +97,7 @@ We will use the ***Scaling-Container*** to build an auto-scaling service that fi
 Later we will explore the ***Sidecar-Assembly*** pattern to assemble otherwise fully functional services running in containers to build an application that has expanded capabilities beyond what is provided by these services. In essence, to reinforce that the whole is greater than the sum of its parts.
 
 ## *Container-on-Demand* Pattern
-### Problem
+### Context & Problem
 AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running jobs. 
 
 For instance these are current limitations on Lambda (as of April 2019):
@@ -130,7 +130,7 @@ While using this pattern Fargate puts Lambdas on steroids, Fargate has its [own 
 If you think your workloads will breach these limitations, you should seriously consider AWS EMR or AWS Glue for your solution's tech stack.
 
 ## Scaling Container Pattern
-### Problem
+### Context & Problem
 In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for such asynchronous workloads. Here the main problem is the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. While the Container-on-Demand pattern solves this issue, for synchronous web services that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
@@ -170,11 +170,11 @@ To do
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMT
-I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
-MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
-AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
-OTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MC
-wzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkzNDEwNjQ0LDg3NDU0
-NTQxN119
+eyJoaXN0b3J5IjpbLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMT
+kzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2
+OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4OD
+I5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcx
+MDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NT
+IsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgzOTkxNDIwNCwxODkz
+NDEwNjQ0XX0=
 -->
