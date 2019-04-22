@@ -431,13 +431,18 @@ Register the bean-counter task definition in ECS and verify it has been created 
 
     $ ./register-bean-counter-task.sh
 
+#### Generate the Service Definition
+Generate bean-counter service definition from the template.
 
+    $ ./generate-bean-counter-service-definition.sh 
+
+This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that the task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4Nj
-I0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5
-LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLT
-IxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAw
-MzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OS
-wyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUw
-MTQ4XX0=
+eyJoaXN0b3J5IjpbLTE1OTI4OTg1MDEsMTc3NjI0MTI0MCwtMT
+cxODUxMDQzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0
+MCwtNTc3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLT
+E0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3
+NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMT
+czLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAy
+NTExXX0=
 -->
