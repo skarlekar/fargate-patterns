@@ -436,13 +436,15 @@ Generate bean-counter service definition from the template.
 
     $ ./generate-bean-counter-service-definition.sh 
 
-This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that it contains the target group for the service under the load balancers section. This ties the load balancer to the  task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
+This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that it contains the target group for the service under the load balancers section. This ties the load balancer to the service. Also notice the desiredCount variable set to 2. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2NTQ4Nzc1LDE3NzYyNDEyNDAsLTE3MT
-g1MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAs
-LTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xND
-EwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0
-NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0MDE3My
-w2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NTkwMjUx
-MV19
+eyJoaXN0b3J5IjpbMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNz
+E4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQw
+LC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMT
+QxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2
+NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNz
+MsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1
+MTFdfQ==
 -->
