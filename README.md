@@ -321,16 +321,19 @@ Generate the parameters for running the task as follows. This will generate a fi
 
 Notice that there is a section for overrides. You can make changes to this file if you want to change the parameters after the fact that the task has been registered.
 
-
+#### Manually run the task
+Verify the task runs and generates the thumbnail as desired.
+$ ./run-tom-thumb-task.sh
+Go to the 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc1OTQwMDI1LDcxNzM4NDUzLDY1NTkwMj
-UxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIwMywx
-MzQ2NjM1OTMyLC0xMzI1NzIxNjA4LDE0NTA1NjY2MDcsLTQ1NT
-QxNDMxMCw5MTIzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5
-LC0xMjIyOTc2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNT
-kyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2
-MzMwXX0=
+eyJoaXN0b3J5IjpbNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczOD
+Q1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0x
+NDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNT
+Y2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkx
+LDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxND
+M1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0
+OTYyXX0=
 -->
