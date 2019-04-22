@@ -221,9 +221,9 @@ Verify that you are able to run awscli in your newly minted environment
     aws-cli/1.16.144 Python/2.7.10 Darwin/18.5.0 botocore/1.12.134
 
 #####  Create AWS roles for Fargate
-Create AWS roles ecsTaskExecutionRole and taskRole in IAM for Fargate to access other AWS serf
+Create AWS roles ecsTaskExecutionRole and taskRole in IAM for Fargate to access other AWS services on your behalf
 $ source ./create-roles.sh
-
+Ensure the role was created by 
 #####  Create VPC, Subnets and Security groups for running Fargate
 $ source ./create-vpc-subnets.sh
 
@@ -236,11 +236,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDEyNzE0MywxNDUwNTY2NjA3LC00NT
-U0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUw
-OSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1NjI0NzU4LD
-U5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4
-NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5Nj
-U2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwx
-NTc0ODAyNDIxXX0=
+eyJoaXN0b3J5IjpbLTE3NjA3MTI3OTYsMTQ1MDU2NjYwNywtND
+U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
+MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OC
+w1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4
+ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OT
+Y1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQs
+MTU3NDgwMjQyMV19
 -->
