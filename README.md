@@ -357,16 +357,23 @@ Package the python code that has the function that will be triggered through the
 
 #### Deploy the Lambda
 Deploy the zip file with the Lambda function on AWS. If the function already exists, it will be updated.
-$ ./create-lambda.sh
+
+    $ ./create-lambda.sh
 
 Verify the Lambda function was created through the console.
 
+### Testing Tom-Thumb
+# Create a folder called 'video', 'thumbnail' and 'raw' in the S3 bucket that will be used for this project.
+
+# [](https://github.com/skarlekar/tom-thumb#in-the-console-go-to-the-advanced-settings-in-the-properties-tab-of-the-bucket-and-create-a-notification-event-when-a-file-is-dropped-into-a-particular-folder-in-your-s3-bucket)In the Console go to the Advanced Settings in the Properties tab of the bucket and create a notification event when a file is dropped into a particular folder in your S3 bucket.
+
+# [](https://github.com/skarlekar/tom-thumb#upload-a-video-file-in-the-video-folder-of-the-bucket-and-verify-a-thumbnail-is-created-in-the-thumbnail-folder-it-will-take-around-a-minute-for-the-process-to-complete-depending-upon-the-size-of-the-video-file)Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY2NDA2NTc1LC00NTc2NDU0MDUsLTkyMD
-AzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5
-LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNT
-AxNDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwt
-MTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMz
-U2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMz
-NF19
+eyJoaXN0b3J5IjpbLTQxMjU1NTU0MiwtNDU3NjQ1NDA1LC05Mj
+AwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3
+OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MD
+UwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIs
+LTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMj
+M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
+MzRdfQ==
 -->
