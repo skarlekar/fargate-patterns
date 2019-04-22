@@ -227,6 +227,7 @@ Verify that you are able to run awscli in your newly minted environment
 #####  Create VPC, Subnets and Security groups for running Fargate
 $ source ./create-vpc-subnets.sh
 
+
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
@@ -235,11 +236,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxMjYzMTM3LC00NTU0MTQzMTAsOTEyMz
-U2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMz
-NCwtMTM2OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMj
-A0MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2
-NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1ND
-kyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEz
-OTEyMTUyMjRdfQ==
+eyJoaXN0b3J5IjpbMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMj
+M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
+MzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLT
+IwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMx
+NjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NT
+Q5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwx
+MzkxMjE1MjI0XX0=
 -->
