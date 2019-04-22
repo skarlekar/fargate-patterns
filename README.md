@@ -195,11 +195,11 @@ All the examples require a few prerequisites to be performed. These range from c
 > generated in one script to subsequent ones.
 
 ### Setup Instructions 
-Clone the 
+Clone the Git repository to your development environment
 
-    $ conda create -n chehara python=2
+    $ git clone https://github.com/skarlekar/fargate-patterns.git
 
- 
+ Run the 
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -209,7 +209,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MDQ2Njk5NiwtMjA0MzA5NDg4MywyMD
+eyJoaXN0b3J5IjpbLTEyNjM0OTIzNSwtMjA0MzA5NDg4MywyMD
 U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
 MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
 UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
