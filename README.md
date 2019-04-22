@@ -212,9 +212,10 @@ Log out of your shell and log back for the newly installed programs to take effe
 
 Verify that you are able to run awscli in your newly minted environment
 
-$ aws
+    $ aws --version
+    aws-cli/1.16.144 Python/2.7.10 Darwin/18.5.0 botocore/1.12.134
 
-
+####
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -224,11 +225,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OT
-IwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYz
-MzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1Ni
-wtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3
-NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mz
-g1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2
-NjkyOTM4N119
+eyJoaXN0b3J5IjpbLTY1NzA4MTg1MCwtMTM2OTMxODIxMywxND
+M1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0
+OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OC
+wxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUsLTgx
+OTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTExNzI3OT
+g4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMzYwODQs
+NzEwNTI1MDddfQ==
 -->
