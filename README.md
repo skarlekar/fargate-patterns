@@ -308,14 +308,17 @@ This will create a temp directory and write the *register-tom-thumb-task-definit
 > storing the access keys in a config file on the container instance.
 
 #### Register the Task Defintion
-Register the bean counter task definition in ECS.
+Register the bean counter task definition in ECS and verify it has been created in the Task Definition section of ECS.
+@TO DO paste register-task-definition image here
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU1OTAyNTExLC0yMTA5MDUwMTQ4LDU1Nj
-A4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3MjE2
-MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMT
-g1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkz
-MTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4OD
-MsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEw
-NTMwNTA5NThdfQ==
+eyJoaXN0b3J5IjpbLTIwMjAwOTQ3ODgsNjU1OTAyNTExLC0yMT
+A5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5
+MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLD
+kxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5
+NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMj
+YsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3
+ODMxNjYxMTZdfQ==
 -->
