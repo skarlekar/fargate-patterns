@@ -162,13 +162,15 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 - **API Gateway** - An *optional* API gateway configured to forward requests to the application load balancer.
 - **Web Interface** - An *optional* browser-based interface for allowing users to post requests to the service. This could be a simple HTML form.
 
-## Sidecar Assembly
+## Sidecar Assembly Pattern
+### Problem
 To do
-
+### Solution
+To do
 ## Code Examples
-The followig code examples demonstrates these be
+The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDk4ODg4MzEsMTkzNDA5OTY1NiwtMT
+eyJoaXN0b3J5IjpbLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMT
 I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
 MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
 AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
