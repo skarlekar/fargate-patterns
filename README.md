@@ -314,15 +314,16 @@ Register the bean counter task definition in ECS and verify it has been created 
 
 @TO DO paste register-task-definition image here
 
-#### Generate the Param
+#### Generate the parameters for running the task
+Generate the parameters for running the task as follows. This will generate a file run0-t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU5MzU5MDAsNzE3Mzg0NTMsNjU1OT
-AyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAz
-LDEzNDY2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtND
-U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
-MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OC
-w1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4
-ODYzMzBdfQ==
+eyJoaXN0b3J5IjpbODA4ODgzODMsNzE3Mzg0NTMsNjU1OTAyNT
+ExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEz
+NDY2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1ND
+E0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDks
+LTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OT
+IwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYz
+MzBdfQ==
 -->
