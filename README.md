@@ -220,7 +220,7 @@ Verify that you are able to run awscli in your newly minted environment
 
     $ source ./create-roles.sh
 
-   
+ ***   Test
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
@@ -229,11 +229,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTgzMjUsOTEyMzU2NTA5LC0xMjIyOT
-c2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2
-LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNz
-gzMTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAy
-NTU0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0Mj
-EsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05
-ODYzMTU1MDVdfQ==
+eyJoaXN0b3J5IjpbLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMj
+IyOTc2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMz
+MTI2LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC
+0xNzgzMTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEy
+NDAyNTU0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MD
+I0MjEsMTM5MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAw
+LC05ODYzMTU1MDVdfQ==
 -->
