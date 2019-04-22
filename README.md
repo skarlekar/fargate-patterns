@@ -257,14 +257,16 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 In the same shell that you used to run the prerequisites, run the following commands.
 
-#### Create a repository in 
+#### Create a repository in ECR 
+Create a repository in ECR for storing the Tom-Thumb container image
+$ source ./create-tom-thumb-repository.sh
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODQzMDA1NCwxMzQ2NjM1OTMyLC0xMz
-I1NzIxNjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1
-MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC
-0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQz
-MDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MT
-E2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIs
-MjAyMjYxNjU4NV19
+eyJoaXN0b3J5IjpbMTI4MzkyNSwxMzQ2NjM1OTMyLC0xMzI1Nz
+IxNjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDks
+LTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMz
+Y5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0
+ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC
+0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAy
+MjYxNjU4NV19
 -->
