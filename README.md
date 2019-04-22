@@ -293,13 +293,13 @@ This will create an ECS cluster called tom-thumb-cluster.
 #### Generate the Task Definition
 Generate bean counter task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
 $ ./generate-tom-thumb-task-definition.sh https://s3.amazonaws.com/your-bucket-name/raw/samplevideo.mp4 10
-This will create a temp directory and write the *register-tom-thumb-task-definition.json* file.  Inspect this file and make sure you understand 
+This will create a temp directory and write the *register-tom-thumb-task-definition.json* file.  Inspect this file and notice that the task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTQxMTk2MSwtMjEwOTA1MDE0OCw1NT
-YwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIx
-NjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLT
-E4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5
-MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0OD
-gzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0x
-MDUzMDUwOTU4XX0=
+eyJoaXN0b3J5IjpbMjA5MzMzMTM2LC0yMTA5MDUwMTQ4LDU1Nj
+A4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3MjE2
+MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMT
+g1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkz
+MTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4OD
+MsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEw
+NTMwNTA5NThdfQ==
 -->
