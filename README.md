@@ -360,7 +360,7 @@ Deploy the zip file with the Lambda function on AWS. If the function already exi
 
     $ ./create-lambda.sh
 
-Verify the Lambda function was created through the console and the following enviroment variables are set right.
+Verify the Lambda ***task-runner*** was created through the console and the following enviroment variables are set right for the following:
 - S3_BUCKET_ARN
 - LAMBDA_ROLE_ARN
 - SUBNET1
@@ -370,13 +370,13 @@ Verify the Lambda function was created through the console and the following env
 ### Testing Tom-Thumb
 - Create a folder called 'video', 'thumbnail' and 'raw' in the S3 bucket that you chose for this project. The Bucket ARN for this should match the S3_BUCKET_ARN variable you set earlier. 
 
-- In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event when a file is dropped into a particular folder in your S3 bucket.
+- In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event to trigger the ***task-runner*** lambda that was created earlier when a file is dropped into a particular folder in your S3 bucket.
 
-@TODO paste two s3-notification-setting
+@TODO paste two s3-notification-setting images here
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODY3NjA5NDYsMTA3MzQyMzg0NiwtND
+eyJoaXN0b3J5IjpbLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtND
 U3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQw
 MTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OT
 AyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAz
