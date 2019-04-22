@@ -164,15 +164,16 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 
 ## Sidecar Assembly Pattern
 ### Problem
-Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. While these capabilities can be integrated into the main service, it will leave the main service exposed to the vagaries of these capabilities. For instance,  they will not be well isolated, and an outage in one of these components can affect other components or the entire servive. Also, they usually need to be implemented using the same language as the parent service. As a result, the component and the application have close interdependence on each other.
+Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. While the components encapsulating these orthogonal capabilities can be integrated into the main service, it will leave the main service exposed to the vagaries of these components. For instance,  they will not be well isolated, and an outage in one of these components can affect other components or the entire servive. Also, they usually need to be implemented using the same language as the parent service. As a result, the component and the main service have close interdependence on each other.
 
+One option is to deploy these 
 If the application is decomposed into services, then each service can be built using different languages and technologies. While this gives more flexibility, it means that each component has its own dependencies and requires language-specific libraries to access the underlying platform and any resources shared with the parent application. In addition, deploying these features as separate services can add latency to the application. Managing the code and dependencies for these language-specific interfaces can also add considerable complexity, especially for hosting, deployment, and management.### Solution
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTMyNDk0NTcsLTE3ODMxNjYxMTYsLT
+eyJoaXN0b3J5IjpbLTE3MDMwNzA0MzEsLTE3ODMxNjYxMTYsLT
 EwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIy
 NjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1Mj
 I0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwx
