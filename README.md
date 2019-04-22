@@ -90,7 +90,7 @@ While AWS is rolling out Fargate to as many regions as they can, it is not as av
 ## Behavioral Design Patterns for AWS Fargate
 Behavioral patterns provide solution for the better interaction between components and foster lose coupling while providing the flexibility to extend these components easily independent of each other.
 
-In this section, we will explore three behavioral design patterns for AWS Fargate viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
+In this section, we will explore three behavioral design patterns for AWS Fargate viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or allow you to run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
 
@@ -220,11 +220,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDM4NzE3LDU5MjAzMzEyNiwtMjA0Mz
-A5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjEx
-NiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLD
-IwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEy
-MTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NT
-A1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3
-NDA0ODIwXX0=
+eyJoaXN0b3J5IjpbMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwND
+MwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYx
+MTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5Mi
+wyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkx
+MjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNT
+UwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0
+NzQwNDgyMF19
 -->
