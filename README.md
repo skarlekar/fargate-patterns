@@ -418,12 +418,21 @@ Create the bean-counter cluster in ECS
     $ ./create-bean-counter-cluster.sh
 
 This will create an ECS cluster called tom-thumb-cluster.
+
+#### Generate the Task Definition
+Generate bean-counter task definition from the template.
+
+    $ ./generate-bean-counter-task-definition.sh 
+
+This will create a temp directory and write the *register-bean-counter-task-definition.json* file.  Inspect this file and notice that the task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNDE2NzYxLDk5Njk4MjU4NiwyMzY0Nj
-I5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkw
-LC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLT
-Q1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0
-MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NT
-kwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIw
-M119
+eyJoaXN0b3J5IjpbLTE3MTg1MTA0MzcsODYyNDE2NzYxLDk5Nj
+k4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4
+LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LD
+EwNzM0MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2
+MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LD
+cxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0
+MThdfQ==
 -->
