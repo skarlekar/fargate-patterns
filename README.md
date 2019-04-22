@@ -230,9 +230,15 @@ Ensure the role was created by verifying the TASK_ROLE_ARN variable was set
     $ echo $TASK_ROLE_ARN
 
 #####  Create VPC, Subnets and Security groups for running Fargate
-$ source ./create-vpc-subnets.sh
+
+    $ source ./create-vpc-subnets.sh
 
 Ensure the role was created by verifying the VPC, SUBNET1, SUBNET2 and SECURITYGROUP variables was set.
+
+    $ echo $VPC
+    $ echo $SUBNET1
+    $ echo $SUBNET2
+    $ echo SECURITYGROUP
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -242,7 +248,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzY3OTExLDE0NTA1NjY2MDcsLTQ1NT
+eyJoaXN0b3J5IjpbLTM5MTUyNzIwLDE0NTA1NjY2MDcsLTQ1NT
 QxNDMxMCw5MTIzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5
 LC0xMjIyOTc2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNT
 kyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2
