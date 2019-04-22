@@ -180,7 +180,7 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ---
 
 
-## Setup Instructions for running the examples
+## Setup Instructions 
 ### Prerequisites 
 All the examples require a few prerequisites to be performed. These range from creating appropriate roles in IAM for the Lambda and Fargate to invoke AWS services. For instance, the Lambda to invoke the Fargate task, the Fargate task to read files from the S3 bucket and write back responses to it. Additionally, the S3 bucket must be prepped to notify the Lambda function.
 
@@ -227,7 +227,7 @@ Ensure the role was created by verifying the TASK_ROLE_ARN variable was set
 
     $ echo $TASK_ROLE_ARN
 
-#####  Create VPC, Subnets and Security Group
+####  Create VPC, Subnets and Security Group
 Create VPC, Subnets and Security groups for running Fargate
 
     $ source ./create-vpc-subnets.sh
@@ -236,7 +236,7 @@ Ensure the role was created by verifying the VPC, SUBNET1, SUBNET2 and SECURITYG
 
     $ echo echo $VPC, $SUBNET1, $SUBNET2, $SECURITYGROUP
 
-##### Create an Application Load Balancer
+#### Create an Application Load Balancer
 Create an application load balancer for the Bean-Counter service we will create later
 
     $ source ./create-alb.sh
@@ -258,11 +258,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDEyMDg2NzgsLTEzMjU3MjE2MDgsMT
-Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
-MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
-MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
-NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNT
-A5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1
-LC04MTk2OTUzMTRdfQ==
+eyJoaXN0b3J5IjpbMjEzMzExMjkwOCwtMTMyNTcyMTYwOCwxND
+UwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYx
+NDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMy
+wxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3
+MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MD
+k1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUs
+LTgxOTY5NTMxNF19
 -->
