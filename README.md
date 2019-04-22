@@ -277,16 +277,20 @@ Ensure the latest image was pushed to the ECR Repository.
 
 #### Create the Log Group
 Create the bean-counter log group
-$ ./create-tom-thumb-log-group.sh
+
+    $ ./create-tom-thumb-log-group.sh
+
 #### Create the ECS Cluster
 Create the bean-counter cluster in ECS
-#### ./create-tom-thumb-cluster.sh
+
+    $ ./create-tom-thumb-cluster.sh
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzk4ODk3NCwtMTQ0NzYwMjAzLDEzND
-Y2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0
-MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLT
-EyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIw
-MzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMz
-AsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1Niwt
-MTI0MDI1NTQ5Ml19
+eyJoaXN0b3J5IjpbMzk4MDkxMDIwLC0xNDQ3NjAyMDMsMTM0Nj
+YzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQz
+MTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMT
+IyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1NjI0NzU4LDU5MjAz
+MzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMC
+wtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0x
+MjQwMjU1NDkyXX0=
 -->
