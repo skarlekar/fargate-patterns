@@ -198,7 +198,7 @@ All the examples require a few prerequisites to be performed. These range from c
 ### Setup Instructions 
 #### AWS IAM setup for executing the AWS CLI commands
 To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
-- A
+
 
 
 #### Environment setup
@@ -224,6 +224,8 @@ Verify that you are able to run awscli in your newly minted environment
 
     $ source ./create-roles.sh
 
+#####  Create VPC, Subnets and Security groups for running Fargate
+$ source ./create-vpc-subnets.sh
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -233,11 +235,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTY3MzY1ODAsLTQ1NTQxNDMxMCw5MT
-IzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2
-MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC
-0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgz
-MTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNT
-U0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEs
-MTM5MTIxNTIyNF19
+eyJoaXN0b3J5IjpbMzcxMjYzMTM3LC00NTU0MTQzMTAsOTEyMz
+U2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMz
+NCwtMTM2OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMj
+A0MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2
+NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1ND
+kyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEz
+OTEyMTUyMjRdfQ==
 -->
