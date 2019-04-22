@@ -181,7 +181,7 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ## Examples
 The following code examples demonstrates these behavioral patterns.
 
-## Pre-requisites
+### Setup Instructions
 
 All the examples require a few prerequisites to be performed. These range from creating appropriate roles in IAM for the Lambda and Fargate to invoke AWS services. For instance, the Lambda to invoke the Fargate task, the Fargate task to read files from the S3 bucket and write back responses to it. Additionally, the S3 bucket must be prepped to notify the Lambda function.
 
@@ -257,7 +257,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTgwNTYwNjAsLTEzMjU3MjE2MDgsMT
+eyJoaXN0b3J5IjpbLTEwMzY2NTQ2NDEsLTEzMjU3MjE2MDgsMT
 Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
 MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
 MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
