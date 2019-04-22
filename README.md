@@ -466,14 +466,16 @@ Set a target scaling policy for the service such that desired count of the servi
 Use Apache Bench to hit the server $100,000 times with 100 concurrent threads with a timeout of 120 seconds to see the service scale out. You will have to wait for the cooling period to see the scaling out. Scaling in will take 15 minutes after scale out. Verify this on the ECS console.
 
     $ ./test-scaling.sh
-
+    
+@TO DO - paste the screenshot of scaling run
 @TO DO - paste the screenshot of scaling test
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTgzMDcyNDcsOTkwNDk2MjYsMTE5MD
-I4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2
-MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1Mz
-A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
-NjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OC
-wtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0
-MDAyNV19
+eyJoaXN0b3J5IjpbLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOT
+kwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEw
+NDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01Nz
+cyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUx
+MzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MD
+UsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3
+NDA1Njc5XX0=
 -->
