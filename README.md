@@ -457,11 +457,12 @@ Retrieve the DNS name of the application load balancer. Cut & paste the DNS in t
 
 @TO DO Paste the screenshots here
 
-#### Set the ScalingPpolicy for the Service
+#### Set the Scaling Policy for the Service
+Set a target scaling policy for the service such that des
 
-
+$ ./set-scaling-policy.sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjUyMTgzOTIsOTkwNDk2MjYsMTE5MD
+eyJoaXN0b3J5IjpbLTEyNTQ0Mzc0MzEsOTkwNDk2MjYsMTE5MD
 I4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2
 MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1Mz
 A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
