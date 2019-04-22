@@ -297,13 +297,13 @@ Generate bean counter task definition from the template by passing an URL for a 
 
 This will create a temp directory and write the *register-tom-thumb-task-definition.json* file.  Inspect this file and notice that the task contains one container and it uses the my-ecs-tasks-role you created earlier to run the Fargate task.
 
-Referring to  [the ECS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html)  you can see that the execution role is the IAM role that executes ECS actions such as pulling the image and storing the application logs in cloudwatch. On the otherhand, the TaskRole is the IAM role used by the task itself. For example, if your container wants to call other AWS services like S3, Lambda, etc,  it uses the permissions from the TaskRole to perform those actions. 
+Referring to  [the ECS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html)  you can see that the execution role is the IAM role that executes ECS actions such as pulling the image and storing the application logs in cloudwatch. On the otherhand, the TaskRole is the IAM role used by the task itself. For example, if your container wants to call other AWS services like S3, Lambda, etc,  it uses the permissions from the TaskRole to perform those actions. You need the TaskRole to avoid storing the access keys in a config file on the container instance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDIzOTg0NiwtMjEwOTA1MDE0OCw1NT
-YwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIx
-NjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLT
-E4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5
-MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0OD
-gzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0x
-MDUzMDUwOTU4XX0=
+eyJoaXN0b3J5IjpbLTE4Mjc4OTM5MzIsLTIxMDkwNTAxNDgsNT
+U2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcy
+MTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC
+0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2
+OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5ND
+g4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwt
+MTA1MzA1MDk1OF19
 -->
