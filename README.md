@@ -194,7 +194,8 @@ All the examples require a few prerequisites to be performed. These range from c
 > scripts. This is done to carry over the environment variables
 > generated in one script to subsequent ones.
 
-#### Setup Instructions 
+### Setup Instructions 
+Clone the 
 
     $ conda create -n chehara python=2
 
@@ -208,7 +209,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzExNDQ3NSwtMjA0MzA5NDg4MywyMD
+eyJoaXN0b3J5IjpbLTc3MDQ2Njk5NiwtMjA0MzA5NDg4MywyMD
 U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
 MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
 UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
