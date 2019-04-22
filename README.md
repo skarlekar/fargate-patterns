@@ -276,10 +276,13 @@ Ensure the latest image was pushed to the ECR Repository.
 @TO DO paste image 
 
 #### Create the Log Group
-Create the Bean Counter log group
-./create-tom-thumb-log-group.sh
+Create the bean-counter log group
+$ ./create-tom-thumb-log-group.sh
+#### Create the ECS Cluster
+Create the bean-counter cluster in ECS
+#### ./create-tom-thumb-cluster.sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTg2NTMyOCwtMTQ0NzYwMjAzLDEzND
+eyJoaXN0b3J5IjpbMTEyMzk4ODk3NCwtMTQ0NzYwMjAzLDEzND
 Y2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0
 MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLT
 EyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIw
