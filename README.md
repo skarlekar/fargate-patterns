@@ -197,7 +197,9 @@ All the examples require a few prerequisites to be performed. These range from c
 
 ### Setup Instructions 
 #### AWS IAM setup for executing the AWS CLI commands
-To be able to run the aws cli commands in 
+To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below.
+- 
+
 
 #### Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment.
@@ -231,7 +233,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNjYyMzc5MywtNDU1NDE0MzEwLDkxMj
+eyJoaXN0b3J5IjpbMjE0NjE0MDk4NywtNDU1NDE0MzEwLDkxMj
 M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
 MzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLT
 IwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMx
