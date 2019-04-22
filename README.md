@@ -90,7 +90,7 @@ While AWS is rolling out Fargate to as many regions as they can, it is not as av
 ## Focus of these Behavioral Patterns
 Behavioral patterns provide solution for the better interaction between objects and how to provide lose coupling and flexibility to extend easily.
 
-In this section, we will explore three behavioral design patterns viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
+In this section, we will explore three behavioral design patterns for AWS Fargate viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
 
 We will use the ***Container-on-Demand*** pattern to build an on-demand video thumbnail service to generate thumbnail images from video files. With this pattern, you can spin the containers on demand and immediately decommission after the task is run.
 
@@ -220,11 +220,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNT
-cxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUw
-OTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NS
-wtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3
-Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNj
-A4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMy
-NzM4NTUyXX0=
+eyJoaXN0b3J5IjpbMTY1MTMxNDUyNiw1OTIwMzMxMjYsLTIwND
+MwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYx
+MTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5Mi
+wyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkx
+MjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNT
+UwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0
+NzQwNDgyMF19
 -->
