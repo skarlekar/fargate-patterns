@@ -164,18 +164,21 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 
 ## Sidecar Assembly Pattern
 ### Problem
-To do
-### Solution
+Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. These capabilities can be implemented  services.
+
+If they are tightly integrated into the application, they can run in the same process as the application, making efficient use of shared resources. However, this also means they are not well isolated, and an outage in one of these components can affect other components or the entire application. Also, they usually need to be implemented using the same language as the parent application. As a result, the component and the application have close interdependence on each other.
+
+If the application is decomposed into services, then each service can be built using different languages and technologies. While this gives more flexibility, it means that each component has its own dependencies and requires language-specific libraries to access the underlying platform and any resources shared with the parent application. In addition, deploying these features as separate services can add latency to the application. Managing the code and dependencies for these language-specific interfaces can also add considerable complexity, especially for hosting, deployment, and management.### Solution
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDc4OTQ1MCwtMTc4MzE2NjExNiwtMT
-A1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2
-MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMj
-QsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1
-NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0OD
-IwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5
-OTE0MjA0XX0=
+eyJoaXN0b3J5IjpbLTE2MjkyMjIxOTEsLTE3ODMxNjYxMTYsLT
+EwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIy
+NjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1Mj
+I0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwx
+NTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwND
+gyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2NzU5NDQsLTgz
+OTkxNDIwNF19
 -->
