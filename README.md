@@ -361,11 +361,12 @@ Deploy the zip file with the Lambda function on AWS. If the function already exi
     $ ./create-lambda.sh
 
 Verify the Lambda ***task-runner*** was created through the console and the following enviroment variables are set right for the following:
-- S3_BUCKET_ARN
-- LAMBDA_ROLE_ARN
+
 - SUBNET1
 - SUBNET2
 - SECURITYGROUP
+
+Note: An update to the function does not update the environment variables. If you have created the subnets and security groups earlier and recreated them, you will have to dele
 
 ### Testing Tom-Thumb
 - Create a folder called 'video', 'thumbnail' and 'raw' in the S3 bucket that you chose for this project. The Bucket ARN for this should match the S3_BUCKET_ARN variable you set earlier. 
@@ -376,11 +377,11 @@ Verify the Lambda ***task-runner*** was created through the console and the foll
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtND
-U3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQw
-MTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OT
-AyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAz
-LDEzNDY2MzU5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtND
-U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
-MDldfQ==
+eyJoaXN0b3J5IjpbLTgzMTUwNTk1NywtMjExNDQwNjI1OCwxMD
+czNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0
+NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MT
+czODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4
+LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxND
+UwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYx
+NDkxXX0=
 -->
