@@ -316,12 +316,15 @@ Register the bean counter task definition in ECS and verify it has been created 
 
 #### Generate the parameters for running the task
 Generate the parameters for running the task as follows. This will generate a file run-tom-thumb-task.json in the temp directory.
-./generate-run-tom-thumb-task.sh htt://s3.amazonaws.com/<your-bucket>/raw/samplevideo.mp4 12 skarlekar-ffmpeg
+
+    $ ./generate-run-tom-thumb-task.sh https://s3.amazonaws.com/your-bucket/raw/samplevideo.mp4 12 your-output-bucket
+
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTAwMTYxOCw3MTczODQ1Myw2NTU5MD
+eyJoaXN0b3J5IjpbLTQzNzAxMzMwMyw3MTczODQ1Myw2NTU5MD
 I1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMs
 MTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NT
 U0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMjM1NjUw
