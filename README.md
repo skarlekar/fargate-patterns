@@ -195,9 +195,9 @@ All the examples require a few prerequisites to be performed. These range from c
 > generated in one script to subsequent ones.
 
 #### AWS IAM setup for executing the AWS CLI commands
-To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
+To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the IAM user you will be using to work on this exercise.
 
-@TO DO - Paste image here
+![FargateDeveloper Group](https://github.com/skarlekar/fargate-patterns/blob/master/images/FargateDeveloperGroup.png)
 
 #### Development Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment and in the terminal window clone the Git repository to your development environment
@@ -378,11 +378,11 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNz
-gzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0
-MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3Mj
-csMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4
-NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLT
-E0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4LDE0NTA1
-NjY2MDddfQ==
+eyJoaXN0b3J5IjpbLTcyMzQ4MjY5OSwtNTc3MjQzNzg5LC04NT
+MwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0
+MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxOD
+gsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5
+NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUwMTQ4LD
+U1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3
+MjE2MDhdfQ==
 -->
