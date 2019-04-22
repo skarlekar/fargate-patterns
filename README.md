@@ -307,12 +307,15 @@ This will create a temp directory and write the *register-tom-thumb-task-definit
 > TaskRole to perform those actions. You need the TaskRole to avoid
 > storing the access keys in a config file on the container instance.
 
+#### Register the Task Defintion
+Register the bean counter task definition in ECS.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTE4MTIyOCwtMjEwOTA1MDE0OCw1NT
-YwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIx
-NjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLT
-E4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5
-MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0OD
-gzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0x
-MDUzMDUwOTU4XX0=
+eyJoaXN0b3J5IjpbNjU1OTAyNTExLC0yMTA5MDUwMTQ4LDU1Nj
+A4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3MjE2
+MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMT
+g1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkz
+MTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4OD
+MsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEw
+NTMwNTA5NThdfQ==
 -->
