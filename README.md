@@ -243,17 +243,19 @@ Create an application load balancer for the Bean-Counter service we will create 
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
+$ source ./create-alb.sh
 
+Ensure the ALB, Target Group and Listener were created suc
 In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtND
-U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
-MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OC
-w1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4
-ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OT
-Y1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQs
-MTU3NDgwMjQyMV19
+eyJoaXN0b3J5IjpbLTE3NTM0MTU3MzQsLTEzMjU3MjE2MDgsMT
+Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
+MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
+MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
+NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNT
+A5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1
+LC04MTk2OTUzMTRdfQ==
 -->
