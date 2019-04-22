@@ -1,0 +1,32 @@
+{
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "containerDefinitions": [
+        {
+            "name": "bean-counter-container",
+            "image": "MY_ECR_IMAGE:latest",
+            "essential": true,
+            "portMappings": [
+		{
+			"containerPort": 8080,
+			"hostPort": 8080
+		}
+	     ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/bean-counter-service",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "networkMode": "awsvpc",
+    "memory": "1024",
+    "cpu": "256",
+    "executionRoleArn": "MY_EXECUTION_ROLE_ARN",
+    "family": "bean-counter-service-task",
+    "taskRoleArn": "MY_TASK_ROLE_ARN"
+}
