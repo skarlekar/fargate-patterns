@@ -206,7 +206,7 @@ Clone the Git repository to your development environment
 
  Run the *prereqs-ubuntu.sh* script to install Docker, Python, pip, aws cli and other development enablers in your environment.
 
-    $ cd fargate-patterns/pre-requisities
+    $ cd fargate-patterns/prerequisities
     $ prereqs-ubuntu.sh
 
 Log out of your shell and log back for the newly installed programs to take effect.
@@ -229,11 +229,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMj
-M1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1NjI0
-NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0OTYyLD
-Q5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwxOTM0
-MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NT
-MxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4Mjks
-LTQ5NzQzODUwMF19
+eyJoaXN0b3J5IjpbLTQ1NTQxNDMxMCw5MTIzNTY1MDksLTE4NT
+k1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5MzE4
+MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0ODgzLD
+IwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUz
+MDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNj
+U4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwt
+MTE3Mjc5ODgyOV19
 -->
