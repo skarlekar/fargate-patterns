@@ -458,11 +458,11 @@ Retrieve the DNS name of the application load balancer. Cut & paste the DNS in t
 @TO DO Paste the screenshots here
 
 #### Set the Scaling Policy for the Service
-Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the 
+Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the when the combined load on the service breaches 75% the service should scale-out. A cool-out period of 60 seconds is also speci
 
 $ ./set-scaling-policy.sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjAxMjM0OCw5OTA0OTYyNiwxMTkwMj
+eyJoaXN0b3J5IjpbLTkyOTQzMzQzNiw5OTA0OTYyNiwxMTkwMj
 g3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYx
 LDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMD
 U1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2
