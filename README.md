@@ -200,9 +200,7 @@ To be able to run the aws cli commands in the following exercises, create a grou
 @TO DO - Paste image here
 
 #### Development Environment setup
-Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment.
-
-Clone the Git repository to your development environment
+Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment and in the terminal window clone the Git repository to your development environment
 
     $ git clone https://github.com/skarlekar/fargate-patterns.git
 
@@ -245,6 +243,7 @@ Ensure the ALB, Target Group and Listener were created successfully.
 
     $ echo $ALB_ARN $TG_ARN $LISTENER_ARN
 
+Do not close the terminal or the shell. You will need the environment variables for running the commands below in the examples.'
 ## Examples
 The following code examples demonstrates these behavioral patterns.
 
@@ -258,11 +257,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzExMjkwOCwtMTMyNTcyMTYwOCwxND
-UwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYx
-NDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMy
-wxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3
-MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MD
-k1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1ODUs
-LTgxOTY5NTMxNF19
+eyJoaXN0b3J5IjpbLTE1Njc1NTI4NTgsLTEzMjU3MjE2MDgsMT
+Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
+MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
+MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
+NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNT
+A5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1
+LC04MTk2OTUzMTRdfQ==
 -->
