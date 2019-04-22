@@ -356,7 +356,7 @@ Package the python code that has the function that will be triggered through the
     $ ./package-lambda.sh
 
 #### Deploy the Lambda
-Deploy the zip file with the Lambda function on AWS. If the function already exists, it will be updated. This script also add the permission for the Lambda to be invoked when a file is uploaded to the S3 bucket mentioned in the S3_BUCKET_ARN variable.
+Deploy the zip file with the Lambda function on AWS. If the function already exists, it will be updated. This script also adds the permission for the Lambda to be invoked when a file is uploaded to the S3 bucket mentioned in the S3_BUCKET_ARN variable.
 
     $ ./create-lambda.sh
 
@@ -378,11 +378,11 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMT
-QxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2
-NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNz
-MsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1
-MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMsMT
-M0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0
-MTQzMTBdfQ==
+eyJoaXN0b3J5IjpbLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNz
+gzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0
+MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3Mj
+csMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1LDcxNzM4
+NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwODM0MTgsLT
+E0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4LDE0NTA1
+NjY2MDddfQ==
 -->
