@@ -351,14 +351,17 @@ Create the log group required for the lambda to post logs to CloudWatch
     $ ./create-task-runner-log-group.sh
 
 #### Package the Lambda
-Package the python code that has the function that will be triggered when a video file is uploaded.
+Package the python code that has the function that will be triggered through the Lambda when a video file is uploaded.
 
+    $ ./package-lambda.sh
+
+#### De
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nz
-c2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1
-LDcxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwOD
-M0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4
-LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLTE4NT
-k1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5MzE4
-MjEzXX0=
+eyJoaXN0b3J5IjpbLTk5MzEzNDU4OSwtNDU3NjQ1NDA1LC05Mj
+AwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3
+OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MD
+UwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIs
+LTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMj
+M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
+MzRdfQ==
 -->
