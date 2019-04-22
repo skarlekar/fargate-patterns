@@ -438,13 +438,17 @@ Generate bean-counter service definition from the template.
 
 This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that it contains the target group for the service under the load balancers section. This ties the load balancer to the service. Also notice the desiredCount variable set to 2. 
 
+#### Create the Bean-Counter Service
+Create the bean-counter service from the service defintion file generated in the previous step.
+$ ./create-bean-counter-service.sh
 
+Verify that the service has been created with a desire
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNz
-E4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQw
-LC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMT
-QxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2
-NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNz
-MsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1
-MTFdfQ==
+eyJoaXN0b3J5IjpbLTIxMzk0NDk3NzIsMTE5MDI4Nzk3OSwxNz
+c2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1
+ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMT
+c4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDcz
+NDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0Nz
+I3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTcz
+ODQ1M119
 -->
