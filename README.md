@@ -366,6 +366,7 @@ Verify the Lambda ***task-runner*** was created through the console and the foll
 - SUBNET2
 - SECURITYGROUP
 
+Additionally, verify that the Lambda permissi
 Note: An update to the function does not update the environment variables. 
 
 ### Testing Tom-Thumb
@@ -377,11 +378,11 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMT
-A3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxODgsLTQ3NzYy
-NDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5NDAwMjUsNz
-E3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUwMTQ4LDU1NjA4MzQx
-OCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3MjE2MDgsMT
-Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
-MTQ5MV19
+eyJoaXN0b3J5IjpbMTE5MzE3MjQzMSwtMTQxMDUxMzEwMywtMj
+ExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAz
+NzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LD
+I3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAx
+NDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMT
+MyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2
+NTA5XX0=
 -->
