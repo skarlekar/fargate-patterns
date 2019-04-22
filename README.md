@@ -183,14 +183,14 @@ The following code examples demonstrates these behavioral patterns.
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
-In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and invoke a Fargate task
+In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and invoke a Fargate task. The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDc2ODk4LC0yMDQzMDk0ODgzLDIwNT
-cxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUw
-OTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NS
-wtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3
-Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2NjAzNj
-A4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4MjAsMTMy
-NzM4NTUyXX0=
+eyJoaXN0b3J5IjpbMTI0NzY0MjU3NywtMjA0MzA5NDg4MywyMD
+U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
+MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
+UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
+NzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMz
+YwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEz
+MjczODU1Ml19
 -->
