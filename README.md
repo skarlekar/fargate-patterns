@@ -458,15 +458,15 @@ Retrieve the DNS name of the application load balancer. Cut & paste the DNS in t
 @TO DO Paste the screenshots here
 
 #### Set the Scaling Policy for the Service
-Set a target scaling policy for the service such that des
+Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the 
 
 $ ./set-scaling-policy.sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ0Mzc0MzEsOTkwNDk2MjYsMTE5MD
-I4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2
-MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1Mz
-A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
-NjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OC
-wtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0
-MDAyNV19
+eyJoaXN0b3J5IjpbMTI0MjAxMjM0OCw5OTA0OTYyNiwxMTkwMj
+g3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYx
+LDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMD
+U1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2
+MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC
+00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQw
+MDI1XX0=
 -->
