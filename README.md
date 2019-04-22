@@ -392,7 +392,7 @@ In the same shell that you used to run the prerequisites, run the following comm
 #### Create a repository in ECR 
 Create a repository in ECR for storing the Tom-Thumb container image
 
-    $ source ./create-tom-thumb-repository.sh
+    $ source ./create-bean-counter-repository.sh
 
 If the repository already exists, you will get an error message. This is expected. Make sure that the variable ECR_REPO_URI is set
 
@@ -405,11 +405,11 @@ Build Docker image and push to ECR repository
 
 Ensure the latest image was pushed to the ECR Repository.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MDEzNTcyNCwyMzY0NjI5NDAsLTU3Nz
-I0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEz
-MTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNS
-wtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0
-MDU2NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NTkwMjUxMSwtMj
-EwOTA1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1
-OTMyXX0=
+eyJoaXN0b3J5IjpbOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3Mj
+QzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMx
+MDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC
+05MjAwMzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQw
+NTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMT
+A5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5
+MzJdfQ==
 -->
