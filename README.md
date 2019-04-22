@@ -222,8 +222,13 @@ Verify that you are able to run awscli in your newly minted environment
 
 #####  Create AWS roles for Fargate
 Create AWS roles ecsTaskExecutionRole and taskRole in IAM for Fargate to access other AWS services on your behalf
-$ source ./create-roles.sh
-Ensure the role was created by 
+
+    $ source ./create-roles.sh
+
+Ensure the role was created by verifying the TASK_ROLE_ARN was set
+
+    $ echo $TASK_ROLE_ARN
+
 #####  Create VPC, Subnets and Security groups for running Fargate
 $ source ./create-vpc-subnets.sh
 
@@ -236,7 +241,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjA3MTI3OTYsMTQ1MDU2NjYwNywtND
+eyJoaXN0b3J5IjpbLTE5NzYyMjc5NjQsMTQ1MDU2NjYwNywtND
 U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
 MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OC
 w1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4
