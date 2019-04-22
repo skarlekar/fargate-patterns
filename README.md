@@ -166,17 +166,19 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 ### Problem
 Services require orthogonal technical capabilities, such as monitoring, logging, configuration, and networking services. While the components encapsulating these orthogonal capabilities can be integrated into the main service, it will leave the main service exposed to the vagaries of these components. For instance,  they will not be well isolated, and an outage in one of these components can affect other components or the entire servive. Also, they usually need to be implemented using the same language as the parent service. As a result, the component and the main service have close interdependence on each other.
 
-One option is to deploy these orthogonal components as separate services allowing each component to have its own life-cycle and be built using different languages. While this gives more flexibility, it means that each component has its own dependencies and requires language-specific libraries to access the underlying platform and any resources shared with the parent service. In addition, deploying these features as separate services can add latency to the application. Managing the code and dependencies for these language-specific interfaces can also add considerable complexity, especially for hosting, deployment, and management.### Solution
+One option is to deploy these orthogonal components as separate services allowing each component to have its own life-cycle and be built using different languages. While this gives more flexibility, deploying these features as separate services can add latency to the application. 
+
+### Solution
 
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 ## Code Examples
 The followig code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNDEwMzcwMSwtMTc4MzE2NjExNiwtMT
-A1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2
-MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMj
-QsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1
-NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0OD
-IwLDEzMjczODU1MiwxNTA5NTMwNTcwLDMxOTY3NTk0NCwtODM5
-OTE0MjA0XX0=
+eyJoaXN0b3J5IjpbNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMD
+UzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYx
+NjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNC
+wtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMTU1MDUsMTU2
+NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2NDc0MDQ4Mj
+AsMTMyNzM4NTUyLDE1MDk1MzA1NzAsMzE5Njc1OTQ0LC04Mzk5
+MTQyMDRdfQ==
 -->
