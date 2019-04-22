@@ -165,9 +165,10 @@ Following is a possible solution to use a Fargate Service fronted by an Applicat
 ## Sidecar Assembly
 To do
 
-## Code Ex
+## Code Examples
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODA5NTU0OTIsMTkzNDA5OTY1NiwtMT
+eyJoaXN0b3J5IjpbLTE5ODg2MzEzNzIsMTkzNDA5OTY1NiwtMT
 I0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgw
 MjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MD
 AsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2Njky
