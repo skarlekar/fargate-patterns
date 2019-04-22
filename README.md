@@ -324,16 +324,18 @@ Notice that there is a section for overrides. You can make changes to this file 
 #### Manually run the task
 Verify the task runs and generates the thumbnail as desired.
 $ ./run-tom-thumb-task.sh
-Go to the tom-thumb-cluster and verify that the 
+Go to the tom-thumb-cluster and verify that the task is running and the thumbnail was generated.
+
+@TO DO paste the manual verification image here.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OT
-QwMDI1LDcxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1
-NTYwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1Nz
-IxNjA4LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDks
-LTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMz
-Y5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0
-ODgzXX0=
+eyJoaXN0b3J5IjpbLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4Nz
+QwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0y
+MTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2Mz
+U5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEw
+LDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMj
+I5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMx
+MjZdfQ==
 -->
