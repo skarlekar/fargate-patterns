@@ -273,7 +273,7 @@ Build Docker image and push to ECR repository
 
 Ensure the latest image was pushed to the ECR Repository.
 
-@TO DO paste image 
+![ECR Repository](https://github.com/skarlekar/fargate-patterns/blob/master/images/ecr-repository-tom-thumb.png) 
 
 #### Create the Log Group
 Create the bean-counter log group
@@ -378,7 +378,7 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMzQ4MjY5OSwtNTc3MjQzNzg5LC04NT
+eyJoaXN0b3J5IjpbLTE4MjU4ODY1MSwtNTc3MjQzNzg5LC04NT
 MwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0
 MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxOD
 gsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5
