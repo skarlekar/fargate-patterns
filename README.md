@@ -196,6 +196,8 @@ All the examples require a few prerequisites to be performed. These range from c
 > generated in one script to subsequent ones.
 
 ### Setup Instructions 
+#### AWS IAM setup for executing the AWS CLI commands
+To be able to run the aws cli commands in 
 
 #### Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment.
@@ -229,11 +231,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NTQxNDMxMCw5MTIzNTY1MDksLTE4NT
-k1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5MzE4
-MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0ODgzLD
-IwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUz
-MDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNj
-U4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwt
-MTE3Mjc5ODgyOV19
+eyJoaXN0b3J5IjpbLTgzNjYyMzc5MywtNDU1NDE0MzEwLDkxMj
+M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
+MzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLT
+IwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMx
+NjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NT
+Q5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwx
+MzkxMjE1MjI0XX0=
 -->
