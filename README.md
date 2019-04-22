@@ -180,7 +180,9 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ## Code Examples
 The following code examples demonstrates these behavioral patterns.
 
-### Pre-requi
+### Pre-requisites
+
+Both the example requires a few prerequisites to be performed. These range from creating appropriate roles in IAM for 
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -190,7 +192,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Mzk4MzQxMiwtMjA0MzA5NDg4MywyMD
+eyJoaXN0b3J5IjpbMTU1MzkzNjYwMiwtMjA0MzA5NDg4MywyMD
 U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
 MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
 UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
