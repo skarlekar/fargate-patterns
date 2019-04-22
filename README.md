@@ -345,8 +345,11 @@ Create the policies and roles required for the lambda to invoke the Fargate task
 
 This will create a new role called my-run-task-lambda-role. Verify that the role is created through the IAM section of the AWS console.
 
+#### Create a Log Group for Lambda
+Create the log group required for the lambda to post logs to CloudWatch
+$ ./create-task-runner-log-group.sh
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDk1MTMxMywtOTIwMDM3MTg4LC00Nz
+eyJoaXN0b3J5IjpbLTg0MjE3ODI1MCwtOTIwMDM3MTg4LC00Nz
 c2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1
 LDcxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwOD
 M0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4
