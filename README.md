@@ -291,13 +291,15 @@ This will create an ECS cluster called tom-thumb-cluster.
 @TO DO paste image here
 
 #### Generate the Task Definition
-Generate bean counter task definition from the template
+Generate bean counter task definition from the template by passing an URL for a sample video and the duration in the video where you want the frame captured for the thumbnail.
+$ ./generate-tom-thumb-task-definition.sh https://s3.amazonaws.com/your-bucket-name/raw/samplevideo.mp4 10
+This will create a temp directory in your 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xND
-Q3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2
-NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLD
-kxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1
-NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0OT
-YyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwx
-OTM0MDk5NjU2XX0=
+eyJoaXN0b3J5IjpbLTEyMDQxNTQ1MjYsLTIxMDkwNTAxNDgsNT
+U2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcy
+MTYwOCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC
+0xODU5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2
+OTMxODIxMywxNDM1NjI0NzU4LDU5MjAzMzEyNiwtMjA0MzA5ND
+g4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwt
+MTA1MzA1MDk1OF19
 -->
