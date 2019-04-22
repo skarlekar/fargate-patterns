@@ -188,7 +188,10 @@ All these examples uses AWS CLI to invoke various AWS services. To avoid the idi
 
 As you run the various shell scripts indicated in the instructions, pay close attention to scripts requiring you to *source* shell scripts. This is done to carry over the environment variables generated in one script to subsequent ones. 
 
-#### Instructions 
+#### Setup Instructions 
+
+
+    $ conda create -n chehara python=2
 
  
 
@@ -200,11 +203,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNjUyNzQwNSwtMjA0MzA5NDg4MywyMD
-U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
-MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
-UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
-NzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMz
-YwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEz
-MjczODU1Ml19
+eyJoaXN0b3J5IjpbLTE2NzA3NDE5NDUsLTIwNDMwOTQ4ODMsMj
+A1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMw
+NTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NT
+g1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0x
+MTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MD
+M2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwx
+MzI3Mzg1NTJdfQ==
 -->
