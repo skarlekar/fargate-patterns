@@ -48,6 +48,8 @@ If you are used to traditional container management, you will really appreciate 
 
 ## Components of AWS Fargate
 
+
+
 ### Task 
 A *Task* is the blue print for your application running on Fargate. You use *Task Definition* to configure your tasks on Fargate and each time you launch a task in Amazon ECS.
 
@@ -171,16 +173,18 @@ One option is to deploy these orthogonal components as separate services allowin
 ### Solution
 Co-deploy the orthogonal components along with the main service by placing them in their own containers. Containers in a task are co-deployed together in the same host thereby not affecting the latency of the service signficantly for the communication between them. As a result of this co-deployment, the sidecar and the main service can access the same resources. This allows the sidecar to monitor system resources used by both the sidecar and the primary service.
 
+![enter image description here](https://github.com/skarlekar/fargate-patterns/blob/master/images/side-car-assembly.png)
+
 This pattern can also enable applications to be composed of heterogeneous components and services that has expanded capabilities beyond what is provided by these individual services. In essence, to reinforce that the whole is greater than the sum of its parts. The sidecar also shares the same lifecycle as the parent application, being created and retired alongside the parent.
 
 ## Code Examples
 The following code examples demonstrates these behavioral patterns
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3OD
-MxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1
-NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMS
-wxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4
-NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4Ny
-wtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUwOTUzMDU3MCwzMTk2
-NzU5NDRdfQ==
+eyJoaXN0b3J5IjpbLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OT
+c4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5
+OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMT
+QsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00
+OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNT
+A3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwxMzI3Mzg1NTIsMTUw
+OTUzMDU3MF19
 -->
