@@ -215,8 +215,9 @@ Verify that you are able to run awscli in your newly minted environment
     $ aws --version
     aws-cli/1.16.144 Python/2.7.10 Darwin/18.5.0 botocore/1.12.134
 
-##### # Create AWS roles ecsTaskExecutionRole and taskRole in IAM
-$ source ./create-roles.sh
+#####  Create AWS roles ecsTaskExecutionRole and taskRole in IAM
+
+    $ source ./create-roles.sh
 
 
 ### Tom Thumb - A video thumb-nail generator
@@ -227,7 +228,7 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzcwMjU3NjMsLTEzNjkzMTgyMTMsMT
+eyJoaXN0b3J5IjpbLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMT
 QzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1
 NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NT
 gsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04
