@@ -444,14 +444,14 @@ $ ./create-bean-counter-service.sh
 
 Verify that the service has been created and two tasks are being provisioned for the service.
 
-@TO DO paste images here
-
+![@TO DO paste images here](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-1.png)
+![Bean-counter ](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjkzMDA5NTUsMTE5MDI4Nzk3OSwxNz
-c2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1
-ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMT
-c4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDcz
-NDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0Nz
-I3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTcz
-ODQ1M119
+eyJoaXN0b3J5IjpbNzIxODQyOTksMTE5MDI4Nzk3OSwxNzc2Mj
+QxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYs
+MjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4Mz
+QzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIz
+ODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LD
+E3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1
+M119
 -->
