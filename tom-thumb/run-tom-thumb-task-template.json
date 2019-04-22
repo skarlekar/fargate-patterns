@@ -1,0 +1,50 @@
+{
+    "cluster": "tom-thumb-cluster",
+    "taskDefinition": "tom-thumb-task",
+    "overrides": {
+        "containerOverrides": [
+            { 	
+		"name": "tom-thumb-container",
+		"environment": [
+                    {
+                        "name": "AWS_REGION",
+                        "value": "AWS_REGION"
+                    },
+                    {
+                        "name": "INPUT_VIDEO_FILE_URL",
+                        "value": "INPUT_VIDEO_FILE_URL"
+                    },
+                    {
+                        "name": "OUTPUT_S3_PATH",
+                        "value": "OUTPUT_S3_PATH"
+                    },
+                    {
+                        "name": "OUTPUT_THUMBS_FILE_NAME",
+                        "value": "OUTPUT_THUMBS_FILE_NAME"
+                    },
+                    {
+                        "name": "POSITION_TIME_DURATION",
+                        "value": "POSITION_TIME_DURATION"
+                    }
+                ]
+            }
+        ],
+        "taskRoleArn": "MY_TASK_ROLE_ARN",
+        "executionRoleArn": "MY_EXECUTION_ROLE_ARN"
+    },
+    "count": 1,
+    "launchType": "FARGATE",
+    "platformVersion": "LATEST",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "SUBNET1",
+                "SUBNET2"
+            ],
+            "securityGroups": [
+                "SECURITYGROUP"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}

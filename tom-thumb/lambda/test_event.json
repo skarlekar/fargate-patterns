@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2019-04-20T01:24:18.795Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "A1SB8BH9HWVKGZ"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "70.106.242.187"
+            },
+            "responseElements": {
+                "x-amz-request-id": "48385656785C23C4",
+                "x-amz-id-2": "fhdkrhlmiY/YxyEgIkTVc9TPChCl+Fw4n0XOXvxQ9aEU3tukSu3uWEl8EOLOglKZMMTIc0cFix8="
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "be71b0f9-4714-4635-81a1-61e205a2fa65",
+                "bucket": {
+                    "name": "skarlekar-ffmpeg",
+                    "ownerIdentity": {
+                        "principalId": "A1SB8BH9HWVKGZ"
+                    },
+                    "arn": "arn:aws:s3:::skarlekar-ffmpeg"
+                },
+                "object": {
+                    "key": "video/star_trails.mpeg",
+                    "size": 3610624,
+                    "eTag": "03291d89798401078b8ef977608259bb",
+                    "sequencer": "005CBA74BD9587AF5D"
+                }
+            }
+        }
+    ]
+}
