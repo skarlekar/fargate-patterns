@@ -180,7 +180,7 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ---
 
 
-## Setup Instructions 
+## Instructions for Running the Examples
 ### Prerequisites 
 All the examples require a few prerequisites to be performed. These range from creating appropriate roles in IAM for the Lambda and Fargate to invoke AWS services. For instance, the Lambda to invoke the Fargate task, the Fargate task to read files from the S3 bucket and write back responses to it. Additionally, the S3 bucket must be prepped to notify the Lambda function.
 
@@ -331,11 +331,11 @@ Go to the tom-thumb-cluster and verify that the task is running and the thumbnai
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4Nz
-QwNTY3OSwyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0y
-MTA5MDUwMTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2Mz
-U5MzIsLTEzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEw
-LDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMj
-I5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMx
-MjZdfQ==
+eyJoaXN0b3J5IjpbLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MD
+E0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2
+NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3Nj
+AyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3
+LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xODU5NTYxNDkxLDkxMj
+M1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMxODIxMywxNDM1NjI0
+NzU4XX0=
 -->
