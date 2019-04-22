@@ -197,8 +197,8 @@ All the examples require a few prerequisites to be performed. These range from c
 
 ### Setup Instructions 
 #### AWS IAM setup for executing the AWS CLI commands
-To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below.
-- 
+To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
+- A
 
 
 #### Environment setup
@@ -233,11 +233,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjE0MDk4NywtNDU1NDE0MzEwLDkxMj
-M1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYz
-MzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLT
-IwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMx
-NjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NT
-Q5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwx
-MzkxMjE1MjI0XX0=
+eyJoaXN0b3J5IjpbLTEyNTY3MzY1ODAsLTQ1NTQxNDMxMCw5MT
+IzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2
+MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNTkyMDMzMTI2LC
+0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgz
+MTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNT
+U0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEs
+MTM5MTIxNTIyNF19
 -->
