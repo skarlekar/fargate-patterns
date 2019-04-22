@@ -202,7 +202,9 @@ Clone the Git repository to your development environment
 
     $ git clone https://github.com/skarlekar/fargate-patterns.git
 
- Run the prereqs-ubuntu.sh 
+ Run the *prereqs-ubuntu.sh* script to install Docker, Python, pip and other development enablers in your environment.
+
+$ cd 
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -212,11 +214,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjAyMzcyMCwtMjA0MzA5NDg4MywyMD
-U3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjExNiwtMTA1MzA1
-MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLDIwMjI2MTY1OD
-UsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEyMTUyMjQsLTEx
-NzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NTA1LDE1NjYwMz
-YwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3NDA0ODIwLDEz
-MjczODU1Ml19
+eyJoaXN0b3J5IjpbLTIwMzY4MDc5NDQsLTIwNDMwOTQ4ODMsMj
+A1NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMw
+NTA5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NT
+g1LC04MTk2OTUzMTQsMTU3NDgwMjQyMSwxMzkxMjE1MjI0LC0x
+MTcyNzk4ODI5LC00OTc0Mzg1MDAsLTk4NjMxNTUwNSwxNTY2MD
+M2MDg0LDcxMDUyNTA3LDQ2NjkyOTM4NywtMTY0NzQwNDgyMCwx
+MzI3Mzg1NTJdfQ==
 -->
