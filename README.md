@@ -235,10 +235,7 @@ Ensure the role was created by verifying the TASK_ROLE_ARN variable was set
 
 Ensure the role was created by verifying the VPC, SUBNET1, SUBNET2 and SECURITYGROUP variables was set.
 
-    $ echo $VPC
-    $ echo $SUBNET1
-    $ echo $SUBNET2
-    $ echo SECURITYGROUP
+    $ echo echo $VPC, $SUBNET1, $SUBNET2, $SECURITYGROUP
 
 ### Tom Thumb - A video thumb-nail generator
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
@@ -248,11 +245,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTUyNzIwLDE0NTA1NjY2MDcsLTQ1NT
-QxNDMxMCw5MTIzNTY1MDksLTE4NTk1NjE0OTEsOTEyMzU2NTA5
-LC0xMjIyOTc2MzM0LC0xMzY5MzE4MjEzLDE0MzU2MjQ3NTgsNT
-kyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2
-MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NT
-YsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1
-NzQ4MDI0MjFdfQ==
+eyJoaXN0b3J5IjpbLTEzOTQyMzUwMjYsMTQ1MDU2NjYwNywtND
+U1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2MTQ5MSw5MTIzNTY1
+MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMTMsMTQzNTYyNDc1OC
+w1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4
+ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OT
+Y1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQs
+MTU3NDgwMjQyMV19
 -->
