@@ -195,13 +195,13 @@ All the examples require a few prerequisites to be performed. These range from c
 > scripts. This is done to carry over the environment variables
 > generated in one script to subsequent ones.
 
-## Setup Instructions 
-### AWS IAM setup for executing the AWS CLI commands
+### Setup Instructions 
+#### AWS IAM setup for executing the AWS CLI commands
 To be able to run the aws cli commands in the following exercises, create a group in IAM with the following permissions as shown below and assign it to the user you will using to work on this exercise.
 
 
 
-### Environment setup
+#### Environment setup
 Start a brand new EC2 instance running Ubuntu 16.04 LTS as your development environment.
 
 Clone the Git repository to your development environment
@@ -220,7 +220,7 @@ Verify that you are able to run awscli in your newly minted environment
     $ aws --version
     aws-cli/1.16.144 Python/2.7.10 Darwin/18.5.0 botocore/1.12.134
 
-####  Create AWS roles for Fargate
+#####  Create AWS roles for Fargate
 Create AWS roles ecsTaskExecutionRole and taskRole in IAM for Fargate to access other AWS services on your behalf
 
     $ source ./create-roles.sh
@@ -229,7 +229,7 @@ Ensure the role was created by verifying the TASK_ROLE_ARN variable was set
 
     $ echo $TASK_ROLE_ARN
 
-####  Create VPC, Subnets and Security Group
+#####  Create VPC, Subnets and Security Group
 Create VPC, Subnets and Security groups for running Fargate
 
     $ source ./create-vpc-subnets.sh
@@ -238,7 +238,7 @@ Ensure the role was created by verifying the VPC, SUBNET1, SUBNET2 and SECURITYG
 
     $ echo echo $VPC, $SUBNET1, $SUBNET2, $SECURITYGROUP
 
-#### Create an Application Load Balancer
+##### Create an Application Load Balancer
 Create an application load balancer for the Bean-Counter service we will create later
 
     $ source ./create-alb.sh
@@ -257,11 +257,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDk4NTkwLC0xMzI1NzIxNjA4LDE0NT
-A1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLTE4NTk1NjE0
-OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5MzE4MjEzLD
-E0MzU2MjQ3NTgsNTkyMDMzMTI2LC0yMDQzMDk0ODgzLDIwNTcx
-NTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUwOT
-U4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NSwt
-ODE5Njk1MzE0XX0=
+eyJoaXN0b3J5IjpbLTIxMTgwNTYwNjAsLTEzMjU3MjE2MDgsMT
+Q1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1NjUwOSwtMTg1OTU2
+MTQ5MSw5MTIzNTY1MDksLTEyMjI5NzYzMzQsLTEzNjkzMTgyMT
+MsMTQzNTYyNDc1OCw1OTIwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1
+NzE1NDk2Miw0OTc4ODYzMzAsLTE3ODMxNjYxMTYsLTEwNTMwNT
+A5NTgsMTkzNDA5OTY1NiwtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1
+LC04MTk2OTUzMTRdfQ==
 -->
