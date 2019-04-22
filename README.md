@@ -374,15 +374,16 @@ Note: An update to the function does not update the environment variables.
 
 - In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event to trigger the ***task-runner*** lambda that was created earlier when a file is dropped into a particular folder in your S3 bucket.
 
-@TODO paste two s3-notification-setting images here
+![S3 Notification Setting 1](https://github.com/skarlekar/fargate-patterns/blob/master/images/s3-notification-setting-1.png)
 
+![S3 Notification Setting 2](https://github.com/skarlekar/fargate-patterns/blob/master/images/s3-notification-setting-2.png)
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzcwOTAxMiwtNTc3MjQzNzg5LC04NT
-MwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0
-MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxOD
-gsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OSwyNzU5
-NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUwMTQ4LD
-U1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLTEzMjU3
-MjE2MDhdfQ==
+eyJoaXN0b3J5IjpbMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1Mz
+A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
+NjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OC
+wtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0
+MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNT
+U2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcy
+MTYwOF19
 -->
