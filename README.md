@@ -203,14 +203,17 @@ Clone the Git repository to your development environment
 
     $ git clone https://github.com/skarlekar/fargate-patterns.git
 
- Run the *prereqs-ubuntu.sh* script to install Docker, Python, pip and other development enablers in your environment.
+ Run the *prereqs-ubuntu.sh* script to install Docker, Python, pip, aws cli and other development enablers in your environment.
 
     $ cd fargate-patterns/pre-requisities
     $ prereqs-ubuntu.sh
 
 Log out of your shell and log back for the newly installed programs to take effect.
 
-Verify that you are able to run awscli in y
+Verify that you are able to run awscli in your newly minted environment
+
+$ aws
+
 
 
 ### Tom Thumb - A video thumb-nail generator
@@ -221,11 +224,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjMzNjYxMCwxNDM1NjI0NzU4LDU5Mj
-AzMzEyNiwtMjA0MzA5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMz
-MCwtMTc4MzE2NjExNiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC
-0xMjQwMjU1NDkyLDIwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0
-ODAyNDIxLDEzOTEyMTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzOD
-UwMCwtOTg2MzE1NTA1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2
-OTI5Mzg3XX0=
+eyJoaXN0b3J5IjpbLTEzNjkzMTgyMTMsMTQzNTYyNDc1OCw1OT
+IwMzMxMjYsLTIwNDMwOTQ4ODMsMjA1NzE1NDk2Miw0OTc4ODYz
+MzAsLTE3ODMxNjYxMTYsLTEwNTMwNTA5NTgsMTkzNDA5OTY1Ni
+wtMTI0MDI1NTQ5MiwyMDIyNjE2NTg1LC04MTk2OTUzMTQsMTU3
+NDgwMjQyMSwxMzkxMjE1MjI0LC0xMTcyNzk4ODI5LC00OTc0Mz
+g1MDAsLTk4NjMxNTUwNSwxNTY2MDM2MDg0LDcxMDUyNTA3LDQ2
+NjkyOTM4N119
 -->
