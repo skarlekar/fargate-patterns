@@ -340,13 +340,17 @@ $ EXPORT S3_BUCKET_ARN=arn:aws:s3:::your-bucket-name
 #### Create Lambda 
 Create the policies and roles required for the lambda to invoke the Fargate task. 
 
+    $ source ./create-lambda-role.sh
+    $ echo $LAMBDA_ROLE_ARN
+
 This will create a new role called my-run-task-lambda-role. Verify that the role is created through the IAM section of the AWS console.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDQ5MTE3MjQsLTkyMDAzNzE4OCwtND
-c3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAy
-NSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MD
-gzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYw
-OCwxNDUwNTY2NjA3LC00NTU0MTQzMTAsOTEyMzU2NTA5LC0xOD
-U5NTYxNDkxLDkxMjM1NjUwOSwtMTIyMjk3NjMzNCwtMTM2OTMx
-ODIxM119
+eyJoaXN0b3J5IjpbMTc4NDk1MTMxMywtOTIwMDM3MTg4LC00Nz
+c2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0MDU2NzksMjc1OTQwMDI1
+LDcxNzM4NDUzLDY1NTkwMjUxMSwtMjEwOTA1MDE0OCw1NTYwOD
+M0MTgsLTE0NDc2MDIwMywxMzQ2NjM1OTMyLC0xMzI1NzIxNjA4
+LDE0NTA1NjY2MDcsLTQ1NTQxNDMxMCw5MTIzNTY1MDksLTE4NT
+k1NjE0OTEsOTEyMzU2NTA5LC0xMjIyOTc2MzM0LC0xMzY5MzE4
+MjEzXX0=
 -->
