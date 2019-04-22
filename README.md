@@ -248,7 +248,7 @@ Do not close the terminal or the shell. You will need the environment variables 
 ## Examples
 The following code examples demonstrates these behavioral patterns.
 
-### Tom Thumb - A video thumb-nail generator
+### Tom Thumb - A Video Thumb-nail Generator Task
 Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
 In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
@@ -381,7 +381,7 @@ Note: An update to the function does not update the environment variables.
 
 ---
 ### Bean-Counter - A Coin Counter Service
-Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
+Bean Counter is a coin counter service. It will analyze an image of coins and return the total value of the coins in the image. It assumes that there is a  It is implemented following the ***Container-on-Demand*** pattern.
 
 In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
 
@@ -405,7 +405,7 @@ Build Docker image and push to ECR repository
 
 Ensure the latest image was pushed to the ECR Repository.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODYzMjY1MiwyMzY0NjI5NDAsLTU3Nz
+eyJoaXN0b3J5IjpbLTI1MjY2MDcyMSwyMzY0NjI5NDAsLTU3Nz
 I0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEz
 MTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNS
 wtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0
