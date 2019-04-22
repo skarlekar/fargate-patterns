@@ -180,10 +180,11 @@ This pattern can also enable applications to be composed of heterogeneous compon
 ## Code Examples
 The following code examples demonstrates these behavioral patterns.
 
-### Tom Thumb - A Vide
+### Tom Thumb - A video thumb-nail generator
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY1MTA0NDY5LC0yMDQzMDk0ODgzLDIwNT
+eyJoaXN0b3J5IjpbMzUyMTcwODk4LC0yMDQzMDk0ODgzLDIwNT
 cxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2MTE2LC0xMDUzMDUw
 OTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OTIsMjAyMjYxNjU4NS
 wtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5MTIxNTIyNCwtMTE3
