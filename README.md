@@ -378,12 +378,38 @@ Note: An update to the function does not update the environment variables.
 
 ![S3 Notification Setting 2](https://github.com/skarlekar/fargate-patterns/blob/master/images/s3-notification-setting-2.png)
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
+
+---
+### Bean-Counter - A Coin Counter Service
+Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
+
+In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
+
+### Setup Instructions
+
+In the same shell that you used to run the prerequisites, run the following commands.
+
+#### Create a repository in ECR 
+Create a repository in ECR for storing the Tom-Thumb container image
+
+    $ source ./create-tom-thumb-repository.sh
+
+If the repository already exists, you will get an error message. This is expected. Make sure that the variable ECR_REPO_URI is set
+
+    $ echo $ECR_REPO_URI
+
+#### Build the Docker Image
+Build Docker image and push to ECR repository
+
+    $ ./push-to-ecr.sh
+
+Ensure the latest image was pushed to the ECR Repository.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1Mz
-A1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQw
-NjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OC
-wtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0
-MDAyNSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNT
-U2MDgzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcy
-MTYwOF19
+eyJoaXN0b3J5IjpbLTgxODYzMjY1MiwyMzY0NjI5NDAsLTU3Nz
+I0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEz
+MTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNS
+wtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcwMTQ0MDE3Myw2ODc0
+MDU2NzksMjc1OTQwMDI1LDcxNzM4NDUzLDY1NTkwMjUxMSwtMj
+EwOTA1MDE0OCw1NTYwODM0MTgsLTE0NDc2MDIwMywxMzQ2NjM1
+OTMyXX0=
 -->
