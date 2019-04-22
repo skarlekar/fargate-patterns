@@ -343,7 +343,7 @@ Create the policies and roles required for the lambda to invoke the Fargate task
     $ source ./create-lambda-role.sh
     $ echo $LAMBDA_ROLE_ARN
 
-This will create a new role called my-run-task-lambda-role. Verify that the role is created through the IAM section of the AWS console.
+This will create a new role called *my-run-task-lambda-role*. Verify that the role is created through the IAM section of the AWS console.
 
 #### Create a Log Group for Lambda
 Create the log group required for the lambda to post logs to CloudWatch
@@ -378,11 +378,11 @@ Note: An update to the function does not update the environment variables.
 
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLT
-IxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAw
-MzcxODgsLTQ3NzYyNDcyNywxNzAxNDQwMTczLDY4NzQwNTY3OS
-wyNzU5NDAwMjUsNzE3Mzg0NTMsNjU1OTAyNTExLC0yMTA5MDUw
-MTQ4LDU1NjA4MzQxOCwtMTQ0NzYwMjAzLDEzNDY2MzU5MzIsLT
-EzMjU3MjE2MDgsMTQ1MDU2NjYwNywtNDU1NDE0MzEwLDkxMjM1
-NjUwOV19
+eyJoaXN0b3J5IjpbLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMT
+QxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2
+NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNz
+MsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1Myw2NTU5MDI1
+MTEsLTIxMDkwNTAxNDgsNTU2MDgzNDE4LC0xNDQ3NjAyMDMsMT
+M0NjYzNTkzMiwtMTMyNTcyMTYwOCwxNDUwNTY2NjA3LC00NTU0
+MTQzMTBdfQ==
 -->
