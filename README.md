@@ -88,7 +88,7 @@ As Fargate is serverless, scaling is taken care by the provider seamlessly. As a
 While AWS is rolling out Fargate to as many regions as they can, it is not as available as Lambdas, ECS or EKS. As of April 2019, Fargate is not available in GovCloud, Sao Paulo, Paris, Stockholm, Japan and China.
 
 ## Behavioral Design Patterns for AWS Fargate
-Behavioral patterns provide solution for the better interaction between components and foster lose coupling while providing the flexibility to extend these components easily independent of ea.
+Behavioral patterns provide solution for the better interaction between components and foster lose coupling while providing the flexibility to extend these components easily independent of each other.
 
 In this section, we will explore three behavioral design patterns for AWS Fargate viz., the ***Container-on-Demand***, ***Scaling-Container*** and ***Sidecar-Assembly*** patterns that allows Fargate to be used just like Lambdas for heavy on-demand tasks where Lambda is not suitable, or just run containers traditionally but without having to manage infrastructure. Additionally, we will explore how to attach sidecar containers to a parent container to provide supporting features for the application. 
 
@@ -220,11 +220,11 @@ In a typical usage, an user uploads a video file to a S3 bucket. A trigger is se
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ0NzA3MzQsNTkyMDMzMTI2LC0yMD
-QzMDk0ODgzLDIwNTcxNTQ5NjIsNDk3ODg2MzMwLC0xNzgzMTY2
-MTE2LC0xMDUzMDUwOTU4LDE5MzQwOTk2NTYsLTEyNDAyNTU0OT
-IsMjAyMjYxNjU4NSwtODE5Njk1MzE0LDE1NzQ4MDI0MjEsMTM5
-MTIxNTIyNCwtMTE3Mjc5ODgyOSwtNDk3NDM4NTAwLC05ODYzMT
-U1MDUsMTU2NjAzNjA4NCw3MTA1MjUwNyw0NjY5MjkzODcsLTE2
-NDc0MDQ4MjBdfQ==
+eyJoaXN0b3J5IjpbMTI4NDM4NzE3LDU5MjAzMzEyNiwtMjA0Mz
+A5NDg4MywyMDU3MTU0OTYyLDQ5Nzg4NjMzMCwtMTc4MzE2NjEx
+NiwtMTA1MzA1MDk1OCwxOTM0MDk5NjU2LC0xMjQwMjU1NDkyLD
+IwMjI2MTY1ODUsLTgxOTY5NTMxNCwxNTc0ODAyNDIxLDEzOTEy
+MTUyMjQsLTExNzI3OTg4MjksLTQ5NzQzODUwMCwtOTg2MzE1NT
+A1LDE1NjYwMzYwODQsNzEwNTI1MDcsNDY2OTI5Mzg3LC0xNjQ3
+NDA0ODIwXX0=
 -->
