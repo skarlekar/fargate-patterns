@@ -335,10 +335,13 @@ Create a Lambda to automatically trigger the Fargate Task when a video file land
 
 #### Set the S3 bucket ARN
 Identify a bucket that will notify the lambda when a video file is uploaded. Note down its ARN and set the S3_BUCKET_ARN variable.
-$ EXPORT S3_BUCKET_ARN=
+$ EXPORT S3_BUCKET_ARN=arn:aws:s3:::your-bucket-name
+
+#### Create Lambda 
+# Create the policies and roles required for the lambda to invoke the Fargate task
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM3NjIxNzcsLTkyMDAzNzE4OCwtND
+eyJoaXN0b3J5IjpbLTE3OTQ1NTA3ODEsLTkyMDAzNzE4OCwtND
 c3NjI0NzI3LDE3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAy
 NSw3MTczODQ1Myw2NTU5MDI1MTEsLTIxMDkwNTAxNDgsNTU2MD
 gzNDE4LC0xNDQ3NjAyMDMsMTM0NjYzNTkzMiwtMTMyNTcyMTYw
