@@ -482,7 +482,7 @@ On the other hand, if you need greater control of the network resources or have 
 ### Scenarios where Fargate is most Beneficial
 Fargate can be used with any type of containerized application. However, this doesn’t mean that you will get the same benefit in every scenario. Fargate would be most beneficial for projects that need to reduce the time from ideation to realization such as proof-of-concepts and well-designed, decoupled, micro service based architectures deployed in production environments.
 
-Applications can consist of a mix of Fargate & Lambda to exploit the Serverless model.
+**Applications can consist of a mix of Fargate & Lambda to exploit the Serverless model.**
 
 Use Lambdas for small & tight services with low memory (<3GB) and small request-response cycles (<15 mins).
 
@@ -490,11 +490,10 @@ Use containers deployed on Fargate for:
 - Existing legacy services that cannot be trivially refactored, 
 - Applications written in languages not supported by Lambda,
 - Need to use large libraries that cannot fit into a Lambda profile (Quantlib, Scikit etc),
-- Where you need more control over networkion compute horsepower/process or memory/process
-
-use cases that requires a long in-process runtimes.
+- Where you need more control over networking, compute horsepower or memory
+- Use cases that requires a long in-process runtimes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTE0OTE3MywxNDg0MjM0NTEzLDEyNT
+eyJoaXN0b3J5IjpbMjA2MDYzMTA3MCwxNDg0MjM0NTEzLDEyNT
 A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
 MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
 g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
