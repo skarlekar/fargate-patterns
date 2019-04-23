@@ -75,12 +75,11 @@
 
 ## Compendium and Code Examples of AWS Fargate Patterns.
 
-This is a companion project for my blog post on Fargate Patterns.
+This is a companion project for my blog post on [Fargate Patterns](http://bit.ly/fargate-patterns-blog).
 
-You can find the code examples, prerequisites and installation instructions here.
+You can find the code examples, prerequisites and installation instructions for the blog post here.
 
 ---
-
 
 ## Instructions for Running the Examples
 ### Prerequisites 
@@ -401,11 +400,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if you are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjYxNDA2NywtMTI0Njg5Mjk3OSwtMj
-A3OTczNDQ0NywtMTgzNzM2NDE3NSwzODM0OTc3NDcsODkwNDI3
-MTc3LC03ODk4NDcyNDgsMTQ4NDIzNDUxMywxMjUwNzAyNDQyLC
-0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOTAy
-ODc5NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3Nj
-EsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMw
-NTUxNjhdfQ==
+eyJoaXN0b3J5IjpbLTE1NjM2MjY3MjgsLTEyNDY4OTI5NzksLT
+IwNzk3MzQ0NDcsLTE4MzczNjQxNzUsMzgzNDk3NzQ3LDg5MDQy
+NzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0Mi
+wtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMTkw
+Mjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2Nz
+YxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUz
+MDU1MTY4XX0=
 -->
