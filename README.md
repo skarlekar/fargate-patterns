@@ -293,8 +293,8 @@ Do not close the terminal or the shell. You will need the environment variables 
 ## Examples
 The following code examples demonstrates these behavioral patterns.
 
-### Tom Thumb - A Video Thumb-nail Generator Task
-Tom Thumb is a video thumb-nail generator task. It is implemented following the ***Container-on-Demand*** pattern.
+### Tom Thumb - A Video Thumbnail Generator Task
+Tom Thumb is a video thumbnail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
 In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
 
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwNDI3MTc3LC03ODk4NDcyNDgsMTQ4ND
-IzNDUxMywxMjUwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3
-MjQ3LDk5MDQ5NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMT
-cxODUxMDQzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0
-MCwtNTc3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLT
-E0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3
-NjQ1NDA1XX0=
+eyJoaXN0b3J5IjpbMzgzNDk3NzQ3LDg5MDQyNzE3NywtNzg5OD
+Q3MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0MiwtMTUzNDI1ODYz
+NSwtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMTkwMjg3OTc5LDE3Nz
+YyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4
+NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNz
+gzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0
+MjM4NDZdfQ==
 -->
