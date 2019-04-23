@@ -474,8 +474,10 @@ Following is the output of running Apache Bench:
 In the following picture you can see that Fargate has scaled-out as a result of the load.
 ![Fargate caught in action](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
 
+## Conclusion
+Each a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTAzMjAyOCwxMjUwNzAyNDQyLC0xNT
+eyJoaXN0b3J5IjpbMTM4NDE4NTkxMSwxMjUwNzAyNDQyLC0xNT
 M0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOTAyODc5
 NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3NjEsOT
 k2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUx
