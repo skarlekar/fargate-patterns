@@ -1,73 +1,11 @@
-# tom-thumb
-To demonstrate invoking a long-running Fargate task on demand using Lambda
+#  Tom Thumb - A Video Thumbnail Generator Task
 
-git clone https://github.com/skarlekar/tom-thumb.git
-cd bean-counter-service/pre-requisites/
+## To demonstrate invoking a long-running Fargate task on demand using Lambda
 
-# Start of Prerequisites
-./prereqs-ubuntu.sh
-aws configure set default.region us-east-1
-aws configure set default.output json
+Tom Thumb is a video thumbnail generator task. It is implemented following the ***Container-on-Demand*** pattern.
 
-# Create ecsTaskExecutionRole and taskRole in IAM and note down the ARNs
-source ./create-roles.sh
+In a typical usage, an user uploads a video file to a S3 bucket. A trigger is set on the S3 bucket to notify a Lambda function in the event of a file upload to the *video* folder in the bucket. The Lambda is deployed with a Python code to extract the name of the video file from the Lambda notification event and [invoke a Fargate task](https://github.com/skarlekar/tom-thumb/blob/85f5dc8527ed9c8b917119ee4f94cd61621e1b42/lambda/lambda-function.py#L29-L63). The Fargate task consists of one container that uses ffmpeg application to decode the video and freeze an image at a given position in the video. The frozen image is written to a pre-configured folder in a S3 bucket.
 
-# Create VPC, Subnets and Security groups for running Fargate
-source ./create-vpc-subnets.sh
-
-# Create the ALB
-source ./create-alb.sh
-
-# ------------------ End of prerequisites
-
-# Create the ECR Repository
-source ./create-tom-thumb-repository.sh
-
-# Build Docker image and push to ECR repository
-./push-to-ecr.sh
-
-# Create the bean counter log group
-./create-tom-thumb-log-group.sh
-
-# Create the bean counter cluster
-./create-tom-thumb-cluster.sh
-
-
-# Generate bean counter task definition from the template
-./generate-tom-thumb-task-definition.sh <videoFileUrl> <position-in-secs>
-
-# Register the bean counter task definition
-./register-tom-thumb-task.sh
-
-# Generate the run params for running the task
-./generate-run-tom-thumb-task.sh <videoFileUrl> <position-in-secs>
-
-# Run the task
-./run-tom-thumb-task.sh
-
-# Verify the results
-
-# Use a lambda to trigger the task
-cd lambda
-
-# Identify a bucket that will notify the lambda when a video file is uploaded. Note down its ARN and set the S3_BUCKET_ARN variable.
-EXPORT S3_BUCKET_ARN=arn:aws:s3:::your-bucket-name
-
-# Create the policies and roles required for the lambda to invoke the Fargate task
-source ./create-lambda-role.sh
-
-# Create the log group required for the lambda to post logs to CloudWatch
-./create-task-runner-log-group.sh
-
-# Package the python code that has the function that will be triggered when a video file is uploaded
-./package-lambda.sh
-
-# Create the lambda code from the zipped source code from the above step
-./create-lambda.sh
-
-# S3 setup
-# Create a folder called 'video', 'thumbnail' and 'raw' in the S3 bucket that will be used for this project.
-
-# In the Console go to the Advanced Settings in the Properties tab of the bucket and create a notification event when a file is dropped into a particular folder in your S3 bucket.
-
-# Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
+### Setup Instructions
+- Install the prerequisites as specified here: https://github.com/skarlekar/fargate-patterns#instructions-for-running-the-examples
+- Follow the instructions here to install the Tom Thumb task: https://github.com/skarlekar/fargate-patterns#tom-thumb---a-video-thumbnail-generator-task
