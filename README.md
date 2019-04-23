@@ -475,9 +475,9 @@ In the following picture you can see that Fargate has scaled-out as a result of 
 ![Fargate caught in action](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
 
 ## Conclusion
-Each application is unique and solving different needs based on the business requirements. If the task of infrastructure management is too onerous or not warranted, then Fargate may be
+Each application is unique and solving different needs based on the business requirements. If the task of infrastructure management is too onerous or not warranted, then Fargate may be the right choice for you. On the other hand, if you need greater control of the network resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM3NjQyMjM5LDEyNTA3MDI0NDIsLTE1Mz
+eyJoaXN0b3J5IjpbNjgzNTgwODAwLDEyNTA3MDI0NDIsLTE1Mz
 QyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2MjYsMTE5MDI4Nzk3
 OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OT
 Y5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2
