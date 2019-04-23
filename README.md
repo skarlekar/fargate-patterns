@@ -50,7 +50,7 @@
       - [Create a Log Group for Lambda](#create-a-log-group-for-lambda)
       - [Package the Lambda](#package-the-lambda)
       - [Deploy the Lambda](#deploy-the-lambda)
-    + [Testing Tom-Thumb](#testing-tom-thumb)
+      - [Testing Tom-Thumb](#testing-tom-thumb)
     + [Bean-Counter - A Coin Counter Service](#bean-counter---a-coin-counter-service)
     + [Setup Instructions](#setup-instructions-1)
       - [Create a repository in ECR](#create-a-repository-in-ecr-1)
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NjEyNjU4LDE0ODQyMzQ1MTMsMTI1MD
-cwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYy
-NiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsOD
-YyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4
-OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC
-0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNSwtOTIw
-MDM3MTg4XX0=
+eyJoaXN0b3J5IjpbLTc4OTg0NzI0OCwxNDg0MjM0NTEzLDEyNT
+A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
+MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
+g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
+ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMy
+wtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTky
+MDAzNzE4OF19
 -->
