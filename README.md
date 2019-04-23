@@ -144,7 +144,7 @@ We will use the ***Scaling-Container*** to build an auto-scaling service that fi
 
 Later we will explore the ***Sidecar-Assembly*** pattern to deploy components of an application into a separate containers to provide isolation and encapsulation. 
 
-## *Container-on-Demand* Pattern
+## Container-on-Demand Pattern
 ### Context & Problem
 AWS Lambda lets you run functions as a service. This allows you to build applications as a conglomeration of serverless microservices which react to events, eschewing development of core functionalities, easy deployment, automatic scaling and fault tolerance. But Lambda has  many [resource limitations](https://docs.aws.amazon.com/lambda/latest/dg/limits.html) and in general, it is not efficient for running long-running jobs. 
 
@@ -547,11 +547,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NjIxNTU4MSwtMTgzNzM2NDE3NSwzOD
-M0OTc3NDcsODkwNDI3MTc3LC03ODk4NDcyNDgsMTQ4NDIzNDUx
-MywxMjUwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LD
-k5MDQ5NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMTcxODUx
-MDQzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNT
-c3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1
-MTMxMDNdfQ==
+eyJoaXN0b3J5IjpbLTE5NTIyNTk3MjEsLTE4MzczNjQxNzUsMz
+gzNDk3NzQ3LDg5MDQyNzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1
+MTMsMTI1MDcwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Ny
+w5OTA0OTYyNiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1
+MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLT
+U3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEw
+NTEzMTAzXX0=
 -->
