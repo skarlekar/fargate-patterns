@@ -60,8 +60,8 @@
       - [Generate the Task Definition](#generate-the-task-definition-1)
       - [Register the Task Defintion](#register-the-task-defintion-1)
       - [Generate the Service Definition](#generate-the-service-definition)
-      - [Create the Bean-Counter Service](#create-the-bean-counter-service)
-      - [Test the Service](#test-the-service)
+      - [Create the Bean-counter Service](#create-the-bean-counter-service)
+      - [Testing the Bean-counter Service](#testing-the-bean-counter-service)
       - [Set the Scaling Policy for the Service](#set-the-scaling-policy-for-the-service)
       - [Test the Scaling Policy](#test-the-scaling-policy)
   * [Conclusion](#conclusion)
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4OTg0NzI0OCwxNDg0MjM0NTEzLDEyNT
-A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
-MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
-g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
-ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMy
-wtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTky
-MDAzNzE4OF19
+eyJoaXN0b3J5IjpbLTE4Nzk0NzEzMTksLTc4OTg0NzI0OCwxND
+g0MjM0NTEzLDEyNTA3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgz
+MDcyNDcsOTkwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC
+0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYy
+OTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MC
+wtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00
+NTc2NDU0MDVdfQ==
 -->
