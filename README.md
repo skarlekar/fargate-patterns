@@ -1,3 +1,4 @@
+
 - [**Fargate Design Patterns**](#fargate-design-patterns)
   * [Compendium and Code Examples of AWS Fargate Patterns.](#compendium-and-code-examples-of-aws-fargate-patterns)
   * [Introduction](#introduction)
@@ -34,7 +35,7 @@
       - [Create VPC, Subnets and Security Group](#create-vpc--subnets-and-security-group)
       - [Create an Application Load Balancer](#create-an-application-load-balancer)
   * [Examples](#examples)
-    + [Tom Thumb - A Video Thumb-nail Generator Task](#tom-thumb---a-video-thumb-nail-generator-task)
+    + [Tom Thumb - A Video Thumbnail Generator Task](#tom-thumb---a-video-thumbnail-generator-task)
     + [Setup Instructions](#setup-instructions)
       - [Create a repository in ECR](#create-a-repository-in-ecr)
       - [Build the Docker Image](#build-the-docker-image)
@@ -51,7 +52,7 @@
       - [Package the Lambda](#package-the-lambda)
       - [Deploy the Lambda](#deploy-the-lambda)
       - [Testing Tom-Thumb](#testing-tom-thumb)
-    + [Bean-Counter - A Coin Counter Service](#bean-counter---a-coin-counter-service)
+    + [Bean-counter - A Coin Counter Service](#bean-counter---a-coin-counter-service)
     + [Setup Instructions](#setup-instructions-1)
       - [Create a repository in ECR](#create-a-repository-in-ecr-1)
       - [Build the Docker Image](#build-the-docker-image-1)
@@ -546,11 +547,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzczNjQxNzUsMzgzNDk3NzQ3LDg5MD
-QyNzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0
-MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMT
-kwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2
-NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtOD
-UzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0
-NDA2MjU4XX0=
+eyJoaXN0b3J5IjpbMTU3NjIxNTU4MSwtMTgzNzM2NDE3NSwzOD
+M0OTc3NDcsODkwNDI3MTc3LC03ODk4NDcyNDgsMTQ4NDIzNDUx
+MywxMjUwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LD
+k5MDQ5NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMTcxODUx
+MDQzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNT
+c3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1
+MTMxMDNdfQ==
 -->
