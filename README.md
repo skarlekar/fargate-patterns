@@ -467,16 +467,19 @@ Set a target scaling policy for the service such that desired count of the servi
 Use Apache Bench to hit the server $100,000 times with 100 concurrent threads with a timeout of 120 seconds to see the service scale out. You will have to wait for the cooling period to see the scaling out. Scaling in will take 15 minutes after scale out. Verify this on the ECS console.
 
     $ ./test-scaling.sh
-    
-@TO DO - paste the screenshot of scaling run
+
+Following is the output of running Apache Bench:    
+![Output of Apache Bench](https://github.com/skarlekar/fargate-patterns/blob/master/images/auto-scaling-output.png)
+
+In the following picture you can see that Fargate has scaled-out as a result of the load.
 @TO DO - paste the screenshot of scaling test
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDcwMjQ0MiwtMTUzNDI1ODYzNSwtMT
-MxODMwNzI0Nyw5OTA0OTYyNiwxMTkwMjg3OTc5LDE3NzYyNDEy
-NDAsLTE3MTg1MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4NiwyMz
-Y0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMx
-MjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4ND
-YsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcw
-MTQ0MDE3M119
+eyJoaXN0b3J5IjpbLTM4MzE1NjIyNCwxMjUwNzAyNDQyLC0xNT
+M0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOTAyODc5
+NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3NjEsOT
+k2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUx
+NjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0MDYyNT
+gsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxODgsLTQ3
+NzYyNDcyN119
 -->
