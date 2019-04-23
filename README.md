@@ -455,7 +455,8 @@ Retrieve the DNS name of the application load balancer. Cut & paste the DNS in t
     $ echo $DNS
     My-Fargate-ALB-xxxxxxx.us-east-1.elb.amazonaws.com
 
-![Bean counter ](https://github.com/skarlekar/fargate-patterns/blob/master/images/bean-counter-browser-1.png)
+![Bean counter landing page](https://github.com/skarlekar/fargate-patterns/blob/master/images/bean-counter-browser-1.png)
+![Bean counter test output](https://github.com/skarlekar/fargate-patterns/blob/master/images/bean-counter-browser-2.png)
 
 #### Set the Scaling Policy for the Service
 Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the when the combined load on the service breaches 75% the service should scale-out. A cool-out period of 60 seconds is also specified so that the service doesn't thrash around.
@@ -471,11 +472,11 @@ Use Apache Bench to hit the server $100,000 times with 100 concurrent threads wi
 @TO DO - paste the screenshot of scaling test
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDQzMzc4NDcsLTE1MzQyNTg2MzUsLT
-EzMTgzMDcyNDcsOTkwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQx
-MjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMj
-M2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQz
-MTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzOD
-Q2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3
-MDE0NDAxNzNdfQ==
+eyJoaXN0b3J5IjpbMTI1MDcwMjQ0MiwtMTUzNDI1ODYzNSwtMT
+MxODMwNzI0Nyw5OTA0OTYyNiwxMTkwMjg3OTc5LDE3NzYyNDEy
+NDAsLTE3MTg1MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4NiwyMz
+Y0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgzNDMx
+MjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2MjU4LDEwNzM0MjM4ND
+YsLTQ1NzY0NTQwNSwtOTIwMDM3MTg4LC00Nzc2MjQ3MjcsMTcw
+MTQ0MDE3M119
 -->
