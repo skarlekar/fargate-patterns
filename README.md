@@ -15,7 +15,7 @@
     + [Good:  Scaling](#good---scaling)
     + [Bad: Limited Availability](#bad--limited-availability)
   * [Behavioral Design Patterns for AWS Fargate](#behavioral-design-patterns-for-aws-fargate)
-  * [*Container-on-Demand* Pattern](#-container-on-demand--pattern)
+  * [Container-on-Demand Pattern](#-container-on-demand--pattern)
     + [Context & Problem](#context---problem)
     + [Solution](#solution)
       - [Pattern Components](#pattern-components)
@@ -547,7 +547,7 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTIyNTk3MjEsLTE4MzczNjQxNzUsMz
+eyJoaXN0b3J5IjpbLTIwNzk3MzQ0NDcsLTE4MzczNjQxNzUsMz
 gzNDk3NzQ3LDg5MDQyNzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1
 MTMsMTI1MDcwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Ny
 w5OTA0OTYyNiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1
