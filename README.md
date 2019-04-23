@@ -178,7 +178,7 @@ If you think your workloads will breach these limitations, you should seriously 
 
 ## Scaling Container Pattern
 ### Context & Problem
-In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for asynchronous workloads. Here the main problem was the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. While the Container-on-Demand pattern solves this issue, for synchronous web services that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
+In the [problem](https://github.com/skarlekar/fargate-patterns#problem) section of the [Container-on-Demand](https://github.com/skarlekar/fargate-patterns#container-on-demand-pattern) pattern we discussed how the limitations on long-processes rules out Lambda for asynchronous workloads. Therefore, we use the Container-on-Demand pattern to overcome the time limitation of Lambda Here the main problem was the restrictions on the time it takes to run the jobs which cannot exceed 15 minutes. While the Container-on-Demand pattern solves this issue, for synchronous web services that execute within these limits, the main limitations are the ***size of the deployment package***, networking, local temporary store or the language supported in Lambda. 
 
 As of this writing in April 2019, AWS Lambda natively supports Java, Go, PowerShell, Node.js, C#, Python, and Ruby code. Most recently AWS Lambda provides a Runtime API which allows you to use any additional programming languages to author your functions. While the concept of allowing you to bring your own runtime is radical, it is not straight forward as can be seen from this author's experiment [here](https://github.com/skarlekar/lambda-custom-runtime).
 
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1NzY0NDMsMzgzNDk3NzQ3LDg5MDQyNz
-E3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0Miwt
-MTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMTkwMj
-g3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYx
-LDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMD
-U1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC0yMTE0NDA2
-MjU4XX0=
+eyJoaXN0b3J5IjpbMTAwOTkwMzIyOSwzODM0OTc3NDcsODkwND
+I3MTc3LC03ODk4NDcyNDgsMTQ4NDIzNDUxMywxMjUwNzAyNDQy
+LC0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOT
+AyODc5NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3
+NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NT
+MwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0
+MDYyNThdfQ==
 -->
