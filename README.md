@@ -492,8 +492,13 @@ Use containers deployed on Fargate for:
 - Need to use large libraries that cannot fit into a Lambda profile (Quantlib, Scikit etc),
 - Where you need more control over networking, compute horsepower or memory
 - Use cases that requires a long in-process runtimes.
+
+### Scenarios where Fargate may not be the Best Choice
+
+- When you require greater control of your EC2 instances to support networking, COTS applications that require broader customization options, then use ECS without Fargate.
+- Request-response cycle of a function running in Lambda may be relatively quicker than running the same function in a Fargate container. This is especially true if your are using large cont images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDYzMTA3MCwxNDg0MjM0NTEzLDEyNT
+eyJoaXN0b3J5IjpbLTU1ODgyMzAyNSwxNDg0MjM0NTEzLDEyNT
 A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
 MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
 g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
