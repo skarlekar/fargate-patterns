@@ -496,10 +496,10 @@ Use containers deployed on Fargate for:
 ### Scenarios where Fargate may not be the Best Choice
 
 - When you require greater control of your EC2 instances to support networking, COTS applications that require broader customization options, then use ECS without Fargate.
-- When you are using progamming languages like Java/Scal
-- Request-response cycle of a function running in Lambda may be relatively quicker than running the same function in a Fargate container. This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects.
+- When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
+- By breaking down your application into smaller modules that fit in Lambdas you can get 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjYwMTY1MSwxNDg0MjM0NTEzLDEyNT
+eyJoaXN0b3J5IjpbLTYyODc2MjA2NiwxNDg0MjM0NTEzLDEyNT
 A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
 MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
 g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
