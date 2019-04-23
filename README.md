@@ -487,22 +487,18 @@ Applications can consist of a mix of Fargate & Lambda to exploit the Serverless 
 Use Lambdas for small & tight services with low memory (<3GB) and small request-response cycles (<15 mins).
 
 Use containers deployed on Fargate for:
-
-existing legacy services that cannot be trivially refactored,
-
-written in languages not supported by Lambda,
-
-need to use large libraries that cannot fit into a Lambda profile (Quantlib, Scikit etc),
-
-where you need more control over the compute horsepower/process or memory/process
+- Existing legacy services that cannot be trivially refactored, 
+- Applications written in languages not supported by Lambda,
+- Need to use large libraries that cannot fit into a Lambda profile (Quantlib, Scikit etc),
+- Where you need more control over networkion compute horsepower/process or memory/process
 
 use cases that requires a long in-process runtimes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTgwNjUxMjksMTQ4NDIzNDUxMywxMj
-UwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5
-NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNy
-w4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQz
-Nzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMD
-MsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05
-MjAwMzcxODhdfQ==
+eyJoaXN0b3J5IjpbLTM3MTE0OTE3MywxNDg0MjM0NTEzLDEyNT
+A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
+MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
+g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
+ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMy
+wtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTky
+MDAzNzE4OF19
 -->
