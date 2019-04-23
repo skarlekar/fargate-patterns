@@ -493,7 +493,7 @@ Verify that the service has been created and two tasks are being provisioned for
 
 ![Bean-counter Service Task Provision Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
 
-#### Test the Service
+#### Testing the Bean-counter Service
 Retrieve the DNS name of the application load balancer. Cut & paste the DNS in the browser.
 
     $ export DNS=$(aws elbv2 describe-load-balancers | jq '.LoadBalancers[] | if .LoadBalancerName == "My-Fargate-ALB" then .DNSName else null end' | grep -v null | sed "s/\"//g")
@@ -544,7 +544,7 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3MDk3MjcxLDE0ODQyMzQ1MTMsMTI1MD
+eyJoaXN0b3J5IjpbNjk2NjEyNjU4LDE0ODQyMzQ1MTMsMTI1MD
 cwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYy
 NiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsOD
 YyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4
