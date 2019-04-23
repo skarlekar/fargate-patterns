@@ -425,7 +425,7 @@ Note: An update to the function does not update the environment variables.
 - Upload a video file in the 'video' folder of the bucket and verify a thumbnail is created in the 'thumbnail' folder. It will take around a minute for the process to complete depending upon the size of the video file.
 
 ---
-### Bean-Counter - A Coin Counter Service
+### Bean-counter - A Coin Counter Service
 Bean Counter is a coin counter service. It will analyze an image of coins and return the total value of the coins in the image. It works only on US Mint issued coined and does not recognize any denomination above a quarter dollar coin. It also assumes that the picture contains a quarter. The quarter is used to calibrate the size of the coins. It is implemented following the ***Scaling-Container*** pattern.
 
 In a typical usage, an user navigates to the URL of the ALB on the browser and enters the URL for the service along with the location of the image file containing the picture of the coins. The Bean-Counter service then invokes the Fargate Task and returns the response to the browser.
@@ -483,7 +483,7 @@ Generate bean-counter service definition from the template.
 
 This will create a temp directory and write the *create-bean-counter-service-definition.json* file.  Inspect this file and notice that it contains the target group for the service under the load balancers section. This ties the load balancer to the service. Also notice the desiredCount variable set to 2. 
 
-#### Create the Bean-Counter Service
+#### Create the Bean-counter Service
 Create the bean-counter service from the service defintion file generated in the previous step.
 $ ./create-bean-counter-service.sh
 
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk0NzEzMTksLTc4OTg0NzI0OCwxND
-g0MjM0NTEzLDEyNTA3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgz
-MDcyNDcsOTkwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC
-0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYy
-OTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MC
-wtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00
-NTc2NDU0MDVdfQ==
+eyJoaXN0b3J5IjpbODkwNDI3MTc3LC03ODk4NDcyNDgsMTQ4ND
+IzNDUxMywxMjUwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3
+MjQ3LDk5MDQ5NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMT
+cxODUxMDQzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0
+MCwtNTc3MjQzNzg5LC04NTMwNTUxNjgsLTE3ODM0MzEyOTAsLT
+E0MTA1MTMxMDMsLTIxMTQ0MDYyNTgsMTA3MzQyMzg0NiwtNDU3
+NjQ1NDA1XX0=
 -->
