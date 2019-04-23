@@ -447,12 +447,35 @@ Verify that the service has been created and two tasks are being provisioned for
 ![Bean-counter Service Creation Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-1.png)
 
 ![Bean-counter Service Task Provision Check](https://github.com/skarlekar/fargate-patterns/blob/master/images/create-bean-counter-service-2.png)
+
+#### Test the Service
+Retrieve the DNS name of the application load balancer. Cut & paste the DNS in the browser.
+
+    $ export DNS=$(aws elbv2 describe-load-balancers | jq '.LoadBalancers[] | if .LoadBalancerName == "My-Fargate-ALB" then .DNSName else null end' | grep -v null | sed "s/\"//g")
+    $ echo $DNS
+    My-Fargate-ALB-xxxxxxx.us-east-1.elb.amazonaws.com
+
+@TO DO Paste the screenshots here
+
+#### Set the Scaling Policy for the Service
+Set a target scaling policy for the service such that desired count of the service is set to 2 and can increase to 4 on demand. The auto-scaling-policy.json specifies that the when the combined load on the service breaches 75% the service should scale-out. A cool-out period of 60 seconds is also specified so that the service doesn't thrash around.
+
+    $ ./set-scaling-policy.sh
+
+#### Test the Scaling Policy
+Use Apache Bench to hit the server $100,000 times with 100 concurrent threads with a timeout of 120 seconds to see the service scale out. You will have to wait for the cooling period to see the scaling out. Scaling in will take 15 minutes after scale out. Verify this on the ECS console.
+
+    $ ./test-scaling.sh
+    
+@TO DO - paste the screenshot of scaling run
+@TO DO - paste the screenshot of scaling test
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2Mj
-QxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYs
-MjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2OCwtMTc4Mz
-QzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OCwxMDczNDIz
-ODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LD
-E3MDE0NDAxNzMsNjg3NDA1Njc5LDI3NTk0MDAyNSw3MTczODQ1
-M119
+eyJoaXN0b3J5IjpbLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOT
+kwNDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEw
+NDM3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01Nz
+cyNDM3ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUx
+MzEwMywtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MD
+UsLTkyMDAzNzE4OCwtNDc3NjI0NzI3LDE3MDE0NDAxNzMsNjg3
+NDA1Njc5XX0=
 -->
