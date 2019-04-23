@@ -414,7 +414,7 @@ Verify the Lambda ***task-runner*** was created through the console and the foll
 Additionally, verify that the Lambda permissi
 Note: An update to the function does not update the environment variables. 
 
-### Testing Tom-Thumb
+#### Testing Tom-Thumb
 - Create a folder called 'video', 'thumbnail' and 'raw' in the S3 bucket that you chose for this project. The Bucket ARN for this should match the S3_BUCKET_ARN variable you set earlier. 
 
 - In the Console go to the Advanced Settings in the Properties tab of the S3 bucket and create a notification event to trigger the ***task-runner*** lambda that was created earlier when a file is dropped into a particular folder in your S3 bucket.
@@ -544,11 +544,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjU1MjA5MCwxNDg0MjM0NTEzLDEyNT
-A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
-MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
-g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
-ODksLTg1MzA1NTE2OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMy
-wtMjExNDQwNjI1OCwxMDczNDIzODQ2LC00NTc2NDU0MDUsLTky
-MDAzNzE4OF19
+eyJoaXN0b3J5IjpbODI3MDk3MjcxLDE0ODQyMzQ1MTMsMTI1MD
+cwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYy
+NiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsOD
+YyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4
+OSwtODUzMDU1MTY4LC0xNzgzNDMxMjkwLC0xNDEwNTEzMTAzLC
+0yMTE0NDA2MjU4LDEwNzM0MjM4NDYsLTQ1NzY0NTQwNSwtOTIw
+MDM3MTg4XX0=
 -->
