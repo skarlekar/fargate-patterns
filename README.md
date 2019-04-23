@@ -75,7 +75,7 @@
 
 ## Compendium and Code Examples of AWS Fargate Patterns.
 
-**AWS Fargate** is the Uber of container service allowing engineers to hail a container by specifying their compute and memory needs. By providing incredible on-demand flexibility and removing the burden of resource provisioning just as Lambda did years ago to servers, Fargate is disrupting the container management technology.
+This is a companion project for the blog post at: 
 
 ## Introduction
 Making software behave predictably in different environments where it is deployed during the lifecycle of an application is one of the biggest challenges of development. Subtle differences in system software on which developers have no control - even in same operating systems - can cause unexpected behaviors and are hard to debug and fix. 
@@ -547,11 +547,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if you are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY4OTI5NzksLTIwNzk3MzQ0NDcsLT
-E4MzczNjQxNzUsMzgzNDk3NzQ3LDg5MDQyNzE3NywtNzg5ODQ3
-MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0MiwtMTUzNDI1ODYzNS
-wtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMTkwMjg3OTc5LDE3NzYy
-NDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2NzYxLDk5Njk4MjU4Ni
-wyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUzMDU1MTY4LC0xNzgz
-NDMxMjkwXX0=
+eyJoaXN0b3J5IjpbLTExNTgyNDkxOTAsLTEyNDY4OTI5NzksLT
+IwNzk3MzQ0NDcsLTE4MzczNjQxNzUsMzgzNDk3NzQ3LDg5MDQy
+NzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1MTMsMTI1MDcwMjQ0Mi
+wtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0OTYyNiwxMTkw
+Mjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0MzcsODYyNDE2Nz
+YxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0Mzc4OSwtODUz
+MDU1MTY4XX0=
 -->
