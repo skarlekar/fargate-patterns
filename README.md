@@ -475,9 +475,11 @@ In the following picture you can see that Fargate has scaled-out as a result of 
 ![Fargate caught in action](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
 
 ## Conclusion
-Each application is unique and solving different needs based on the business requirements. If the task of infrastructure management is too onerous and/or if you only want to pay for your compo, then Fargate may be the right choice for you. On the other hand, if you need greater control of the network resources
+Each application is unique and solving different needs based on the business requirements. If the task of infrastructure management is too onerous and/or if you only want to pay for your computing time, then Fargate may be the right choice for you. 
+
+On the other hand, if you need greater control of the network resources or have large container workloads that warrant maintaing a cluster of servers to run ECS or EKS, then stick with the latter.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NDg3OTE3MCwxMjUwNzAyNDQyLC0xNT
+eyJoaXN0b3J5IjpbMTQ4NDIzNDUxMywxMjUwNzAyNDQyLC0xNT
 M0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOTAyODc5
 NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3NjEsOT
 k2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUx
