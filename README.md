@@ -1,30 +1,4 @@
-- [**Fargate Design Patterns**](#fargate-design-patterns)
-  * [Compendium and Code Examples of AWS Fargate Patterns.](#compendium-and-code-examples-of-aws-fargate-patterns)
-  * [Introduction](#introduction)
-  * [What is AWS Fargate?](#what-is-aws-fargate-)
-  * [Components of AWS Fargate](#components-of-aws-fargate)
-    + [Task](#task)
-    + [Service](#service)
-    + [Cluster](#cluster)
-  * [AWS Fargate - the Good, Bad & Ugly](#aws-fargate---the-good--bad---ugly)
-    + [Good & Bad: Pay Per Use](#good---bad--pay-per-use)
-    + [Good: Low Complexity](#good--low-complexity)
-    + [Good: Better Security](#good--better-security)
-    + [Good: Faster Development](#good--faster-development)
-    + [Good:  Scaling](#good---scaling)
-    + [Bad: Limited Availability](#bad--limited-availability)
-  * [Focus of these Behavioral Patterns](#focus-of-these-behavioral-patterns)
-  * [*Container-on-Demand* Pattern](#-container-on-demand--pattern)
-    + [Problem](#problem)
-    + [Solution](#solution)
-      - [Pattern Components](#pattern-components)
-    + [Limitations](#limitations)
-  * [Scaling Container Pattern](#scaling-container-pattern)
-    + [Problem](#problem-1)
-    + [Solution](#solution-1)
-      - [Pattern Components](#pattern-components-1)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 # Fargate Design Patterns
 
 ## Compendium and Code Examples of AWS Fargate Patterns.
@@ -499,7 +473,7 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if your are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzU2MjUwNywxNDg0MjM0NTEzLDEyNT
+eyJoaXN0b3J5IjpbMjA0ODU2MzA3OSwxNDg0MjM0NTEzLDEyNT
 A3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2
 MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LD
 g2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3
