@@ -472,14 +472,14 @@ Following is the output of running Apache Bench:
 ![Output of Apache Bench](https://github.com/skarlekar/fargate-patterns/blob/master/images/auto-scaling-output.png)
 
 In the following picture you can see that Fargate has scaled-out as a result of the load.
-![@TO DO - paste the screenshot of scaling test](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
+![Fargate caught in action](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5NjI5NDEyLDEyNTA3MDI0NDIsLTE1Mz
-QyNTg2MzUsLTEzMTgzMDcyNDcsOTkwNDk2MjYsMTE5MDI4Nzk3
-OSwxNzc2MjQxMjQwLC0xNzE4NTEwNDM3LDg2MjQxNjc2MSw5OT
-Y5ODI1ODYsMjM2NDYyOTQwLC01NzcyNDM3ODksLTg1MzA1NTE2
-OCwtMTc4MzQzMTI5MCwtMTQxMDUxMzEwMywtMjExNDQwNjI1OC
-wxMDczNDIzODQ2LC00NTc2NDU0MDUsLTkyMDAzNzE4OCwtNDc3
-NjI0NzI3XX0=
+eyJoaXN0b3J5IjpbMjExMTAzMjAyOCwxMjUwNzAyNDQyLC0xNT
+M0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5MDQ5NjI2LDExOTAyODc5
+NzksMTc3NjI0MTI0MCwtMTcxODUxMDQzNyw4NjI0MTY3NjEsOT
+k2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3MjQzNzg5LC04NTMwNTUx
+NjgsLTE3ODM0MzEyOTAsLTE0MTA1MTMxMDMsLTIxMTQ0MDYyNT
+gsMTA3MzQyMzg0NiwtNDU3NjQ1NDA1LC05MjAwMzcxODgsLTQ3
+NzYyNDcyN119
 -->
