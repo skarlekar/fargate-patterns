@@ -1,5 +1,5 @@
 
-- [Fargate Design Patterns](#fargate-design-patterns)
+- [**Fargate Design** Patterns](#fargate-design-patterns)
   * [Compendium and Code Examples of AWS Fargate Patterns.](#compendium-and-code-examples-of-aws-fargate-patterns)
   * [Instructions for Running the Examples](#instructions-for-running-the-examples)
     + [Prerequisites](#prerequisites)
@@ -39,12 +39,14 @@
       - [Testing the Bean-counter Service](#testing-the-bean-counter-service)
       - [Set the Scaling Policy for the Service](#set-the-scaling-policy-for-the-service)
       - [Test the Scaling Policy](#test-the-scaling-policy)
+  * [Application in Action](#application-in-action)
+    + [Tom-thumb Task in Action](#tom-thumb-task-in-action)
+    + [Bean-counter in Action](#bean-counter-in-action)
   * [Conclusion](#conclusion)
     + [Scenarios where Fargate is most Beneficial](#scenarios-where-fargate-is-most-beneficial)
     + [Scenarios where Fargate may not be the Best Choice](#scenarios-where-fargate-may-not-be-the-best-choice)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 # Fargate Design Patterns
 
@@ -381,11 +383,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if you are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTA0MDcxMiwtOTI3OTMyNDU0LC0xMj
-Q2ODkyOTc5LC0yMDc5NzM0NDQ3LC0xODM3MzY0MTc1LDM4MzQ5
-Nzc0Nyw4OTA0MjcxNzcsLTc4OTg0NzI0OCwxNDg0MjM0NTEzLD
-EyNTA3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkw
-NDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwND
-M3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01Nzcy
-NDM3ODldfQ==
+eyJoaXN0b3J5IjpbLTIxMzk5ODI2NDMsLTkyNzkzMjQ1NCwtMT
+I0Njg5Mjk3OSwtMjA3OTczNDQ0NywtMTgzNzM2NDE3NSwzODM0
+OTc3NDcsODkwNDI3MTc3LC03ODk4NDcyNDgsMTQ4NDIzNDUxMy
+wxMjUwNzAyNDQyLC0xNTM0MjU4NjM1LC0xMzE4MzA3MjQ3LDk5
+MDQ5NjI2LDExOTAyODc5NzksMTc3NjI0MTI0MCwtMTcxODUxMD
+QzNyw4NjI0MTY3NjEsOTk2OTgyNTg2LDIzNjQ2Mjk0MCwtNTc3
+MjQzNzg5XX0=
 -->
