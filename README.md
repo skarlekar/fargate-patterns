@@ -351,7 +351,11 @@ In the following picture, you can see that Fargate has scaled-out as a result of
 ![Fargate caught in action](https://github.com/skarlekar/fargate-patterns/blob/master/images/scaling-demo.png)
 
 ## Application in Action
-The following is the examples of the a
+The following is the examples of the application in action
+### Tom-thumb Task in Action
+![tom-thumb task in action](https://github.com/skarlekar/fargate-patterns/blob/master/videos/tom-thumb-in-action.gif)
+### Bean-counter in Action
+
 ## Conclusion
 Each application is unique and solving different needs based on business requirements. If the task of infrastructure management is too onerous and/or if you only want to pay for your computing time, then Fargate may be the right choice for you. 
 
@@ -377,11 +381,11 @@ Use containers deployed on Fargate for:
 - When you want fast request-response cycle time then Lambda may be a good choice.  This is especially true if you are using large container images written with object-heavy languages such as Java/Scala that requires significant initiation time to start the JVM and bootstrap objects. 
 - By breaking down your application into smaller modules that fit into Lambdas and using Layers and Step Functions you can reap the benefits of Serverless architectures while paying only for your compute time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MzUwMzAwLC05Mjc5MzI0NTQsLTEyND
-Y4OTI5NzksLTIwNzk3MzQ0NDcsLTE4MzczNjQxNzUsMzgzNDk3
-NzQ3LDg5MDQyNzE3NywtNzg5ODQ3MjQ4LDE0ODQyMzQ1MTMsMT
-I1MDcwMjQ0MiwtMTUzNDI1ODYzNSwtMTMxODMwNzI0Nyw5OTA0
-OTYyNiwxMTkwMjg3OTc5LDE3NzYyNDEyNDAsLTE3MTg1MTA0Mz
-csODYyNDE2NzYxLDk5Njk4MjU4NiwyMzY0NjI5NDAsLTU3NzI0
-Mzc4OV19
+eyJoaXN0b3J5IjpbMTg2MTg0MTgxNCwtOTI3OTMyNDU0LC0xMj
+Q2ODkyOTc5LC0yMDc5NzM0NDQ3LC0xODM3MzY0MTc1LDM4MzQ5
+Nzc0Nyw4OTA0MjcxNzcsLTc4OTg0NzI0OCwxNDg0MjM0NTEzLD
+EyNTA3MDI0NDIsLTE1MzQyNTg2MzUsLTEzMTgzMDcyNDcsOTkw
+NDk2MjYsMTE5MDI4Nzk3OSwxNzc2MjQxMjQwLC0xNzE4NTEwND
+M3LDg2MjQxNjc2MSw5OTY5ODI1ODYsMjM2NDYyOTQwLC01Nzcy
+NDM3ODldfQ==
 -->
