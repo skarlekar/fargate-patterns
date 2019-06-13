@@ -1,4 +1,4 @@
-# Create a new role to be used for ECS tasks
+# Create a new policy to be used for ECS tasks
 export POLICY_ARN=$(aws iam create-policy --policy-name my-run-task-by-lambda-policy --policy-document file://run-task-by-lambda-policy.json | jq '.Policy.Arn' | sed "s/\"//g")
 
 # Name our new role
