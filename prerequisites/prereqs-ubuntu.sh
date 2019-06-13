@@ -37,7 +37,7 @@ fi
 
 # check version is supported
 if echo ${versions[@]} | grep -q -w ${CODENAME}; then
-    echo "Installing Hyperledger Composer prereqs for Ubuntu ${CODENAME}"
+    echo "Installing Fargate Patterns prereqs for Ubuntu ${CODENAME}"
 else
     echo "Error: Ubuntu ${CODENAME} is not supported"
     exit 1
